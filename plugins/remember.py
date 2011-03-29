@@ -133,11 +133,11 @@ def unforget(inp, chan='', db=None, nick=''):
     
 
 @hook.regex(r'^[?!](.+)')
-def question(inp, chan='', say=None, db=None, input=None, nick="", me="", bot=None, oldchan=None):
+def question(inp, chan='', say=None, db=None, input=None, nick="", me="", bot=None, notice=None, oldchan=None):
     "!factoid -- shows what data is associated with word"
     def recurse():
         if chan != "default":
-            question(inp, "default", say, db, input, nick, me, bot, chan)
+            question(inp, "default", say, db, input, nick, me, bot, notice, chan)
 #    if nick == "lahwran":
 #        chan = "#risucraft"
     db_init(db)
@@ -175,14 +175,14 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me="", bot=No
     
     data = get_memory(db, chan, match.split(" ")[0].strip())
     if whole:
-        say("["+chan+"]"+str(data))
+        notice("["+chan+"]"+str(data))
         recurse()
         return
     counter = 0
     pyarg =" ".join(match.strip().split(" ")[1:])
     while data and data.startswith("<pyexec>") and counter<=3:
         counter += 1
-        data=pyexec.python("inp="+repr(pyarg)+";"+data[len("<pyexec>"):].strip())
+        data=pyexec.python("inp="+repr(pyarg)+".encode('utf8');"+data[len("<pyexec>"):].strip())
     if data == None:
         recurse()
         return
