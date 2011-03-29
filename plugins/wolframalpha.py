@@ -7,7 +7,7 @@ from util import hook, http
 @hook.command
 def wolframalpha(inp):
     ".wa/.wolframalpha <query> -- scrapes Wolfram Alpha's" \
-            "results for <query>"
+            " results for <query>"
 
     url = "http://www.wolframalpha.com/input/?asynchronous=false"
 
@@ -44,8 +44,8 @@ def wolframalpha(inp):
     def unicode_sub(match):
         return unichr(int(match.group(1), 16))
 
-    ret = re.sub(r'\\:([0-9a-z]{4})', unicode_sub, re
-    leng=28
+    ret = re.sub(r'\\:([0-9a-z]{4})', unicode_sub, ret)
+    leng=175
     if len(ret) > leng:
         ret = ret[:ret.rfind(' ', 0, leng)]
         ret = re.sub(r'\W+$', '', ret) + '...'
