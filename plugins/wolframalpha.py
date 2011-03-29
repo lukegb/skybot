@@ -44,10 +44,10 @@ def wolframalpha(inp):
     def unicode_sub(match):
         return unichr(int(match.group(1), 16))
 
-    ret = re.sub(r'\\:([0-9a-z]{4})', unicode_sub, ret)
-
-    if len(ret) > 430:
-        ret = ret[:ret.rfind(' ', 0, 430)]
+    ret = re.sub(r'\\:([0-9a-z]{4})', unicode_sub, re
+    leng=28
+    if len(ret) > leng:
+        ret = ret[:ret.rfind(' ', 0, leng)]
         ret = re.sub(r'\W+$', '', ret) + '...'
 
     if not ret:

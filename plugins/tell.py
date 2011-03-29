@@ -36,7 +36,7 @@ def tellinput(paraml, input=None, db=None, bot=None):
         user_from, message, time, chan = tells[0]
         reltime = timesince.timesince(time)
 
-        reply = "%s said %s ago in %s: %s" % (user_from, reltime, chan,
+        reply = "%s said %s ago: %s" % (user_from, reltime,
                                               message)
         if len(tells) > 1:
             reply += " (+%d more, .showtells to view)" % (len(tells) - 1)
@@ -62,7 +62,7 @@ def showtells(inp, nick='', chan='', notice=None, db=None):
     for tell in tells:
         user_from, message, time, chan = tell
         past = timesince.timesince(time)
-        notice("%s said %s ago in %s: %s" % (user_from, past, chan, message))
+        notice("%s said %s ago: %s" % (user_from, past, message))
 
     db.execute("delete from tell where user_to=lower(?)",
                   (nick,))

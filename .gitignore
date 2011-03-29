@@ -6,3 +6,4 @@ config
 pep8.py
 .project
 .pydevproject
+donotwant

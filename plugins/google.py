@@ -48,7 +48,7 @@ def google(inp):
     out = '%s -- \x02%s\x02: "%s"' % (result['unescapedUrl'], title, content)
     out = ' '.join(out.split())
 
-    if len(out) > 300:
-        out = out[:out.rfind(' ')] + '..."'
+    if len(out) > 200:
+        out = out[:out[:200].rfind(' ')] + '..."'
 
     return out
