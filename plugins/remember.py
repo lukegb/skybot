@@ -171,17 +171,18 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me="", bot=No
         user=spl[1].strip()
         mainout = redirout
     else:
-        match=match.split(" ")[0]
+        match=match.strip()
     
-    data = get_memory(db, chan, match)
+    data = get_memory(db, chan, match.split(" ")[0].strip())
     if whole:
         say("["+chan+"]"+str(data))
         recurse()
         return
     counter = 0
+    pyarg =" ".join(match.strip().split(" ")[1:])
     while data and data.startswith("<pyexec>") and counter<=3:
         counter += 1
-        data=pyexec.python(data[len("<pyexec>"):].strip())
+        data=pyexec.python("inp="+repr(pyarg)+";"+data[len("<pyexec>"):].strip())
     if data == None:
         recurse()
         return
@@ -210,7 +211,7 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me="", bot=No
     elif data.startswith("<reply>"):
         mainout(data.replace("<reply>","").strip())
     elif not data.startswith("<action>"):   
-        mainout(match+" is "+data)
+        mainout(match.split(" ")[0].strip()+" is "+data)
     elif data.startswith("<action>") and mainout == say:
         me(data.replace("<action>","").strip())
     #else:
