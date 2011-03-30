@@ -28,10 +28,10 @@ def seen(inp, nick='', chan='', db=None, input=None):
 
     if input.conn.nick.lower() == inp.lower():
         # user is looking for us, being a smartass
-        return "You need to get your eyes checked."
+        return "I'm right here, need something?"
 
     if inp.lower() == nick.lower():
-        return "Have you looked in a mirror lately?"
+        return "Yes, that's your nick ..."
 
     db_init(db)
 
@@ -44,5 +44,6 @@ def seen(inp, nick='', chan='', db=None, input=None):
             inp = last_seen[0]
         return '%s was last seen %s ago saying: %s' % \
                     (inp, reltime, last_seen[2])
-    else:
-        return "I've never seen %s" % inp
+    #else:
+    #    return "I've never seen %s" % inp
+    #this gets abused
