@@ -44,6 +44,6 @@ def seen(inp, nick='', chan='', db=None, input=None):
             inp = last_seen[0]
         return '%s was last seen %s ago saying: %s' % \
                     (inp, reltime, last_seen[2])
-    #else:
-    #    return "I've never seen %s" % inp
+    else:
+        return "User not in database"
     #this gets abused
