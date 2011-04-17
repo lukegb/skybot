@@ -26,9 +26,9 @@ def rexec(s, bot, input, db):
 
 @hook.command
 def ply(inp, bot=None, input=None, nick=None, db=None):
-    "only lahwran can use this and he knows how so fuck off"
+    "only lahwran can use this"
     if nick != "lahwran":
-        return "you are a dumbfuck. I want to fucking dumbfuck your fucking dumbfuckery."
+        return "nope"
     asdf = inp.split(" ")
     asdfa = asdf[0]
     if asdfa == "eval":
