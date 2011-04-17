@@ -140,6 +140,8 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me="", bot=No
             question(inp, "default", say, db, input, nick, me, bot, notice, chan)
 #    if nick == "lahwran":
 #        chan = "#risucraft"
+    if nick=="citricsquid" and chan.startswith("#"):
+        return
     db_init(db)
     whole=False
     #print inp, input
@@ -175,7 +177,8 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me="", bot=No
     
     data = get_memory(db, chan, match.split(" ")[0].strip())
     if whole:
-        notice("["+chan+"]"+str(data))
+        if data:
+            mainout("["+chan+"]"+str(data))
         recurse()
         return
     counter = 0
