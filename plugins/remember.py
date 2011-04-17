@@ -135,7 +135,7 @@ def unforget(inp, chan='', db=None, nick=''):
     else:
         return ("[local]" if local else "") + "I never knew about that."
     
-redirect_re = re.compile(r'([|><])\s*(\S*)\s*$')
+redirect_re = re.compile(r'([|>])\s*(\S*)\s*$|([<])(.*)')
 word_re = re.compile(r'^([+-]?)(\S+)')
 filter_re = re.compile(r'^\s*[<]([^>]*)[>]\s*(.*)\s*$')
 #args is what is left over after removing these
@@ -155,6 +155,8 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
             
             
     def filters(orig, variables, filterhistory):
+        if not orig:
+            return ""
         if len(filterhistory)+1 > 4:
             return "Hit max recursion depth: ["+orig[:30]+"...]"
         if orig in filterhistory:
