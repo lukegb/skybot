@@ -1,9 +1,13 @@
 """
-remember.py: written by Scaevolus 2010
+remember.py: written by Scaevolus 2010, modified by lahwran 2011
 """
 
 from util import hook
 import pyexec
+import users
+import re
+
+defaultchan = "default" #TODO: creates a security hole, username "default" can alter global factoids
 
 def db_init(db):
     db.execute("create table if not exists memory(chan, word, data, nick,"
@@ -21,7 +25,7 @@ def get_memory(db, chan, word):
 
 def checkinp(chan, inp, localpm):
     if not inp.split(" ")[0]=="." and ((chan.startswith('#') and localpm) or not localpm):
-        chan = "default"
+        chan = defaultchan
         local=False
     elif (chan.startswith('#') and localpm) or not localpm:
         inp=" ".join(inp.split(" ")[1:])
@@ -131,32 +135,137 @@ def unforget(inp, chan='', db=None, nick=''):
     else:
         return ("[local]" if local else "") + "I never knew about that."
     
+redirect_re = re.compile(r'([|><])\s*(\S*)\s*$')
+word_re = re.compile(r'^([+-]?)(\S+)')
+filter_re = re.compile(r'^\s*[<]([^>]*)[>]\s*(.*)\s*$')
+#args is what is left over after removing these
 
-@hook.regex(r'^[?!](.+)')
-def question(inp, chan='', say=None, db=None, input=None, nick="", me="", bot=None, notice=None, oldchan=None):
+maxdepth=4
+
+@hook.regex(r'^[?!](.+)') #groups: (mode,word,args,redirectmode,redirectto)
+def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=None, notice=None):
     "!factoid -- shows what data is associated with word"
-    def recurse():
-        if chan != "default":
-            question(inp, "default", say, db, input, nick, me, bot, notice, chan)
-#    if nick == "lahwran":
-#        chan = "#risucraft"
+        
+    filterhistory = [] #loop detection, maximum recursion depth(s)
+    
+    def varreplace(orig, variables):
+        for i in variables.keys():
+            orig = orig.replace("$"+i,variables[i])
+        return orig
+            
+            
+    def filters(orig, variables, filterhistory):
+        if len(filterhistory)+1 > 4:
+            return "Hit max recursion depth: ["+orig[:30]+"...]"
+        if orig in filterhistory:
+            return "Going in a circle: ["+orig[:30]+"...]"
+        filterhistory.append(orig)
+        
+        filtermatch = filter_re.search(orig)
+        if filtermatch:
+            filtername = filtermatch.group(1).lower()
+            filterinp = filtermatch.group(2)
+            if filtername == "alias":
+                return filters(retrieve(filterinp, chan), variables, filterhistory)
+            elif filtername == "reply":
+                return varreplace(filterinp, variables)
+            elif filtername == "action":
+                return (varreplace(filterinp, variables), me)
+            elif filtername == "pyexec":
+                preargs = ""
+                for i in variables.keys():
+                    preargs+=i+"="+repr(str(variables[i]))+".encode('utf8');"
+                print preargs+filterinp
+                return filters(pyexec.python(preargs+filterinp), variables, filterhistory)
+        else:
+            return variables["word"]+" is "+varreplace(orig, variables)
+            
+            
+    def retrieve(word, chan):
+        ret = get_memory(db, chan, word)
+        if ret and not ret.startswith("<forgotten>"):
+            return ret
+        ret = get_memory(db, defaultchan, word)
+        if ret and not ret.startswith("<forgotten>"):
+            return ret
+        return ""
+            
+    #TODO: hardcoded permission
     if nick=="citricsquid" and chan.startswith("#"):
         return
     db_init(db)
     whole=False
-    #print inp, input
-    #if input.msg.startswith("?"):
-    #    return "do you mean !"+inp.group(1).strip()
-    match = inp.group(1).strip()
-    chans = ["#risucraft", "#lahwran"]
-    if input.msg.startswith("!") and nick != "lahwran" and chan.lower() not in chans and oldchan.lower() not in chans:
-    	
-	return
-    if match.startswith("+"):
-        match=match[1:]
-        whole=True
-    user=""
     
+    def splitgroups(inp):
+        "returns (mode, word, args, redir, redirto)"
+        words = inp.group(1)
+        ret = []
+        wordmatch = word_re.search(words)
+        words=words[wordmatch.end():]
+        ret.append(wordmatch.group(1))
+        ret.append(wordmatch.group(2).lower())
+        
+        redirect = ''
+        redirectto = ''
+        redirectmatch = redirect_re.search(words)
+        if redirectmatch:
+            redirect = redirectmatch.group(1)
+            redirectto = redirectmatch.group(2)
+            words=words[:redirectmatch.start()]
+        ret.append(words.strip())
+        ret.append(redirect)
+        ret.append(redirectto)
+        return ret
+    (mode, word, args, redir, redirto) = splitgroups(inp)
+    def output(s, redir, redirto, input, special=None):
+        if redir==">" and not special:
+            input.conn.cmd('NOTICE', [redirto, nick+" sent:"+s])
+        elif redir == "|" and not special:
+            input.say(redirto+": "+s)
+        elif redir == "<" and not special:
+            input.notice(s)
+        elif special:
+            special(s)
+        else:
+            input.say(s)
+    variables = {"chan":    chan, 
+                 "user":    nick, 
+                 "nick":    input.conn.nick,
+                 "target":  redirto,
+                 "inp":     args,
+                 "word":    word}
+    if mode == "-": #information
+        message = word+" is "
+        local = db.execute("select nick from memory where chan=? and word=lower(?)",(chan, word)).fetchone()
+        if local:
+            message += "locally set by "+local[0]
+        default = db.execute("select nick from memory where chan=? and word=lower(?)",(defaultchan, word)).fetchone()
+        if local and default:
+            message += " and "
+        if default:
+            message += "globally set by "+default[0]
+        if local or default:
+            output(message, redir, redirto, input)
+    elif mode == "+": #raw
+        local = get_memory(db, chan, word)
+        default = get_memory(db, defaultchan, word)
+        if local:
+            output("[local] "+local, redir, redirto, input)
+        if default:
+            output("[global] "+default, redir, redirto, input)
+    else:
+        result = filters(retrieve(word, chan), variables, filterhistory)
+        if type(result) == tuple:
+            output(result[0], redir, redirto, input, result[1]) #special for things like /me
+        else:
+            output(result, redir, redirto, input)
+        
+        
+        
+    
+"""
+    def output(s):
+        
     mainout = say
     def pipeout(s):
         say(user+": "+s)
@@ -189,11 +298,6 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me="", bot=No
     if data == None:
         recurse()
         return
-    if chan != "default":
-        data = data.replace("$chan", chan)
-    elif oldchan != None:
-        data = data.replace("$chan", oldchan)
-    data = data.replace("$user", nick)
 
 
     aliastrail = ["<alias>"+match]
@@ -218,4 +322,4 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me="", bot=No
     elif data.startswith("<action>") and mainout == say:
         me(data.replace("<action>","").strip())
     #else:
-    #    say("Sorry, I don't know anything about "+match)
+    #    say("Sorry, I don't know anything about "+match)"""
