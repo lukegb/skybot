@@ -33,6 +33,10 @@ def get_history(db, chan, url):
 
 def nicklist(nicks):
     nicks = sorted(dict(nicks), key=unicode.lower)
+    for i in range(len(nicks)):
+        l = list(nicks[i])
+	l[0]="_"
+	nicks[i]="".join(l)
     if len(nicks) <= 2:
         return ' and '.join(nicks)
     else:
@@ -54,7 +58,7 @@ def format_reply(history):
 
     hlen = len(history)
     ordinal = ["once", "twice", "%d times" % hlen][min(hlen, 3) - 1]
-
+    last_nick = "_"+last_nick[1:]
     if len(dict(history)) == 1:
         last = "last linked %s ago" % last_time
     else:
