@@ -107,8 +107,9 @@ def map(text, notice=None):
 
 @hook.command
 def grep(text, notice=None):
+    "maps "
     try:
-        p = subprocess.Popen(["egrep", "-e", text, "121-131"], stdout=subprocess.PIPE)
+        p = subprocess.Popen(["egrep", "-e", text, "141-151"], stdout=subprocess.PIPE)
         lines = p.stdout.readlines()
         if len(lines) > 6:
             notice("Only displaying first 6.")

@@ -185,3 +185,5 @@ def main(conn, out):
                 input.inp = m
 
                 dispatch(input, "regex", func, args)
+bot.Input = Input
+bot.dispatch = dispatch

@@ -30,17 +30,20 @@ def rejoin(paraml, conn=None):
 #join channels when invited
 @hook.event('INVITE')
 def invite(paraml, conn=None):
+    if paraml[-1] == "#bottestspamchan":
+        return "no."
     conn.join(paraml[-1])
 
 
 @hook.event('004')
-def onjoin(paraml, conn=None):
+def onjoin(paraml, conn=None, bot=None):
     # identify to services
     nickserv_password = conn.conf.get('nickserv_password', '')
     nickserv_name = conn.conf.get('nickserv_name', 'nickserv')
     nickserv_command = conn.conf.get('nickserv_command', 'IDENTIFY %s')
     if nickserv_password:
         conn.msg(nickserv_name, nickserv_command % nickserv_password)
+        bot.config['censored_strings'].append(nickserv_password)
         time.sleep(1)
 
     # set mode on self
@@ -55,11 +58,11 @@ def onjoin(paraml, conn=None):
 
     # set user-agent
     ident, rev = get_version()
-    http.ua_skybot = 'Skybot/r%d %s http://github.com/rmmh/skybot' % (rev, ident)
+    http.ua_skybot = 'Skybot/r%d %s http://github.com/lahwran/skybot' % (rev, ident)
 
 @hook.regex(r'^\x01VERSION\x01$')
 def version(inp, notice=None):
     ident, rev = get_version()
-    notice('\x01VERSION skybot %s r%d - http://github.com/rmmh/'
+    notice('\x01VERSION skybot %s r%d - http://github.com/lahwran/'
            'skybot/\x01' % (ident, rev))
-    http.ua_skybot = 'Skybot/r%d %s http://github.com/rmmh/skybot' % (rev, ident)
+    http.ua_skybot = 'Skybot/r%d %s http://github.com/lahwran/skybot' % (rev, ident)

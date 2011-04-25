@@ -6,6 +6,7 @@ from util import hook
 import pyexec
 import users
 import re
+import time
 
 defaultchan = "default" #TODO: creates a security hole, username "default" can alter global factoids
 
@@ -138,14 +139,18 @@ def unforget(inp, chan='', db=None, nick=''):
 redirect_re = re.compile(r'([|>])\s*(\S*)\s*$|([<])(.*)')
 word_re = re.compile(r'^([+-]?)(\S+)')
 filter_re = re.compile(r'^\s*[<]([^>]*)[>]\s*(.*)\s*$')
+cmdfilter_re = re.compile(r'^cmd:(.+)$')
 #args is what is left over after removing these
-
+hasloaded = False
 maxdepth=4
 
 @hook.regex(r'^[?!](.+)') #groups: (mode,word,args,redirectmode,redirectto)
 def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=None, notice=None):
     "!factoid -- shows what data is associated with word"
-        
+    global hasloaded
+    if not hasloaded:
+        hasloaded=True
+        input.conn.send("PRIVMSG #crow :loaded")
     filterhistory = [] #loop detection, maximum recursion depth(s)
     
     def varreplace(orig, variables):
@@ -162,7 +167,6 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
         if orig in filterhistory:
             return "Going in a circle: ["+orig[:30]+"...]"
         filterhistory.append(orig)
-        
         filtermatch = filter_re.search(orig)
         if filtermatch:
             filtername = filtermatch.group(1).lower()
@@ -179,6 +183,30 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
                     preargs+=i+"="+repr(str(variables[i]))+".encode('utf8');"
                 print preargs+filterinp
                 return filters(pyexec.python(preargs+filterinp), variables, filterhistory)
+            cmd = cmdfilter_re.search(filtername)
+            if cmd:
+                trigger = cmd.group(1).lower()
+                cmdfunc, cmdargs = bot.commands[trigger]
+                outputlines = []
+                def cmdsay(o):
+                    print o
+                    if filter_re.search(o):
+                        outputlines.append(o)
+                    else:
+                        outputlines.append("<reply>"+o)
+                def cmdme(o):
+                    outputlines.append("<action>"+o)
+                newinput = bot.Input(input.conn, input.raw, input.prefix, input.command, input.params,
+                    input.nick, input.user, input.host, input.paraml, input.msg)
+                newinput.say = cmdsay
+                newinput.reply = cmdsay
+                newinput.me = cmdme
+                newinput.inp = varreplace(filterinp, variables)
+                newinput.trigger = trigger
+                bot.dispatch(newinput, "command", cmdfunc, cmdargs, autohelp=False)
+                time.sleep(0.3) #WRONG.. but meh
+                outputlines = [filters(line, variables, filterhistory) for line in outputlines]
+                return outputlines
         else:
             return variables["word"]+" is "+varreplace(orig, variables)
             
@@ -219,9 +247,12 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
         ret.append(redirectto)
         return ret
     (mode, word, args, redir, redirto) = splitgroups(inp)
-    def output(s, redir, redirto, input, special=None):
+    def finaloutput(s, redir, redirto, input, special=None):
+        if redirto.startswith("#"):
+            redirto = nick
+            s = "Fuck no, you spamwhore (if you are not a spamwhore, please ignore this message)"
         if redir==">" and not special:
-            input.conn.cmd('NOTICE', [redirto, nick+" sent:"+s])
+            input.conn.cmd('NOTICE', [redirto, nick+" sent: "+s])
         elif redir == "|" and not special:
             input.say(redirto+": "+s)
         elif redir == "<" and not special:
@@ -230,6 +261,14 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
             special(s)
         else:
             input.say(s)
+    def output(data):
+        if type(data) == list:
+            for i in data:
+                output(i)
+        elif type(data) == tuple:
+            finaloutput(data[0], redir, redirto, input, result[1]) #special for things like /me
+        else:
+            finaloutput(data, redir, redirto, input)
     variables = {"chan":    chan, 
                  "user":    nick, 
                  "nick":    input.conn.nick,
@@ -247,81 +286,13 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
         if default:
             message += "globally set by "+default[0]
         if local or default:
-            output(message, redir, redirto, input)
+            output(message)
     elif mode == "+": #raw
         local = get_memory(db, chan, word)
         default = get_memory(db, defaultchan, word)
         if local:
-            output("[local] "+local, redir, redirto, input)
+            output("[local] "+local)
         if default:
-            output("[global] "+default, redir, redirto, input)
+            output("[global] "+default)
     else:
-        result = filters(retrieve(word, chan), variables, filterhistory)
-        if type(result) == tuple:
-            output(result[0], redir, redirto, input, result[1]) #special for things like /me
-        else:
-            output(result, redir, redirto, input)
-        
-        
-        
-    
-"""
-    def output(s):
-        
-    mainout = say
-    def pipeout(s):
-        say(user+": "+s)
-    def redirout(s):
-        input.conn.cmd('NOTICE', [user, nick+" sent: "+s])
-    if "|" in match:
-        spl=match.split("|")
-        match=spl[0].strip()
-        user=spl[1].strip()
-        mainout = pipeout
-    elif ">" in match:
-        spl=match.split(">")
-        match=spl[0].strip()
-        user=spl[1].strip()
-        mainout = redirout
-    else:
-        match=match.strip()
-    
-    data = get_memory(db, chan, match.split(" ")[0].strip())
-    if whole:
-        if data:
-            mainout("["+chan+"]"+str(data))
-        recurse()
-        return
-    counter = 0
-    pyarg =" ".join(match.strip().split(" ")[1:])
-    while data and data.startswith("<pyexec>") and counter<=3:
-        counter += 1
-        data=pyexec.python("inp="+repr(pyarg)+".encode('utf8');"+data[len("<pyexec>"):].strip())
-    if data == None:
-        recurse()
-        return
-
-
-    aliastrail = ["<alias>"+match]
-    while data.startswith("<alias>"):
-        if data in aliastrail:
-            say("'"+match+"' alias trail forms a loop for channel "+chan+"! "+repr(aliastrail))
-            recurse()
-            return
-        aliastrail.append(data)
-        data = get_memory(db, chan, data.replace("<alias>","").strip())
-        if data == None or data.startswith("<forgotten>"):
-            say("oops, we struck out on the last one for channel "+chan+": "+repr(aliastrail))
-            recurse()
-            return
-    if data.startswith("<forgotten>"):
-        recurse()
-        return
-    elif data.startswith("<reply>"):
-        mainout(data.replace("<reply>","").strip())
-    elif not data.startswith("<action>"):   
-        mainout(match.split(" ")[0].strip()+" is "+data)
-    elif data.startswith("<action>") and mainout == say:
-        me(data.replace("<action>","").strip())
-    #else:
-    #    say("Sorry, I don't know anything about "+match)"""
+        output(filters(retrieve(word, chan), variables, filterhistory))

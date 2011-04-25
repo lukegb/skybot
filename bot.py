@@ -17,7 +17,6 @@ class Bot(object):
 
 
 bot = Bot()
-
 print 'Loading plugins'
 
 # bootstrap the reloader

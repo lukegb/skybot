@@ -28,10 +28,10 @@ def seen(inp, nick='', chan='', db=None, input=None):
 
     if input.conn.nick.lower() == inp.lower():
         # user is looking for us, being a smartass
-        return "I'm right here, need something?"
+        input.notice("I'm right here, need something?")
 
     if inp.lower() == nick.lower():
-        return "Yes, that's your nick ..."
+        input.notice("Yes, that's your nick ...")
 
     db_init(db)
 
@@ -42,8 +42,8 @@ def seen(inp, nick='', chan='', db=None, input=None):
         reltime = timesince.timesince(last_seen[1])
         if last_seen[0] != inp.lower():  # for glob matching
             inp = last_seen[0]
-        return '%s was last seen %s ago saying: %s' % \
-                    (inp, reltime, last_seen[2])
+        input.notice('%s was last seen %s ago saying: %s' % \
+                    (inp, reltime, last_seen[2]))
     else:
-        return "User not in database"
+        input.notice("User not in database")
     #this gets abused
