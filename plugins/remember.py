@@ -10,6 +10,14 @@ import time
 
 defaultchan = "default" #TODO: creates a security hole, username "default" can alter global factoids
 
+redirect_re = re.compile(r'([|>])\s*(\S*)\s*$|([<])(.*)')
+word_re = re.compile(r'^([+-]?)(\S+)')
+filter_re = re.compile(r'^\s*[<]([^>]*)[>]\s*(.*)\s*$')
+cmdfilter_re = re.compile(r'^cmd:(.+)$')
+#args is what is left over after removing these
+hasloaded = False
+maxdepth=4
+
 def db_init(db):
     db.execute("create table if not exists memory(chan, word, data, nick,"
                " primary key(chan, word))")
@@ -35,7 +43,7 @@ def checkinp(chan, inp, localpm):
         local=True
     return local, chan, inp.strip()
 @hook.command
-def no(inp, nick='', chan='', db=None):
+def no(inp, nick='', chan='', db=None, notice=None, bot=None):
     ".no <word> is <data> -- remaps word to data"
     
     local, chan, inp = checkinp(chan, inp, True)
@@ -48,23 +56,28 @@ def no(inp, nick='', chan='', db=None):
     if tail.startswith("is "):
         tail=" ".join(tail.split(" ")[1:])
     
-    
+    if tail.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
+        notice(("[local]" if local else "") + "you may not lock factoids.")
+        return
 
     data = get_memory(db, chan, head)
     
     if not data:
-        return "but '%s' doesn't exist!" % head.replace("'", "`")
+        notice("but '%s' doesn't exist!" % head.replace("'", "`"))
+    if data.startswith("<locked"):
+        notice(("[local]" if local else "") + "that factoid is locked, sorry.")
+        return
     
     db.execute("replace into memory(chan, word, data, nick) values"
                " (?,lower(?),?,?)", (chan, head, tail, nick))
     print "replace into memory(chan, word, data, nick) values (?,lower(?),?,?)", repr((chan, head, tail, nick))
     db.commit()
-    return 'forgetting "%s", remembering this instead.' % \
-                data.replace('"', "''")
+    notice('forgetting "%s", remembering this instead.' % \
+                data.replace('"', "''"))
 
 @hook.command
 #@hook.regex("([^ ]*)")
-def remember(inp, nick='', chan='', db=None, input=None):
+def remember(inp, nick='', chan='', db=None, input=None, notice=None, bot=None):
     ".remember [.] <word> is <data> -- maps word to data in the memory, '.' means here only"
     db_init(db)
     
@@ -78,12 +91,17 @@ def remember(inp, nick='', chan='', db=None, input=None):
     if tail.startswith("is "):
         tail=" ".join(tail.split(" ")[1:])
     
-    
+    if tail.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.commands.lock"):
+        notice(("[local]" if local else "") + "you may not lock factoids.")
+        return
 
     data = get_memory(db, chan, head)
     
+    if data and data.startswith("<locked"):
+        input.notice(("[local]" if local else "") + "that factoid is locked.")
+        return
     if data and not data.startswith("<forgotten>"):
-        return "but '%s' already means something else!" % head.replace("'", "`")
+        notice("but '%s' already means something else!" % head.replace("'", "`"))
     elif data and data.startswith("<forgotten>"):
         input.notice(("[local]" if local else "") + "permanently deleting "+repr(data)+" to accomodate this")
     
@@ -91,18 +109,20 @@ def remember(inp, nick='', chan='', db=None, input=None):
                " (?,lower(?),?,?)", (chan, head, tail, nick))
     print "replace into memory(chan, word, data, nick) values (?,lower(?),?,?)", repr((chan, head, tail, nick))
     db.commit()
-    return ("[local]" if local else "") + 'done.'
+    notice(("[local]" if local else "") + 'done.')
 
 
 @hook.command
-def forget(inp, chan='', db=None, nick=''):
+def forget(inp, chan='', db=None, nick='', notice=None):
     ".forget [.] <word> -- forgets the mapping that word had, '.' means here only"
     local, chan, inp = checkinp(chan, inp, True)
     db_init(db)
     
     
     data = get_memory(db, chan, inp)
-
+    if data and data.startswith("<locked"):
+        notice(("[local]" if local else "") + "that factoid is locked.")
+        return
     if data and not data.startswith("<forgotten>"):
         db.execute("replace into memory(chan, word, data, nick) values"
                " (?,lower(?),?,?)", (chan, inp, "<forgotten>"+data, nick))
@@ -110,39 +130,92 @@ def forget(inp, chan='', db=None, nick=''):
         #db.execute("delete from memory where chan=? and word=lower(?)",
         #           (chan, inp))
         db.commit()
-        return ("[local]" if local else "") + ('forgot `%s`' % data.replace('`', "'"))
+        notice(("[local]" if local else "") + ('forgot `%s`' % data.replace('`', "'")))
     elif data:
-        return ("[local]" if local else "") + "I already archived that."
+        notice(("[local]" if local else "") + "I already archived that.")
     else:
-        return ("[local]" if local else "") + "I don't know about that."
+        notice(("[local]" if local else "") + "I don't know about that.")
 
 @hook.command
-def unforget(inp, chan='', db=None, nick=''):
+def unforget(inp, chan='', db=None, nick='', notice=None):
     ".unforget [.] <word> -- re-remembers the mapping the word had before, '.' means here only "
     db_init(db)
     
     local, chan, inp = checkinp(chan, inp, True)
         
     data = get_memory(db, chan, inp)
+    if data and data.startswith("<locked"):
+        input.notice(("[local]" if local else "") + "that factoid is locked.")
+        return
     
     if data and data.startswith("<forgotten>"):
         db.execute("replace into memory(chan, word, data, nick) values"
                " (?,lower(?),?,?)", (chan, inp, data.replace("<forgotten>","").strip(), nick))
         print "replace into memory(chan, word, data, nick) values (?,lower(?),?,?)", repr((chan, inp, data.replace("<forgotten>","").strip(), nick))
         db.commit()
-        return ("[local]" if local else "") + ('unforgot `%s`' % data.replace('`', "'"))
+        notice(("[local]" if local else "") + ('unforgot `%s`' % data.replace('`', "'")))
     elif data:
-        return ("[local]" if local else "") + "I still remember that."
+        notice(("[local]" if local else "") + "I still remember that.")
     else:
-        return ("[local]" if local else "") + "I never knew about that."
+        notice(("[local]" if local else "") + "I never knew about that.")
+
+@hook.command
+def mem(inp, chan='', db=None, nick='', notice=None, user='', host='', bot=None):
+    "controls memory."
     
-redirect_re = re.compile(r'([|>])\s*(\S*)\s*$|([<])(.*)')
-word_re = re.compile(r'^([+-]?)(\S+)')
-filter_re = re.compile(r'^\s*[<]([^>]*)[>]\s*(.*)\s*$')
-cmdfilter_re = re.compile(r'^cmd:(.+)$')
-#args is what is left over after removing these
-hasloaded = False
-maxdepth=4
+    def lock(name):
+        db_init(db)
+        local = name.startswith("l:")
+        if name.startswith("l:"):
+            name=name[2:]
+        facchan = defaultchan if not local else chan
+        data = get_memory(db, facchan, name)
+        if data and data.startswith("<locked"):
+            notice("already locked")
+        elif data:
+            data = "<locked:%s!%s@%s %s %d>%s" % (nick, user, host, chan, time.time(), data)
+            db.execute("replace into memory(chan, word, data, nick) values"
+               " (?,lower(?),?,?)", (facchan, name, data, nick))
+            db.commit()
+            
+    def unlock(name):
+        db_init(db)
+        local = name.startswith("l:")
+        if name.startswith("l:"):
+            name=name[2:]
+        facchan = defaultchan if not local else chan
+        data = get_memory(db, facchan, name)
+        if data and not data.startswith("<locked"):
+            notice("that's not locked..?")
+        elif data:
+            filtermatch = filter_re.search(data)
+            if filtermatch:
+                filtername = filtermatch.group(1).lower()
+                data = filtermatch.group(2)
+                notice("unlocking: "+filtername)
+                db.execute("replace into memory(chan, word, data, nick) values"
+                   " (?,lower(?),?,?)", (facchan, name, data, nick))
+                db.commit()
+            else:
+                notice("this should never happen, but that doesn't seem to be a valid locked factoid. I'm just gonna delete it and let you recreate it, k?")
+                notice("current value: "+repr(data))
+                db.execute("delete from memory where chan=? and word=?", (facchan, name))
+                db.commit()
+            
+            
+    commands = {"lock": [1, lock], "unlock": [1, unlock]}
+    split = inp.split(" ")
+    if len(split):
+        if not users.query(db, bot.config, nick, chan, "remember.commands."+split[0]):
+            return "you do not have permission to use that command"
+        if len(split) == commands[split[0]][0]+1:
+            func = commands[split[0]][1]
+            func(*split[1:])
+        else:
+            return "wrong number of args for command"
+    else:
+        return "arguments reqired"
+
 
 @hook.regex(r'^[?!](.+)') #groups: (mode,word,args,redirectmode,redirectto)
 def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=None, notice=None):
@@ -183,6 +256,8 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
                     preargs+=i+"="+repr(str(variables[i]))+".encode('utf8');"
                 print preargs+filterinp
                 return filters(pyexec.python(preargs+filterinp), variables, filterhistory)
+            elif filtername.startswith("locked"):
+                return filters(filterinp, variables, filterhistory)
             cmd = cmdfilter_re.search(filtername)
             if cmd:
                 trigger = cmd.group(1).lower()
@@ -266,7 +341,7 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
             for i in data:
                 output(i)
         elif type(data) == tuple:
-            finaloutput(data[0], redir, redirto, input, result[1]) #special for things like /me
+            finaloutput(data[0], redir, redirto, input, data[1]) #special for things like /me
         else:
             finaloutput(data, redir, redirto, input)
     variables = {"chan":    chan, 

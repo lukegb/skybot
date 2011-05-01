@@ -8,7 +8,7 @@ from util import hook, http
 def wolframalpha(inp):
     ".wa/.wolframalpha <query> -- scrapes Wolfram Alpha's" \
             " results for <query>"
-    return "derp"
+    #return "derp"
     url = "http://www.wolframalpha.com/input/?asynchronous=false"
     
     h = http.get_html(url, i=inp)

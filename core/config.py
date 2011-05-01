@@ -33,7 +33,8 @@ if not os.path.exists('config'):
             "\\x01",
             "!coz",
             "!tell /x"
-          ]
+          ],
+          "admins": []
         }''') + '\n')
 
 
