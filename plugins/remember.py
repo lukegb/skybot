@@ -262,6 +262,8 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
             if cmd:
                 trigger = cmd.group(1).lower()
                 cmdfunc, cmdargs = bot.commands[trigger]
+                if trigger in ["no", "remember", "forget", "unforget", "python"]:
+                    return "I'm sorry, I can't let you do that, dave"
                 outputlines = []
                 def cmdsay(o):
                     print o
@@ -279,7 +281,7 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
                 newinput.inp = varreplace(filterinp, variables)
                 newinput.trigger = trigger
                 bot.dispatch(newinput, "command", cmdfunc, cmdargs, autohelp=False)
-                time.sleep(0.3) #WRONG.. but meh
+                time.sleep(0.5) #WRONG.. but meh
                 outputlines = [filters(line, variables, filterhistory) for line in outputlines]
                 return outputlines
         else:
