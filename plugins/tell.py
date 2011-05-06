@@ -85,9 +85,6 @@ def tell(inp, nick='', chan='', db=None):
     if chan.lower() == user_from.lower():
         chan = 'a pm'
 
-    if user_to == user_from.lower():
-        return "No."
-
     db_init(db)
 
     if db.execute("select count() from tell where user_to=?",
