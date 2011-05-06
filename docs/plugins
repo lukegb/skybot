@@ -1,3 +1,47 @@
+Plugins are modules in plugins/. If a module is placed in that directory, then
+whether it does anything plugin-like or not, it will be loaded like one.
+
+Plugin modules may use the decorators in util.hook (from util import hook) to be
+callable by skybot. Available are @hook.command, @hook.regex, @hook.event, and
+@hook.singlethread. the former three are events that, when used, will cause
+your function to be called (see below for examples), and @hook.singlethread does
+some magic that nobody has bothered to explain very well.
+
+usage examples of hook.command:
+
+@hook.command()
+def example(inp):
+    return "given argument: '"+inp+"'"
+    #when called by callinguser with ".example stuff"
+    #will output "callinguser: given argument: 'stuff'"
+    #when called by callinguser with ".example", will output
+    #"callinguser: given argument: ''"
+
+@hook.command("example3")
+def example2(inp):
+    return "given argument: '"+inp+"'"
+    #exact same as example except that it must be called as .example3
+
+@hook.command("one")
+@hook.command()
+def two(inp):
+    "is an example"
+    return "you just did example '"+inp+"'"
+    #similar to example and example2, but can be called as .one or .two, and
+    #when called by callinguser as just ".one" or ".two" with no args, will 
+    #output "callinguser: is an example"
+
+@hook.regex("(.*)example(.*)")
+def foo(inp):
+    """monitors for examples. this docstring will never get sent by the bot, 
+    since it does not use any @hook.command()s"""
+    return inp.glob(1)+"eggzemple"+inp.glob(2)
+    #inp in this case is not a string but the match object. 
+    #can be combined with @hook.command if you check what type inp is.
+
+@hook.event
+#todo: dunno how this works
+
 All plugins need to 'from util import hook' if they want to be callable.
 
 There are three ways to set when a plugin is called using
