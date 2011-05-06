@@ -21,7 +21,7 @@ def help(inp, bot=None, pm=None):
                     else:
                         funcs[func] = command
 
-    commands = dict((value, key) for key, value in funcs.iteritems())
+    commands = dict((value, key) for key, value in funcs.iteritems() if key not in ["8ballnooxt"])
 
     if not inp:
         pm('available commands: ' + ' '.join(sorted(commands)))
