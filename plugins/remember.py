@@ -11,9 +11,10 @@ import time
 defaultchan = "default" #TODO: creates a security hole, username "default" can alter global factoids
 
 redirect_re = re.compile(r'([|>])\s*(\S*)\s*$|([<])(.*)')
-word_re = re.compile(r'^([+-]?)(\S+)')
+word_re = re.compile(r'^([+~-]?)(\S+)')
 filter_re = re.compile(r'^\s*[<]([^>]*)[>]\s*(.*)\s*$')
 cmdfilter_re = re.compile(r'^cmd:(.+)$')
+forgotten_re = re.compile(r'^([<]locked[^>]*[>])?[<]forgotten[>].*')
 #args is what is left over after removing these
 hasloaded = False
 maxdepth=4
@@ -64,7 +65,8 @@ def no(inp, nick='', chan='', db=None, notice=None, bot=None):
     
     if not data:
         notice("but '%s' doesn't exist!" % head.replace("'", "`"))
-    if data.startswith("<locked"):
+        return
+    if data and data.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
         notice(("[local]" if local else "") + "that factoid is locked, sorry.")
         return
     
@@ -91,17 +93,18 @@ def remember(inp, nick='', chan='', db=None, input=None, notice=None, bot=None):
     if tail.startswith("is "):
         tail=" ".join(tail.split(" ")[1:])
     
-    if tail.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.commands.lock"):
+    if tail.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
         notice(("[local]" if local else "") + "you may not lock factoids.")
         return
 
     data = get_memory(db, chan, head)
     
-    if data and data.startswith("<locked"):
+    if data and data.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
         input.notice(("[local]" if local else "") + "that factoid is locked.")
         return
     if data and not data.startswith("<forgotten>"):
         notice("but '%s' already means something else!" % head.replace("'", "`"))
+        return
     elif data and data.startswith("<forgotten>"):
         input.notice(("[local]" if local else "") + "permanently deleting "+repr(data)+" to accomodate this")
     
@@ -120,7 +123,7 @@ def forget(inp, chan='', db=None, nick='', notice=None):
     
     
     data = get_memory(db, chan, inp)
-    if data and data.startswith("<locked"):
+    if data and data.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
         notice(("[local]" if local else "") + "that factoid is locked.")
         return
     if data and not data.startswith("<forgotten>"):
@@ -144,7 +147,7 @@ def unforget(inp, chan='', db=None, nick='', notice=None):
     local, chan, inp = checkinp(chan, inp, True)
         
     data = get_memory(db, chan, inp)
-    if data and data.startswith("<locked"):
+    if data and data.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
         input.notice(("[local]" if local else "") + "that factoid is locked.")
         return
     
@@ -219,23 +222,24 @@ def mem(inp, chan='', db=None, nick='', notice=None, user='', host='', bot=None)
 
 @hook.regex(r'^[?!](.+)') #groups: (mode,word,args,redirectmode,redirectto)
 def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=None, notice=None):
+    
     "!factoid -- shows what data is associated with word"
     global hasloaded
     if not hasloaded:
         hasloaded=True
-        input.conn.send("PRIVMSG #crow :loaded")
+        input.conn.send("PRIVMSG ##crow :remember plugin reloaded")
     filterhistory = [] #loop detection, maximum recursion depth(s)
     
     def varreplace(orig, variables):
         for i in variables.keys():
             orig = orig.replace("$"+i,variables[i])
         return orig
-            
-            
-    def filters(orig, variables, filterhistory):
+    def filters(retrieved, variables, filterhistory):
+        orig=retrieved[0]
+        setternick=retrieved[1]
         if not orig:
             return ""
-        if len(filterhistory)+1 > 4:
+        if len(filterhistory)+1 > 10:
             return "Hit max recursion depth: ["+orig[:30]+"...]"
         if orig in filterhistory:
             return "Going in a circle: ["+orig[:30]+"...]"
@@ -245,19 +249,21 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
             filtername = filtermatch.group(1).lower()
             filterinp = filtermatch.group(2)
             if filtername == "alias":
-                return filters(retrieve(filterinp, chan), variables, filterhistory)
+                return filters(retrieve(varreplace(filterinp, variables), chan), variables, filterhistory)
             elif filtername == "reply":
                 return varreplace(filterinp, variables)
             elif filtername == "action":
                 return (varreplace(filterinp, variables), me)
+            elif filtername == "noreply":
+                return ""
             elif filtername == "pyexec":
                 preargs = ""
                 for i in variables.keys():
-                    preargs+=i+"="+repr(str(variables[i]))+".encode('utf8');"
+                    preargs+=i+"="+repr(unicode(variables[i]).encode('utf8'))+";"
                 print preargs+filterinp
-                return filters(pyexec.python(preargs+filterinp), variables, filterhistory)
+                return filters([pyexec.python(preargs+filterinp), setternick], variables, filterhistory)
             elif filtername.startswith("locked"):
-                return filters(filterinp, variables, filterhistory)
+                return filters([filterinp, setternick], variables, filterhistory)
             cmd = cmdfilter_re.search(filtername)
             if cmd:
                 trigger = cmd.group(1).lower()
@@ -266,7 +272,7 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
                     return "I'm sorry, I can't let you do that, dave"
                 outputlines = []
                 def cmdsay(o):
-                    print o
+                    print "cmdsay out:",repr(o)
                     if filter_re.search(o):
                         outputlines.append(o)
                     else:
@@ -274,28 +280,30 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
                 def cmdme(o):
                     outputlines.append("<action>"+o)
                 newinput = bot.Input(input.conn, input.raw, input.prefix, input.command, input.params,
-                    input.nick, input.user, input.host, input.paraml, input.msg)
+                    setternick, "user", "host", input.paraml, input.msg)
                 newinput.say = cmdsay
                 newinput.reply = cmdsay
                 newinput.me = cmdme
                 newinput.inp = varreplace(filterinp, variables)
                 newinput.trigger = trigger
                 bot.dispatch(newinput, "command", cmdfunc, cmdargs, autohelp=False)
-                time.sleep(0.5) #WRONG.. but meh
-                outputlines = [filters(line, variables, filterhistory) for line in outputlines]
+                time.sleep(3.5) #WRONG.. but meh
+                outputlines = [filters([line, setternick], variables, filterhistory) for line in outputlines]
                 return outputlines
         else:
             return variables["word"]+" is "+varreplace(orig, variables)
             
             
     def retrieve(word, chan):
-        ret = get_memory(db, chan, word)
-        if ret and not ret.startswith("<forgotten>"):
+        ret = db.execute("select data, nick from memory where chan=? and word=lower(?)",
+                      (chan, word)).fetchone()
+        if ret and not forgotten_re.match(ret[0]):
             return ret
-        ret = get_memory(db, defaultchan, word)
-        if ret and not ret.startswith("<forgotten>"):
+        ret = db.execute("select data, nick from memory where chan=? and word=lower(?)",
+                      (defaultchan, word)).fetchone()
+        if ret and not forgotten_re.match(ret[0]):
             return ret
-        return ""
+        return ["",""]
             
     #TODO: hardcoded permission
     if nick=="citricsquid" and chan.startswith("#"):
@@ -325,6 +333,8 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
         return ret
     (mode, word, args, redir, redirto) = splitgroups(inp)
     def finaloutput(s, redir, redirto, input, special=None):
+        if not s:
+            return
         if redirto.startswith("#"):
             redirto = nick
             s = "Fuck no, you spamwhore (if you are not a spamwhore, please ignore this message)"
