@@ -14,24 +14,30 @@ class Input(dict):
             chan = nick
 
         def say(msg):
+            if not msg: return 
             conn.msg(chan, msg)
 
         def reply(msg):
+            if not msg: return 
             if chan == nick:  # PMs don't need prefixes
                 conn.msg(chan, msg)
             else:
                 conn.msg(chan, nick + ': ' + msg)
 
         def pm(msg):
+            if not msg: return 
             conn.msg(nick, msg)
 
         def set_nick(nick):
+            if not nick: return 
             conn.set_nick(nick)
 
         def me(msg):
+            if not msg: return 
             conn.msg(chan, "\x01%s %s\x01" % ("ACTION", msg))
 
         def notice(msg):
+            if not msg: return 
             conn.cmd('NOTICE', [nick, msg])
 
         dict.__init__(self, conn=conn, raw=raw, prefix=prefix, command=command,
