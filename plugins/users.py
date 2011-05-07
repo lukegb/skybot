@@ -39,6 +39,7 @@ class Users(object):
         del chanobj.usermodes[nick]
     
     def __chnick__(self, old, new):
+        print "changing nick '%s' to '%s'" % (old, new)
         user = self.users[old]
         del self.users[old]
         self.users[new] = user
@@ -82,6 +83,7 @@ def initlists(conn):
         conn.users=Users(curvers)
 
 @hook.command
+@hook.singlethread
 def names(inp, db=None, input=None, bot=None):
     #sends NAMES for all channels, to freshen names
     if query(db, bot.config, input.nick, input.chan, "freshennames"):
@@ -97,6 +99,7 @@ def names(inp, db=None, input=None, bot=None):
 
 flag_re=re.compile(r"^([@+]*)(.*)$")
 @hook.event("353")
+@hook.singlethread
 def tracking_353(inp, input=None):
     "when the names list comes in"
     chan=inp[2]
@@ -108,24 +111,28 @@ def tracking_353(inp, input=None):
         input.conn.users.__join__(nick, None, None, chan, flags)
 
 @hook.event("JOIN")
+@hook.singlethread
 def tracking_join(inp, input=None):
     "when a user joins a channel"
     initlists(input.conn)
     input.conn.users.__join__(input.nick, input.user, input.host, input.chan)
 
 @hook.event("PART")
+@hook.singlethread
 def tracking_part(inp, input=None):
     "when a user parts a channel"
     initlists(input.conn)
     input.conn.users.__exit__(input.nick, input.chan)
 
 @hook.event("KICK")
+@hook.singlethread
 def tracking_kick(inp, input=None):
     "when a user gets kicked from a channel"
     initlists(input.conn)
     input.conn.users.__exit__(inp[1], inp[0])
 
 @hook.event("QUIT")
+@hook.singlethread
 def tracking_quit(inp, input=None):
     "when a user quits"
     initlists(input.conn)
@@ -134,19 +141,25 @@ def tracking_quit(inp, input=None):
             input.conn.users.__exit__(input.nick, channel.name)
 
 @hook.event("PRIVMSG")
+@hook.singlethread
 def tracking_privmsg(inp, input=None):
     "updates last seen time - different from seen plugin"
+    initlists(input.conn)
     input.conn.users.users[input.nick].lastmsg=time.time()
 
 @hook.event("MODE")
+@hook.singlethread
 def tracking_mode(inp, input=None):
     "keeps track of when people change modes of stuff"
+    initlists(input.conn)
     input.conn.users.__mode__(*inp)
 
 @hook.event("NICK")
+@hook.singlethread
 def tracking_nick(inp, input=None):
     "tracks nick changes"
-    input.conn.users.__chnick__(input.prefix[1:].split("!",1)[0], input.nick)
+    initlists(input.conn)
+    input.conn.users.__chnick__(input.nick, inp[0])
     
 
 @hook.command
