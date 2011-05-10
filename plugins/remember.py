@@ -16,7 +16,6 @@ filter_re = re.compile(r'^\s*[<]([^>]*)[>]\s*(.*)\s*$')
 cmdfilter_re = re.compile(r'^cmd:(.+)$')
 forgotten_re = re.compile(r'^([<]locked[^>]*[>])?[<]forgotten[>].*')
 #args is what is left over after removing these
-hasloaded = False
 maxdepth=4
 
 def db_init(db):
@@ -223,11 +222,7 @@ def mem(inp, chan='', db=None, nick='', notice=None, user='', host='', bot=None)
 @hook.regex(r'^[?!](.+)') #groups: (mode,word,args,redirectmode,redirectto)
 def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=None, notice=None):
     
-    "!factoid -- shows what data is associated with word"
-    global hasloaded
-    if not hasloaded:
-        hasloaded=True
-        input.conn.send("PRIVMSG ##crow :remember plugin reloaded")
+    "!factoid -- shows what data is associated with word"\
     filterhistory = [] #loop detection, maximum recursion depth(s)
     
     def varreplace(orig, variables):
