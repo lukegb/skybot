@@ -221,8 +221,7 @@ def mem(inp, chan='', db=None, nick='', notice=None, user='', host='', bot=None)
 
 @hook.regex(r'^[?!](.+)') #groups: (mode,word,args,redirectmode,redirectto)
 def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=None, notice=None):
-    
-    "!factoid -- shows what data is associated with word"\
+    "!factoid -- shows what data is associated with word"
     filterhistory = [] #loop detection, maximum recursion depth(s)
     
     def varreplace(orig, variables):
