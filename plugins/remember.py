@@ -56,7 +56,7 @@ def no(inp, nick='', chan='', db=None, notice=None, bot=None):
     if tail.startswith("is "):
         tail=" ".join(tail.split(" ")[1:])
     
-    if tail.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
+    if tail.startswith("<locked") and not usertracking.query(db, bot.config, nick, chan, "remember.lock"):
         notice(("[local]" if local else "") + "you may not lock factoids.")
         return
 
@@ -92,13 +92,13 @@ def remember(inp, nick='', chan='', db=None, input=None, notice=None, bot=None):
     if tail.startswith("is "):
         tail=" ".join(tail.split(" ")[1:])
     
-    if tail.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
+    if tail.startswith("<locked") and not usertracking.query(db, bot.config, nick, chan, "remember.lock"):
         notice(("[local]" if local else "") + "you may not lock factoids.")
         return
 
     data = get_memory(db, chan, head)
     
-    if data and data.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
+    if data and data.startswith("<locked") and not usertracking.query(db, bot.config, nick, chan, "remember.lock"):
         input.notice(("[local]" if local else "") + "that factoid is locked.")
         return
     if data and not data.startswith("<forgotten>"):
@@ -122,7 +122,7 @@ def forget(inp, chan='', db=None, nick='', notice=None):
     
     
     data = get_memory(db, chan, inp)
-    if data and data.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
+    if data and data.startswith("<locked") and not usertracking.query(db, bot.config, nick, chan, "remember.lock"):
         notice(("[local]" if local else "") + "that factoid is locked.")
         return
     if data and not data.startswith("<forgotten>"):
@@ -146,7 +146,7 @@ def unforget(inp, chan='', db=None, nick='', notice=None):
     local, chan, inp = checkinp(chan, inp, True)
         
     data = get_memory(db, chan, inp)
-    if data and data.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
+    if data and data.startswith("<locked") and not usertracking.query(db, bot.config, nick, chan, "remember.lock"):
         input.notice(("[local]" if local else "") + "that factoid is locked.")
         return
     
@@ -208,7 +208,7 @@ def mem(inp, chan='', db=None, nick='', notice=None, user='', host='', bot=None)
     commands = {"lock": [1, lock], "unlock": [1, unlock]}
     split = inp.split(" ")
     if len(split):
-        if not users.query(db, bot.config, nick, chan, "remember.commands."+split[0]):
+        if not usertracking.query(db, bot.config, nick, chan, "remember.commands."+split[0]):
             return "you do not have permission to use that command"
         if len(split) == commands[split[0]][0]+1:
             func = commands[split[0]][1]

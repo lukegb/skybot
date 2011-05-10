@@ -17,7 +17,7 @@ def stfusieve(bot, input, func, kind, args):
 def stfu(inp, input=None, db=None, bot=None, users=None):
     if inp and inp in input.conn.users.channels.keys():
         input.chan=inp
-    if users.query(db, bot.config, input.nick, input.chan, "stfu") or "o" in users[input.chan].usermodes[input.nick]:
+    if usertracking.query(db, bot.config, input.nick, input.chan, "stfu") or "o" in users[input.chan].usermodes[input.nick]:
         users[input.chan].stfu="%s %d" % (input.nick, time.time())
         input.notice("I am now muted here.")
     else:
@@ -27,7 +27,7 @@ def stfu(inp, input=None, db=None, bot=None, users=None):
 def kthx(inp, input=None, db=None, bot=None, users=None):
     if inp and inp in users.channels.keys():
         input.chan=inp
-    if users.query(db, bot.config, input.nick, input.chan, "stfu") or "o" in users[input.chan].usermodes[input.nick]:
+    if usertracking.query(db, bot.config, input.nick, input.chan, "stfu") or "o" in users[input.chan].usermodes[input.nick]:
         if hasattr(users[input.chan], "stfu"):
             input.notice("I am no longer muted here.")
             del users[input.chan].stfu
