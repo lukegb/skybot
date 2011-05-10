@@ -44,7 +44,7 @@ class Input(dict):
                     params=params, nick=nick, user=user, host=host,
                     paraml=paraml, msg=msg, server=conn.server, chan=chan,
                     notice=notice, say=say, reply=reply, pm=pm, bot=bot,
-                    me=me, set_nick=set_nick, lastparam=paraml[-1])
+                    me=me, set_nick=set_nick, lastparam=paraml[-1], users=conn.users)
 
     # make dict keys accessible as attributes
     def __getattr__(self, key):
