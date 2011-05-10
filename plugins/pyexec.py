@@ -2,11 +2,12 @@ import re
 
 from util import hook, http
 import users
+import sys
 
 re_lineends = re.compile(r'[\r\n]*')
 
 
-@hook.command
+#@hook.command
 def python(inp):
     ".python <prog> -- executes python code <prog>"
     inp = inp.replace("~~n","adsfervbthbfhyujgyjugkikjgqwedawdfrefgdrgrdthg")
@@ -28,7 +29,7 @@ def rexec(s, bot, input, db):
 
 @hook.command
 def ply(inp, bot=None, input=None, nick=None, db=None, chan=None):
-    "only lahwran can use this"
+    "execute local python - only admins can use this"
     if not users.query(db, bot.config, nick, chan, "ply"):
         return "nope"
     asdf = inp.split(" ")
