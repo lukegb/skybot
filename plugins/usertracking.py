@@ -10,6 +10,117 @@ def query(db, config, user, channel, permission):
     
     return False
 
+class Users(object):
+    def __init__(self, users={}, channels={}):
+        self.users = dict(users)
+        self.channels = dict(channels)
+    
+    def __getitem__(self, item):
+        try:
+            return self.users[item]
+        except KeyError:
+            return self.channels[item]
+
+    def _join(self, nick, user, host, channel, modes=""):
+        userobj = self._user(nick, user, host)
+        
+        if channel in self.channels.keys():
+            chanobj = self.channels[channel]
+        else:
+            chanobj = Channel(channel, self.users)
+            self.channels[channel] = chanobj
+        chanobj.users[nick] = userobj
+        chanobj.usermodes[nick] = set(modes.replace("@","o").replace("+","v"))
+
+    def _exit(self, nick, channel):
+        "all types of channel-=user events"
+        chanobj = self.channels[channel]
+        del chanobj.users[nick]
+        del chanobj.usermodes[nick]
+    
+    def _chnick(self, old, new):
+        print "changing nick '%s' to '%s'" % (old, new)
+        user = self.users[old]
+        del self.users[old]
+        self.users[new] = user
+        user.nick = new
+    
+    def _mode(self, chan, mode, argument=None):
+        if not self.channels.has_key(chan):
+            return
+        changetype = mode[0]
+        modeid = mode[1]
+        if modeid in "ov":
+            if changetype == "+":
+                self.channels[chan].usermodes[argument].add(modeid)
+            else:
+                self.channels[chan].usermodes[argument].remove(modeid)
+        else:
+            if changetype == "+":
+                self.channels[chan].modes[modeid]=argument
+            else:
+                del self.channels[chan].modes[modeid]
+    
+    def _trydelete(self, nick):
+        for i in self.channels.values():
+            if i.users.has_key(nick):
+                return
+        del self.users[nick]
+    
+    def _user(self, nick, user, host):
+        if nick in self.users.keys():
+            userobj = self.users[nick]
+        else:
+            userobj = User(nick, user, host)
+            self.users[nick] = userobj
+        return userobj
+
+class User(object):
+    def __init__(self, nick, user, host, lastmsg=0):
+        self.nick=nick
+        self.user=user
+        self.host=host
+        self.realname=None
+        self.channels=None
+        self.server=None
+        self.authed=None
+        self.lastmsg=lastmsg or time.time()
+
+class Channel(object):
+    def __init__(self, name, users, topic=None):
+        self.name=name
+        self.topic=topic
+        self.users=Userdict(users)
+        self.usermodes=Userdict(users)
+        self.modes=dict()
+
+class Userdict(dict):
+    def __init__(self, users, *args, **named):
+        self.users = users
+        dict.__init__(self, *args, **named)
+
+    def __getitem__(self, item):
+        try:
+            return dict.__getitem__(self, self.users[item]) 
+        except KeyError:
+            return dict.__getitem__(self, item)
+    
+    def __setitem__(self, item, value):
+        try:
+            return dict.__setitem__(self, self.users[item], value)
+        except KeyError:
+            return dict.__setitem__(self, item, value)
+
+@hook.sieve
+@hook.singlethread
+def valueadd(bot, input, func, kind, args):
+    if not hasattr(input.conn, "users"):
+        input.conn.users = Users()
+        input.conn.users.users[input.nick] = User(input.nick, input.nick, "127.0.0.1")
+        
+    input["users"]=input.conn.users
+    return input
+
 flag_re=re.compile(r"^([@+]*)(.*)$")
 @hook.event("353")
 @hook.singlethread
