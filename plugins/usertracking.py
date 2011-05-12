@@ -23,12 +23,7 @@ class Users(object):
 
     def _join(self, nick, user, host, channel, modes=""):
         userobj = self._user(nick, user, host)
-        
-        if channel in self.channels.keys():
-            chanobj = self.channels[channel]
-        else:
-            chanobj = Channel(channel, self.users)
-            self.channels[channel] = chanobj
+        chanobj = self._chan(channel)
         chanobj.users[nick] = userobj
         chanobj.usermodes[nick] = set(modes.replace("@","o").replace("+","v"))
 
@@ -75,6 +70,14 @@ class Users(object):
             self.users[nick] = userobj
         return userobj
 
+    def _chan(self, name):
+        if name in self.channels.keys():
+            chanobj = self.channels[name]
+        else:
+            chanobj = Channel(name, self.users)
+            self.channels[name] = chanobj
+        return chanobj
+
 class User(object):
     def __init__(self, nick, user, host, lastmsg=0):
         self.nick=nick
@@ -94,6 +97,12 @@ class Channel(object):
         self.usermodes=Userdict(users)
         self.modes=dict()
 
+    def isop(self, nick):
+        return "o" in self.usermodes[nick]
+
+    def isvoice(self, nick):
+        return "v" in self.usermodes[nick]
+
 class Userdict(dict):
     def __init__(self, users, *args, **named):
         self.users = users
@@ -112,98 +121,61 @@ class Userdict(dict):
             return dict.__setitem__(self, item, value)
 
 @hook.sieve
-@hook.singlethread
 def valueadd(bot, input, func, kind, args):
     if not hasattr(input.conn, "users"):
         input.conn.users = Users()
         input.conn.users.users[input.nick] = User(input.nick, input.nick, "127.0.0.1")
         
     input["users"]=input.conn.users
+    input["userdata"]=input.conn.users._user(input.nick, input.user, input.host)
+    if input.conn.users.channels.has_key(input.chan): 
+        input["chandata"]=input.conn.users[input.chan]
+    else:
+        input["chandata"]=None
     return input
 
 flag_re=re.compile(r"^([@+]*)(.*)$")
-@hook.event("353")
+@hook.event("332 353 311 319 312 330 318 JOIN PART KICK QUIT PRIVMSG MODE NICK")
 @hook.singlethread
-def tracking_353(inp, input=None, users=None):
-    "when the names list comes in"
-    chan=inp[2]
-    names=inp[3]
-    for name in names.split(" "):
-        match = flag_re.match(name)
-        flags=match.group(1)
-        nick=match.group(2)
-        users._join(nick, None, None, chan, flags)
-
-@hook.event("311")
-@hook.singlethread
-def tracking_311(inp, input=None, users=None):
-    "whois: nick, user, host, realname"
-    nick=inp[1]
-    user=inp[2]
-    host=inp[3]
-    if nick not in input.conn.users.users.keys():
-        users._user(nick, user, host)
-    users[nick].realname=inp[5]
-
-@hook.event("319")
-@hook.singlethread
-def tracking_319(inp, input=None, users=None):
-    "whois: channel list"
-    users[inp[1]].channels=inp[2].split(" ")
-
-@hook.event("312")
-@hook.singlethread
-def tracking_312(inp, input=None, users=None):
-    "whois: server"
-    users[inp[1]].server=inp[2]
-
-@hook.event("330")
-@hook.singlethread
-def tracking_330(inp, input=None, users=None):
-    "user logged in"
-    users[inp[1]].nickserv = 1
-
-@hook.event("318")
-@hook.singlethread
-def tracking_318(inp, input=None, users=None):
-    "end of whois"
-    user = users[inp[1]]
-    user.nickserv = user.nickserv or -1
-
-@hook.event("JOIN")
-@hook.singlethread
-def tracking_join(inp, input=None, users=None):
-    "when a user joins a channel"
-    users._join(input.nick, input.user, input.host, input.chan)
-
-@hook.event("PART")
-@hook.event("KICK")
-@hook.event("QUIT")
-@hook.singlethread
-def tracking_quit(inp, input=None, users=None):
-    "when a user quits"
-    for channel in users.channels.values():
-        if input.nick in channel.users:
-            users._exit(input.nick, channel.name)
-    users._trydelete(input.nick)
-
-@hook.event("PRIVMSG")
-@hook.singlethread
-def tracking_privmsg(inp, input=None, users=None):
-    "updates last seen time - different from seen plugin"
-    users[input.nick].lastmsg=time.time()
-
-@hook.event("MODE")
-@hook.singlethread
-def tracking_mode(inp, input=None, users=None):
-    "keeps track of when people change modes of stuff"
-    users._mode(*inp)
-
-@hook.event("NICK")
-@hook.singlethread
-def tracking_nick(inp, input=None, users=None):
-    "tracks nick changes"
-    users._chnick(input.nick, inp[0])
+def tracking(inp, command=None, input=None, users=None):
+    if command=="353": #when the names list comes in
+        chan=inp[2]
+        names=inp[3]
+        for name in names.split(" "):
+            match = flag_re.match(name)
+            flags=match.group(1)
+            nick=match.group(2)
+            users._join(nick, None, None, chan, flags)
+    elif command=="311": #whois: nick, user, host, realname"
+        nick=inp[1]
+        user=inp[2]
+        host=inp[3]
+        if nick not in input.conn.users.users.keys():
+            users._user(nick, user, host)
+        users[nick].realname=inp[5]
+    elif command == "319": #whois: channel list
+        users[inp[1]].channels=inp[2].split(" ")
+    elif command=="312": #whois: server
+        users[inp[1]].server=inp[2]
+    elif command=="330": #whois: user logged in
+        print inp
+        users[inp[1]].authed = inp[2]
+    elif command=="318": #whois: end of whois
+        user = users[inp[1]]
+        user.authed = user.authed or ""
+    elif command=="JOIN":
+        users._join(input.nick, input.user, input.host, input.chan)
+    elif command in ["PART", "KICK", "QUIT"]:
+        for channel in users.channels.values():
+            if input.nick in channel.users:
+                users._exit(input.nick, channel.name)
+        users._trydelete(input.nick)
+    elif command=="PRIVMSG": #updates last seen time - different from seen plugin
+        users[input.nick].lastmsg=time.time()
+    elif command == "MODE": #mode changes - getting op and suchh
+        users._mode(*inp)
+    elif command=="NICK":
+        users._chnick(input.nick, inp[0])
 
 
 
