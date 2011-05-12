@@ -2,8 +2,6 @@ from util import hook
 import usertracking
 import re
 import time
-from itertools import *
-import bz2
 
 db_inited = False
 
@@ -15,9 +13,6 @@ def db_init(db):
     if db_inited:
         return
 
-    db.create_function("bz2compress", 1, bz2.compress)
-    db.create_function("bz2decompress", 1, bz2.decompress)
-
     exists = db.execute("""
       select exists (
         select * from sqlite_master where type = "table" and name = "todos"
@@ -26,7 +21,7 @@ def db_init(db):
 
     if not exists:
         db.execute(cleanSQL("""
-           create virtual table todos using fts3(
+           create virtual table todos using fts4(
                 user,
                 text,
                 added,
