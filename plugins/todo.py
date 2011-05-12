@@ -1,7 +1,5 @@
 from util import hook
-import usertracking
 import re
-import time
 
 db_inited = False
 
@@ -177,5 +175,5 @@ def todo(inp, nick='', chan='', db=None, notice=None, bot=None):
 
 
     else:
-        return "unknown command: %r" % cmd
+        return "unknown command: %s" % cmd
 
