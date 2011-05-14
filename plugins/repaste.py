@@ -75,7 +75,7 @@ def repaste(inp, user=None):
     if parts[0] == 'list':
         return " ".join(sorted(pasters.keys()))
 
-    paster = paste_ubuntu
+    paster = paste_gist
     args = {}
 
     if not parts[0].startswith("http"):
