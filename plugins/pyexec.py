@@ -1,7 +1,7 @@
 import re
 
 from util import hook, http
-import users
+import usertracking
 import sys
 
 re_lineends = re.compile(r'[\r\n]*')
@@ -30,7 +30,7 @@ def rexec(s, bot, input, db):
 @hook.command
 def ply(inp, bot=None, input=None, nick=None, db=None, chan=None):
     "execute local python - only admins can use this"
-    if not users.query(db, bot.config, nick, chan, "ply"):
+    if not usertracking.query(db, bot.config, nick, chan, "ply"):
         return "nope"
     asdf = inp.split(" ")
     asdfa = asdf[0]
