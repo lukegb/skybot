@@ -156,10 +156,12 @@ def main(conn, out):
 
     if inp.command == 'PRIVMSG':
         # COMMANDS
+        if "activation" not in bot.config:
+            bot.config["activation"]="."
         if inp.chan == inp.nick:  # private message, no command prefix
-            prefix = r'^(?:[.]?|'
+            prefix = r'^(?:[' + bot.config["activation"] + r']?|'
         else:
-            prefix = r'^(?:[.]|'
+            prefix = r'^(?:[' + bot.config["activation"] + r']|'
 
         command_re = prefix + inp.conn.nick
         command_re += r'[:,]+\s+)(\w+)(?:$|\s+)(.*)'
