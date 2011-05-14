@@ -38,16 +38,46 @@ def expand(inp):
 
     return url
 
+def db_init(db):
+    db.execute("create table if not exists deadfly_cache (adfly primary key, url)")
+    db.commit()
+
+def db_get(db, adfly):
+    return db.execute("select url from deadfly_cache where adfly = ?", (adfly,)).fetchone()
+
+def db_add(db, adfly, url):
+    db.execute("insert into deadfly_cache (adfly, url) values (?,?)", (adfly,url))
+    db.commit()
+
 @hook.command
-def deadfly(inp):
+def deadfly(inp, db=None):
     ".deadfly <adf.ly url> -- scrapes link shortened by adf.ly"
+    db_init(db)
+
+    result = db_get(db, inp)
+
+    if result:
+        return result[0]
+
     parts = urlparse.urlsplit(inp)
+
     parts = parts._replace(netloc=parts.netloc + ".nyud.net")
     url = urlparse.urlunsplit(parts)
+    timeout = 15
 
     try:
-        text = urllib2.urlopen(url, timeout=15).read()
-    except:
-        return "Timeout"
+        text = urllib2.urlopen(url, timeout=timeout).read()
+    except Exception, e:
+        print e
+        url = inp
+        try: 
+            text = urllib2.urlopen(url, timeout=timeout).read()
+        except Exception, e:
+            print e
+            return "Error"
 
-    return re_adfly.search(text).group(1)
+    result = re_adfly.search(text).group(1)
+
+    db_add(db, inp, result)
+
+    return result
