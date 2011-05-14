@@ -70,6 +70,8 @@ def format_reply(history):
 
 @hook.regex(url_re)
 def urlinput(match, nick='', chan='', db=None, bot=None):
+    if "autoreply" in bot.config and not bot.config["autoreply"]:
+        return
     db_init(db)
     url = urlnorm.normalize(match.group().encode('utf-8'))
     if url not in ignored_urls:

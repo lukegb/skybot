@@ -11,6 +11,8 @@ def unescape_html(text):
                   lambda m: unichr(htmlentitydefs.name2codepoint[m.group(1)]), text)
 
 def scrape_mibpaste(url):
+    if not url.startswith("http"):
+        url = "http://"+url
     pagesource = http.get(url)
     rawpaste = re.search(r'(?s)(?<=<body>\n).+(?=<hr>)', pagesource).group(0)
     filterbr = rawpaste.replace("<br />", "")
@@ -19,12 +21,27 @@ def scrape_mibpaste(url):
 
     return stripped
 
+
 def scrape_pastebin(url):
-    id = re.search(r'http://(?:www\.)?pastebin.com/([a-zA-Z0-9]+)$', url).group(1)
+    id = re.search(r'(?:www\.)?pastebin.com/([a-zA-Z0-9]+)$', url).group(1)
     rawurl = "http://pastebin.com/raw.php?i="+id
     text = http.get(rawurl)
 
     return text
+
+autorepastes = {}
+@hook.regex('(pastebin\.com/[^ ]+)')
+@hook.regex('(mibpaste\.com/[^ ]+)')
+def autorepaste(inp, input=None, bot=None):
+    if "autoreply" in bot.config and not bot.config["autoreply"]:
+        return
+    url = inp.group(1)
+    if url in autorepastes:
+        out = autorepastes[url]
+    else:
+        out = repaste("http://"+url)
+        autorepastes[url] = out
+    return "Autorepasted for your convenience - "+out
 
 scrapers = {
     r'mibpaste\.com': scrape_mibpaste,

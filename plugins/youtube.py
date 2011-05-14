@@ -56,7 +56,9 @@ def get_video_description(vid_id):
 
 
 @hook.regex(*youtube_re)
-def youtube_url(match):
+def youtube_url(match, bot=None):
+    if "autoreply" in bot.config and not bot.config["autoreply"]:
+        return
     return get_video_description(match.group(1))
 
 
