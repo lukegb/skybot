@@ -15,11 +15,11 @@ def regex(inp, say=None):
 
 @hook.command
 @hook.command("t")
-def title(inp, db=None):
+def title(inp, db=None, chan=None):
     ".title <url> - get title of <url>"
     if inp == '^':
         urlhistory.db_init(db)
-        rows = db.execute("select url from urlhistory order by time desc limit 1")
+        rows = db.execute("select url from urlhistory where chan = ? order by time desc limit 1", (chan,))
         if not rows.rowcount:
             return "No url in history."
         inp = rows.fetchone()[0]
