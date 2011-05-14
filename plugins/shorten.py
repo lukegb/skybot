@@ -46,8 +46,8 @@ def deadfly(inp):
     url = urlparse.urlunsplit(parts)
 
     try:
-        text = urllib2.urlopen(url, timeout=10).read()
-    except URLError:
+        text = urllib2.urlopen(url, timeout=15).read()
+    except:
         return "Timeout"
 
     return re_adfly.search(text).group(1)
