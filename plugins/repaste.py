@@ -37,55 +37,17 @@ def scrape_mibpaste(url):
 
     return stripped
 
-
 def scrape_pastebin(url):
-    id = re.search(r'(?:www\.)?pastebin.com/([a-zA-Z0-9]+)$', url).group(1)
-    rawurl = "http://pastebin.com/raw.php?i=" + id
+    id = re.search(r'http://(?:www\.)?pastebin.com/([a-zA-Z0-9]+)$', url).group(1)
+    rawurl = "http://pastebin.com/raw.php?i="+id
     text = http.get(rawurl)
 
     return text
-
-
-autorepastes = {}
-
-
-@hook.regex('(pastebin\.com)(/[^ ]+)')
-@hook.regex('(mibpaste\.com)(/[^ ]+)')
-def autorepaste(inp, input=None, db=None, chan=None):
-    if "autoreply" in input.bot.config and not input.bot.config["autoreply"]:
-        return
-    db_init(db)
-    manual = input.db.execute("select manual from repaste where chan=?", (chan, )).fetchone()
-    if manual and len(manual) and manual[0]:
-        return
-    url = inp.group(1) + inp.group(2)
-    urllib.unquote(url)
-    if url in autorepastes:
-        out = autorepastes[url]
-        input.notice("that has already been repasted, please use the repasted version: %s" % out)
-    else:
-        out = repaste("http://" + url, input, db, False)
-        autorepastes[url] = out
-        input.notice("in the future, please use a less awful pastebin (e.g. gist.github.com) instead of %s." % inp.group(1))
-    input.say("%s (repasted for %s)" % (out, input.nick))
-
 
 scrapers = {
     r'mibpaste\.com': scrape_mibpaste,
     r'pastebin\.com': scrape_pastebin
 }
-
-
-def scrape(url):
-    for pat, scraper in scrapers.iteritems():
-        print "matching " + repr(pat) + " " + url
-        if re.search(pat, url):
-            break
-    else:
-        return None
-
-    return scraper(url)
-
 
 def paste_sprunge(text, syntax=None, user=None):
     data = urllib.urlencode({"sprunge": text})
@@ -147,21 +109,8 @@ def repaste(inp, input=None, db=None, isManual=True):
     db_init(db)
     if parts[0] == 'list':
         return " ".join(pasters.keys())
-    elif parts[0] == 'mode':
-        if len(parts) == 1:
-            return "mode <auto|manual>"
-        elif input.chandata.isop(input.userdata.nick) or input.user.isadmin(input.bot):
-            input.db.execute("replace into repaste(chan, manual) values(?, ?)", (input.chan, 1 if parts[1] == "manual" else 0))
-            input.db.commit()
-            return "repaste mode set to " + ("manual" if parts[1] == "manual" else "auto")
-        else:
-            input.notice("you don't have op nor admin")
 
-    manual = input.db.execute("select manual from repaste where chan=?", (input.chan, )).fetchone()
-    if (not (manual and len(manual) and (manual[0]))) and isManual:
-        return
-
-    paster = paste_ubuntu
+    paster = paste_gist
     args = {}
 
     if not parts[0].startswith("http"):
@@ -184,12 +133,14 @@ def repaste(inp, input=None, db=None, isManual=True):
 
     url = parts[0]
 
-    scraped = scrape(url)
-
-    if not scraped:
+    for pat, scraper in scrapers.iteritems():
+        print "matching "+repr(pat)+" "+url
+        if re.search(pat, url):
+            break
+    else:
         return "No scraper for given url"
 
-    args["text"] = scraped
+    args["text"] = scraper(url)
     pasted = paster(**args)
 
     return pasted
