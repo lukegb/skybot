@@ -6,9 +6,18 @@ import urllib2
 import htmlentitydefs
 import re
 
-def unescape_html(text):
-    return re.sub("&("+"|".join(htmlentitydefs.entitydefs.keys())+");",
-                  lambda m: unichr(htmlentitydefs.name2codepoint[m.group(1)]), text)
+re_htmlent = re.compile("&("+"|".join(htmlentitydefs.name2codepoint.keys())+");")
+re_numeric = re.compile(r'&#(x?)([a-fA-F0-9]+);')
+
+def decode_html(text):
+    text = re.sub(re_htmlent,
+                   lambda m: unichr(htmlentitydefs.name2codepoint[m.group(1)]),
+                   text)
+
+    text = re.sub(re_numeric,
+                  lambda m: unichr(int(m.group(2), 16 if m.group(1) else 10)),
+                  text)
+    return text
 
 def scrape_mibpaste(url):
     if not url.startswith("http"):
@@ -16,7 +25,7 @@ def scrape_mibpaste(url):
     pagesource = http.get(url)
     rawpaste = re.search(r'(?s)(?<=<body>\n).+(?=<hr>)', pagesource).group(0)
     filterbr = rawpaste.replace("<br />", "")
-    unescaped = unescape_html(filterbr)
+    unescaped = decode_html(filterbr)
     stripped = unescaped.strip()
 
     return stripped
@@ -50,6 +59,16 @@ scrapers = {
     r'mibpaste\.com': scrape_mibpaste,
     r'pastebin\.com': scrape_pastebin
 }
+
+def scrape(url):
+    for pat, scraper in scrapers.iteritems():
+        print "matching "+repr(pat)+" "+url
+        if re.search(pat, url):
+            break
+    else:
+        return None
+
+    return scraper(url)
 
 def paste_sprunge(text, syntax=None, user=None):
     data = urllib.urlencode({"sprunge":text})
@@ -132,14 +151,12 @@ def repaste(inp, user=None):
     
     url = parts[0]
 
-    for pat, scraper in scrapers.iteritems():
-        print "matching "+repr(pat)+" "+url
-        if re.search(pat, url):
-            break
-    else:
+    scraped = scrape(url)
+
+    if not scraped:
         return "No scraper for given url"
 
-    args["text"] = scraper(url)
+    args["text"] = scraped
     pasted = paster(**args)
 
     return pasted
