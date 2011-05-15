@@ -30,18 +30,21 @@ def scrape_pastebin(url):
     return text
 
 autorepastes = {}
-#@hook.regex('(pastebin\.com/[^ ]+)')
-@hook.regex('(mibpaste\.com/[^ ]+)')
+@hook.regex('(pastebin\.com)(/[^ ]+)')
+@hook.regex('(mibpaste\.com)(/[^ ]+)')
 def autorepaste(inp, input=None, bot=None):
     if "autoreply" in bot.config and not bot.config["autoreply"]:
         return
-    url = inp.group(1)
+    url = inp.group(1) + inp.group(2)
+    urllib.unquote(url)
     if url in autorepastes:
         out = autorepastes[url]
+        input.notice("that has already been repasted, please use the repasted version: %s" % out)
     else:
         out = repaste("http://"+url)
         autorepastes[url] = out
-    return "Autorepasted for your convenience - "+out
+        input.notice("in the future, please use a less awful pastebin (e.g. gist.github.com) instead of %s." % inp.group(1))
+    input.say("%s (repasted for %s)" % (out, input.nick))
 
 scrapers = {
     r'mibpaste\.com': scrape_mibpaste,
