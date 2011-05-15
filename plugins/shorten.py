@@ -14,7 +14,10 @@ def isgd(inp):
 
     data = urllib.urlencode(dict(format="simple",url=inp))
 
-    shortened = urllib2.urlopen("http://is.gd/create.php", data).read()
+    try:
+        return urllib2.urlopen("http://is.gd/create.php", data).read()
+    except Exception as e:
+        return "Error: %s" % e
 
     return shortened
 
@@ -25,7 +28,10 @@ def expand(inp):
     # try HEAD
     parts = urlparse.urlsplit(inp)
     conn = httplib.HTTPConnection(parts.hostname)
-    conn.request('HEAD',parts.path)
+    path = parts.path
+    if parts.query:
+        path += "?"+parts.query
+    conn.request('HEAD',path)
     resp = conn.getresponse()
     location = resp.msg.getheader("Location")
 

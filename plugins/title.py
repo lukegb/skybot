@@ -70,10 +70,8 @@ def title(inp, db=None, chan=None):
 
     try:
         req = urllib2.urlopen(inp)
-    except urllib2.HTTPError as e:
-        return "Error: GET %s %s" % (e.code, e.reason)
-    except urllib2.URLError as e:
-        return "Error: GET %s" % e.reason
+    except Exception as e:
+        return "Error: GET %s" % e
 
     errors = check_response(req.headers)
 
