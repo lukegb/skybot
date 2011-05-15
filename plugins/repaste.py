@@ -9,12 +9,6 @@ import re
 re_htmlent = re.compile("&(" + "|".join(htmlentitydefs.name2codepoint.keys()) + ");")
 re_numeric = re.compile(r'&#(x?)([a-fA-F0-9]+);')
 
-
-def db_init(db):
-    db.execute("create table if not exists repaste(chan, manual, primary key(chan))")
-    db.commit()
-
-
 def decode_html(text):
     text = re.sub(re_htmlent,
                    lambda m: unichr(htmlentitydefs.name2codepoint[m.group(1)]),
@@ -48,6 +42,16 @@ scrapers = {
     r'mibpaste\.com': scrape_mibpaste,
     r'pastebin\.com': scrape_pastebin
 }
+
+def scrape(url):
+    for pat, scraper in scrapers.iteritems():
+        print "matching "+repr(pat)+" "+url
+        if re.search(pat, url):
+            break
+    else:
+        return None
+
+    return scraper(url)
 
 def paste_sprunge(text, syntax=None, user=None):
     data = urllib.urlencode({"sprunge": text})
@@ -133,14 +137,12 @@ def repaste(inp, input=None, db=None, isManual=True):
 
     url = parts[0]
 
-    for pat, scraper in scrapers.iteritems():
-        print "matching "+repr(pat)+" "+url
-        if re.search(pat, url):
-            break
-    else:
+    scraped = scrape(url)
+
+    if not scraped:
         return "No scraper for given url"
 
-    args["text"] = scraper(url)
+    args["text"] = scraped
     pasted = paster(**args)
 
     return pasted
