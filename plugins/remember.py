@@ -77,6 +77,7 @@ def no(inp, nick='', chan='', db=None, notice=None, bot=None):
                 data.replace('"', "''"))
 
 @hook.command
+@hook.command("r")
 #@hook.regex("([^ ]*)")
 def remember(inp, nick='', chan='', db=None, input=None, notice=None, bot=None):
     ".remember [.] <word> is <data> -- maps word to data in the memory, '.' means here only"
