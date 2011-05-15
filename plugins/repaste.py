@@ -30,7 +30,7 @@ def scrape_pastebin(url):
     return text
 
 autorepastes = {}
-@hook.regex('(pastebin\.com/[^ ]+)')
+#@hook.regex('(pastebin\.com/[^ ]+)')
 @hook.regex('(mibpaste\.com/[^ ]+)')
 def autorepaste(inp, input=None, bot=None):
     if "autoreply" in bot.config and not bot.config["autoreply"]:
@@ -106,7 +106,7 @@ def repaste(inp, user=None):
     if parts[0] == 'list':
         return " ".join(pasters.keys())
 
-    paster = paste_gist
+    paster = paste_ubuntu
     args = {}
 
     if not parts[0].startswith("http"):
