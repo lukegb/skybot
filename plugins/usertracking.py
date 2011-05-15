@@ -89,6 +89,9 @@ class User(object):
         self.authed=None
         self.lastmsg=lastmsg or time.time()
 
+    def isadmin(self, bot):
+        return self.nick in bot.config["admins"]
+
 class Channel(object):
     def __init__(self, name, users, topic=None):
         self.name=name
