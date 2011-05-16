@@ -93,7 +93,6 @@ class Handler(object):
         thread.start_new_thread(self.start, ())
 
     def start(self):
-        uses_db = 'db' in self.func._args
         db_conns = {}
         while True:
             input = self.input_queue.get()
@@ -101,12 +100,11 @@ class Handler(object):
             if input == StopIteration:
                 break
 
-            if uses_db:
-                db = db_conns.get(input.conn)
-                if db is None:
-                    db = bot.get_db_connection(input.conn)
-                    db_conns[input.conn] = db
-                input.db = db
+            db = db_conns.get(input.conn)
+            if db is None:
+                db = bot.get_db_connection(input.conn)
+                db_conns[input.conn] = db
+            input.db = db
 
             run(self.func, input)
 
