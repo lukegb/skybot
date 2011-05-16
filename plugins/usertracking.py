@@ -4,6 +4,8 @@ import re
 import time
 import sys
 
+loaded = False
+
 def query(db, config, user, channel, permission):
     if user in config["admins"]:
         return True
@@ -125,10 +127,11 @@ class Userdict(dict):
 
 @hook.sieve
 def valueadd(bot, input, func, kind, args):
-    if not hasattr(input.conn, "users"):
+    global loaded
+    if not hasattr(input.conn, "users") or not loaded:
+        loaded = True
         input.conn.users = Users()
         input.conn.users.users[input.nick] = User(input.nick, input.nick, "127.0.0.1")
-        
     input["users"]=input.conn.users
     input["userdata"]=input.conn.users._user(input.nick, input.user, input.host)
     if input.conn.users.channels.has_key(input.chan): 
@@ -141,6 +144,10 @@ flag_re=re.compile(r"^([@+]*)(.*)$")
 @hook.event("332 353 311 319 312 330 318 JOIN PART KICK QUIT PRIVMSG MODE NICK")
 @hook.singlethread
 def tracking(inp, command=None, input=None, users=None):
+    if command in ["JOIN", "PART", "KICK", "QUIT", "PRIVMSG", "MODE", "NICK"]:
+        if input.nick != input.conn.nick and input.chan.startswith("#") and input.chan not in users.channels:
+            input.conn.send("NAMES "+input.chan)
+            users._chan(input.chan)
     if command=="353": #when the names list comes in
         chan=inp[2]
         names=inp[3]
