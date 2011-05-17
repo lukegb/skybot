@@ -43,9 +43,10 @@ def checkinp(chan, inp, localpm):
         local=True
     return local, chan, inp.strip()
 @hook.command
-def no(inp, nick='', chan='', db=None, notice=None, bot=None):
+def no(inp, nick='', chan='', db=None, notice=None, bot=None, modes=None):
     ".no <word> is <data> -- remaps word to data"
-    
+    if modes.check("remember.no.no", db):
+        return
     local, chan, inp = checkinp(chan, inp, True)
     
     db_init(db)
@@ -56,7 +57,7 @@ def no(inp, nick='', chan='', db=None, notice=None, bot=None):
     if tail.startswith("is "):
         tail=" ".join(tail.split(" ")[1:])
     
-    if tail.startswith("<locked") and not usertracking.query(db, bot.config, nick, chan, "remember.lock"):
+    if tail.startswith("<locked") and not modes.check("remember.lock", db):
         notice(("[local]" if local else "") + "you may not lock factoids.")
         return
 
@@ -65,7 +66,7 @@ def no(inp, nick='', chan='', db=None, notice=None, bot=None):
     if not data:
         notice("but '%s' doesn't exist!" % head.replace("'", "`"))
         return
-    if data and data.startswith("<locked") and not users.query(db, bot.config, nick, chan, "remember.lock"):
+    if data and data.startswith("<locked") and not modes.check("remember.lock", db):
         notice(("[local]" if local else "") + "that factoid is locked, sorry.")
         return
     
@@ -81,6 +82,8 @@ def no(inp, nick='', chan='', db=None, notice=None, bot=None):
 #@hook.regex("([^ ]*)")
 def remember(inp, nick='', chan='', db=None, input=None, notice=None, bot=None):
     ".remember [.] <word> is <data> -- maps word to data in the memory, '.' means here only"
+    if input.modes.check("remember.no.remember", db):
+        return
     db_init(db)
     
     local, chan, inp = checkinp(chan, inp, True)
@@ -93,13 +96,13 @@ def remember(inp, nick='', chan='', db=None, input=None, notice=None, bot=None):
     if tail.startswith("is "):
         tail=" ".join(tail.split(" ")[1:])
     
-    if tail.startswith("<locked") and not usertracking.query(db, bot.config, nick, chan, "remember.lock"):
+    if tail.startswith("<locked") and not input.modes.check("remember.lock", db):
         notice(("[local]" if local else "") + "you may not lock factoids.")
         return
 
     data = get_memory(db, chan, head)
     
-    if data and data.startswith("<locked") and not usertracking.query(db, bot.config, nick, chan, "remember.lock"):
+    if data and data.startswith("<locked") and not input.modes.check("remember.lock", db):
         input.notice(("[local]" if local else "") + "that factoid is locked.")
         return
     if data and not data.startswith("<forgotten>"):
@@ -116,14 +119,16 @@ def remember(inp, nick='', chan='', db=None, input=None, notice=None, bot=None):
 
 
 @hook.command
-def forget(inp, chan='', db=None, nick='', notice=None):
+def forget(inp, chan='', db=None, nick='', notice=None, modes=None):
     ".forget [.] <word> -- forgets the mapping that word had, '.' means here only"
+    if modes.check("remember.no.forget", db):
+        return
     local, chan, inp = checkinp(chan, inp, True)
     db_init(db)
     
     
     data = get_memory(db, chan, inp)
-    if data and data.startswith("<locked") and not usertracking.query(db, bot.config, nick, chan, "remember.lock"):
+    if data and data.startswith("<locked") and not modes.check("remember.lock", db):
         notice(("[local]" if local else "") + "that factoid is locked.")
         return
     if data and not data.startswith("<forgotten>"):
@@ -140,14 +145,16 @@ def forget(inp, chan='', db=None, nick='', notice=None):
         notice(("[local]" if local else "") + "I don't know about that.")
 
 @hook.command
-def unforget(inp, chan='', db=None, nick='', notice=None):
+def unforget(inp, chan='', db=None, nick='', notice=None, modes=None):
     ".unforget [.] <word> -- re-remembers the mapping the word had before, '.' means here only "
+    if modes.check("remember.no.unforget", db):
+        return
     db_init(db)
     
     local, chan, inp = checkinp(chan, inp, True)
         
     data = get_memory(db, chan, inp)
-    if data and data.startswith("<locked") and not usertracking.query(db, bot.config, nick, chan, "remember.lock"):
+    if data and data.startswith("<locked") and not modes.check("remember.lock", db):
         input.notice(("[local]" if local else "") + "that factoid is locked.")
         return
     
@@ -206,10 +213,12 @@ def mem(inp, chan='', db=None, nick='', notice=None, user='', host='', bot=None)
                 db.commit()
             
             
-    commands = {"lock": [1, lock], "unlock": [1, unlock]}
+    commands = {"lock": [1, lock, "lock"], "unlock": [1, unlock, "lock"]}
     split = inp.split(" ")
     if len(split):
-        if not usertracking.query(db, bot.config, nick, chan, "remember.commands."+split[0]):
+        if not split[0] in commands:
+            return "no such command"
+        if not modes.check("remember."+commands[split[0]][2], db):
             return "you do not have permission to use that command"
         if len(split) == commands[split[0]][0]+1:
             func = commands[split[0]][1]
@@ -224,7 +233,8 @@ def mem(inp, chan='', db=None, nick='', notice=None, user='', host='', bot=None)
 def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=None, notice=None):
     "!factoid -- shows what data is associated with word"
     filterhistory = [] #loop detection, maximum recursion depth(s)
-    
+    if input.modes.check("remember.no.question", db):
+        return
     def varreplace(orig, variables):
         for i in variables.keys():
             orig = orig.replace("$"+i,variables[i])
@@ -300,9 +310,6 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
             return ret
         return ["",""]
             
-    #TODO: hardcoded permission
-    if nick=="citricsquid" and chan.startswith("#"):
-        return
     db_init(db)
     whole=False
     
