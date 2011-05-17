@@ -77,6 +77,8 @@ def run(func, input):
 
 
 def do_sieve(sieve, bot, input, func, type, args):
+    if not hasattr(bot, "sievedb"):
+        bot.sievedb = bot.get_db_connection(input.conn)
     try:
         return sieve(bot, input, func, type, args)
     except Exception:
