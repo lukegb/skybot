@@ -3,6 +3,7 @@ import sqlite3
 import re
 import time
 import sys
+import botmodes
 
 loaded = False
 
@@ -138,6 +139,7 @@ def valueadd(bot, input, func, kind, args):
         input["chandata"]=input.conn.users[input.chan]
     else:
         input["chandata"]=None
+    botmodes.valueadd(bot, input, func, kind, args)
     return input
 
 flag_re=re.compile(r"^([@+]*)(.*)$")

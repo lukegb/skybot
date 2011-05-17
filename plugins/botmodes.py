@@ -1,36 +1,36 @@
 from util import hook
 def db_init(db):
-    db.execute("create table if not exists botmodes(modename, nick, user, host, authed, channel, chanmodes, usermodes)")
+    db.execute("create table if not exists botmodes(modename, nick, user, host, authed, admin, channel, chanmodes, usermodes)")
     db.commit()
 class Checker(object):
-    def __init__(self, db, user, channel):
-        self._db = db
-        db_init(db)
+    def __init__(self, bot, user, channel):
+
+        self._bot = bot
 
         self._user = user
         self._channel = channel
 
-    def check(self, mode, db=None, user=None, channel=None):
-        if db != None:
-            db_init(db)
-        else:
-            db = self._db
+    def check(self, mode, db, bot=None, user=None, channel=None):
+        db_init(db)
+        bot = bot or self._bot
         user = user or self._user
         channel = channel or self._channel
-        check = [mode]
+        checks = [mode]
         if user:
             checks.append(user.nick)
             checks.append(user.user)
             checks.append(user.host)
             checks.append(user.authed or "")
+            checks.append(str(user.nick in bot.config["admins"]))
         else:
             checks.extend([""]*4)
+            checks.append(str(False))
 
         if channel:
             checks.append(channel.name)
             checks.append("".join(channel.modes.keys()))
         else:
-            checks.append([""] * 2)
+            checks.extend([""] * 2)
 
         if channel and user and user in channel.usermodes:
             checks.append("".join(channel.usermodes[user]))
@@ -40,9 +40,9 @@ class Checker(object):
         return bool(query(db, checks).fetchone())
 
 def query(db, checks):
-    return db.execute("select * from botmodes where ? glob modename and ? glob nick and ? glob user and ? glob host and ? glob authed and ? glob channel and ? glob chanmodes and ? glob usermodes order by modename", checks)
+    return db.execute("select * from botmodes where ? glob modename and ? glob nick and ? glob user and ? glob host and ? glob authed and ? glob admin and ? glob channel and ? glob chanmodes and ? glob usermodes order by modename", checks)
 def posquery(db, checks):
-    return db.execute("select * from botmodes where modename glob ? and nick glob ? and user glob ? and host glob ? and authed glob ? and channel glob ? and chanmodes glob ? and usermodes glob ? order by modename", checks)
+    return db.execute("select * from botmodes where modename glob ? and nick glob ? and user glob ? and host glob ? and authed glob ? and admin glob ? and channel glob ? and chanmodes glob ? and usermodes glob ? order by modename", checks)
 
 #called from usertracking, not as it's own sieve
 def valueadd(bot, input, func, kind, args):
@@ -52,25 +52,29 @@ def valueadd(bot, input, func, kind, args):
     user = None
     if input.nick in input.users.users:
         user = input.users.users[input.nick]
-    input["modes"] = Checker(input.db, user, channel)
+    input["modes"] = Checker(bot, user, channel)
 
 @hook.command
 def mode(inp, input=None, db=None):
+    ".mode - set modes on things. admin only."
+    if input.nick not in input.bot.config["admins"]:
+        input.notice("only bot admins can use this command, sorry")
     db_init(db)
     split = inp.split(" ")
     print repr(split)
     if split[0] in ["set", "delete"]:
-        names = dict(mode=None, nick="*", user="*", host="*", authed="*", channel="*", chanmodes="*", usermodes="*")
-        if names["mode"] == None:
-            input.notice("mode name is required!")
-            return
+        names = dict(mode=None, nick="*", user="*", host="*", authed="*", admin="*", channel="*", chanmodes="*", usermodes="*")
     elif split[0] == "search":
-        names = dict(mode="*", nick="*", user="*", host="*", authed="*", channel="*", chanmodes="*", usermodes="*", limit="5")
+        names = dict(mode="*", nick="*", user="*", host="*", authed="*", admin="*", channel="*", chanmodes="*", usermodes="*", limit="5")
     elif split[0] == "query":
-        names = dict(mode="", nick="", user="", host="", authed="", channel="", chanmodes="", usermodes="", limit="5")
+        names = dict(mode="", nick="", user="", host="", authed="", admin="", channel="", chanmodes="", usermodes="", limit="5")
     dictized = dict([y for y in [x.split("=") for x in split[1:]] if len(y) == 2])
     names.update(dictized)
-    namemap = "mode nick user host authed channel chanmodes usermodes".split(" ")
+    if names["mode"] == None:
+        input.notice("mode name is required!")
+        return
+
+    namemap = "mode nick user host authed admin channel chanmodes usermodes".split(" ")
     sqlargs = [names[i] for i in namemap]
     if split[0] in ["query", "search"]:
         if split[0] == "query":
@@ -99,10 +103,10 @@ def mode(inp, input=None, db=None):
         if "".join(sqlargs[1:]) == "*******" and ("iamsure" not in names or names["iamsure"] != "yes"):
             input.notice("you're trying to set a mode on everything. please repeat with 'iamsure=yes' on the query to confirm.")
             return
-        db.execute("insert into botmodes(modename, nick, user, host, authed, channel, chanmodes, usermodes) values(?, ?, ?, ?, ?, ?, ?, ?)", sqlargs)
+        db.execute("insert into botmodes(modename, nick, user, host, authed, admin, channel, chanmodes, usermodes) values(?, ?, ?, ?, ?, ?, ?, ?, ?)", sqlargs)
         db.commit()
         input.notice("done.")
     elif split[0] == "delete":
-        db.execute("delete from botmodes where modename=? and nick=? and user=? and host=? and authed=? and channel=? and chanmodes=? and usermodes=?", sqlargs)
+        db.execute("delete from botmodes where modename=? and nick=? and user=? and host=? and authed=? and admin=? and channel=? and chanmodes=? and usermodes=?", sqlargs)
         db.commit()
         input.notice("done.")
