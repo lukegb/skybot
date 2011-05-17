@@ -40,9 +40,9 @@ class Checker(object):
         return bool(query(db, checks).fetchone())
 
 def query(db, checks):
-    return db.execute("select * from botmodes where ? glob modename and ? glob nick and ? glob user and ? glob host and ? glob authed and ? glob admin and ? glob channel and ? glob chanmodes and ? glob usermodes order by modename", checks)
+    return db.execute("select * from botmodes where ? glob modename and lower(?) glob lower(nick) and lower(?) glob lower(user) and lower(?) glob lower(host) and lower(?) glob lower(authed) and ? glob admin and lower(?) glob lower(channel) and ? glob chanmodes and ? glob usermodes order by modename", checks)
 def posquery(db, checks):
-    return db.execute("select * from botmodes where modename glob ? and nick glob ? and user glob ? and host glob ? and authed glob ? and admin glob ? and channel glob ? and chanmodes glob ? and usermodes glob ? order by modename", checks)
+    return db.execute("select * from botmodes where modename glob ? and lower(nick) glob lower(?) and lower(user) glob lower(?) and lower(host) glob (?) and authed glob ? and admin glob ? and lower(channel) glob lower(?) and chanmodes glob ? and usermodes glob ? order by modename", checks)
 
 #called from usertracking, not as it's own sieve
 def valueadd(bot, input, func, kind, args):
