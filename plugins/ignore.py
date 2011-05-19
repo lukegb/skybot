@@ -10,8 +10,9 @@ def ignore(bot, input, func, kind, args):
     if input.nick in input.users.users:
         user = input.users.users[input.nick]
     c = botmodes.Checker(bot, user, channel)
-    if c.check("neverquiet."+kind, bot.sievedb):
+    db = bot.get_db_connection(input.conn)
+    if c.check("neverquiet."+kind, db):
         return input
-    if c.check("quiet."+kind, bot.sievedb):
+    if c.check("quiet."+kind, db):
         return
     return input
