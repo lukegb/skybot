@@ -170,7 +170,7 @@ def unforget(inp, chan='', db=None, nick='', notice=None, modes=None):
         notice(("[local]" if local else "") + "I never knew about that.")
 
 @hook.command
-def mem(inp, chan='', db=None, nick='', notice=None, user='', host='', bot=None):
+def mem(inp, chan='', db=None, nick='', notice=None, user='', host='', bot=None, modes=None):
     "controls memory."
     
     def lock(name):
