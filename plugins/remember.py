@@ -270,9 +270,9 @@ def question(inp, chan='', say=None, db=None, input=None, nick="", me=None, bot=
             elif filtername == "pyexec":
                 preargs = ""
                 for i in variables.keys():
-                    preargs += i + "=" + repr(unicode(variables[i]).encode('utf8')) + ";"
-                print preargs + filterinp
-                return filters([pyexec.python(preargs + filterinp), setternick], variables, filterhistory)
+                    preargs+=i+"="+repr(unicode(variables[i]).encode('utf8'))+";"
+                print preargs+filterinp
+                return filters([pyexec.python(preargs+filterinp), setternick], variables, filterhistory)
             elif filtername.startswith("locked"):
                 return filters([filterinp, setternick], variables, filterhistory)
             cmd = cmdfilter_re.search(filtername)
