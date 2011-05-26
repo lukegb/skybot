@@ -16,7 +16,7 @@ rnames = defaultdict(lambda: '*')
 #new13 = {}
 
 
-for row in csv.reader(open("1.3.csv")):
+for row in csv.reader(open("mc_1.6.4.csv")):
     if len(row) < 3:
         continue
     #if row[2] == '*' or row[1] == '*':
@@ -105,7 +105,7 @@ def map(text, notice=None):
         print e
         notice("None")
 
-@hook.command
+#@hook.command
 def grep(text, notice=None):
     "maps "
     try:
