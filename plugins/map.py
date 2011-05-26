@@ -16,7 +16,7 @@ rnames = defaultdict(lambda: '*')
 #new13 = {}
 
 
-for row in csv.reader(open("mc_1.6.4.csv")):
+for row in csv.reader(open("mc_1.6.2.csv")):
     if len(row) < 3:
         continue
     #if row[2] == '*' or row[1] == '*':
@@ -92,7 +92,7 @@ def mapn(text, notice=None):
 
 @hook.command
 def map(text, notice=None):
-    "MCP names to 1.2_02 and 1.3_01"
+    "names to old and new"
     try:
         rname = text.strip().lower()
         n = rnames[rname]
