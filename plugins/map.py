@@ -105,9 +105,9 @@ def map(text, notice=None):
         print e
         notice("None")
 
-#@hook.command
+@hook.command
 def grep(text, notice=None):
-    "maps "
+    "calls grep on javamap for 1.5 to 1.6.4 - thanks mcp!"
     try:
         p = subprocess.Popen(["egrep", "-e", text, "15-164"], stdout=subprocess.PIPE)
         lines = p.stdout.readlines()
