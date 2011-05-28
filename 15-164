@@ -1,0 +1,5632 @@
+[CLASSES]
+a a =
+aa ab !
+ab ac !
+ac ad !
+ad ae !
+ae af !
+af ag !
+ag ai !
+ah aj ! # modified
+ai ak !
+aj al !
+ak am !
+al an ! # modified
+am ap ! # modified
+an aq !
+ao ar !
+ap as ! # modified
+aq at !
+ar au !
+as av !
+at ay ! # modified
+au az !
+av ba ! # modified
+aw bb !
+ax bc ! # modified
+ay bd !
+az be !
+b b =
+ba bf !
+bb bg !
+bc bh !
+bd bi !
+be bj ! # modified
+bf bk ! # modified
+bg bl !
+bh bm !
+bi bn ! # modified
+bj bo !
+bk bp !
+bl bq !
+bm br ! # modified
+bn bs ! # modified
+bo bt ! # modified
+bp bu ! # modified
+bq bv !
+br bw ! # modified
+bs bx !
+bt by !
+bu bz ! # modified
+bv ca !
+bw cb ! # modified
+bx cc !
+by cd ! # modified
+bz ce !
+c c =
+ca cf !
+cb cg ! # modified
+cc ci ! # modified
+cd ch ! # modified
+ce ck !
+cf cj !
+cg cl !
+ch cm ! # modified
+ci co ! # modified
+cj cp !
+ck cq ! # modified
+cl cr !
+cm cs !
+cn ct ! # modified
+co cu ! # modified
+cp cv ! # modified
+cq cw !
+cr cx ! # modified
+cs cy ! # modified
+ct cz !
+cu da ! # modified
+cv db !
+cw dc ! # modified
+cx dd !
+cy de !
+cz df !
+d d =
+da dg !
+db dh !
+dc di ! # modified
+dd dj ! # modified
+de dk ! # modified
+df dl ! # modified
+dg dm ! # modified
+dh dn !
+di do ! # modified
+dj dp !
+dk dq ! # modified
+dl dr !
+dm ds ! # modified
+dn dt ! # modified
+do du ! # modified
+dp dw !
+dq dx !
+dr dy !
+ds dz ! # modified
+dt ea !
+du eb !
+dv ec !
+dw ed !
+dx ef !
+dy eg ! # modified
+dz eh !
+e e = # modified
+ea ei !
+eb ej !
+ec ek ! # modified
+ed el !
+ee em !
+ef en ! # modified
+eg eo ! # modified
+eh ep !
+ei eq !
+ej er !
+ek es !
+el et !
+em eu ! # modified
+en ev !
+eo ew ! # modified
+ep ex !
+eq ey !
+er ez !
+es fa !
+et fb ! # modified
+eu fc ! # modified
+ev fd !
+ew fe !
+ex ff ! # modified
+ey fg !
+ez fh ! # modified
+f f =
+fa fi !
+fb fj ! # modified
+fc fk ! # modified
+fd fm ! # modified
+fe fn ! # modified
+ff fo !
+fg fp ! # modified
+fh fs ! # modified
+fi fq ! # modified
+fj fr !
+fk ft !
+fl fu ! # modified
+fm fv !
+fn fw ! # modified
+fo fx ! # modified
+fp fy ! # modified
+fq fz ! # modified
+fr ga !
+fs gb ! # modified
+ft gc ! # modified
+fu gd ! # modified
+fv ge ! # modified
+fw gf !
+fx gg ! # modified
+fy gh !
+fz gi !
+g g = # modified
+ga gj ! # modified
+gb gk ! # modified
+gc gl ! # modified
+gd gm !
+ge gn ! # modified
+gf go !
+gg gp ! # modified
+gh gq ! # modified
+gi gr !
+gj gs !
+gk gt ! # modified
+gl gu !
+gm gv ! # modified
+gn gw !
+go gx ! # modified
+gp gy !
+gq gz !
+gr hb ! # modified
+gs hc ! # modified
+gt hd !
+gu he !
+gv hf ! # modified
+gw hg ! # modified
+gx hh !
+gy hi ! # modified
+gz hj ! # modified
+h h =
+ha hl !
+hb hm !
+hc hn ! # modified
+hd ho ! # modified
+he hp !
+hf hq !
+hg hr ! # modified
+hh hs ! # modified
+hi ht !
+hj hv !
+hk hw ! # modified
+hl hx ! # modified
+hm hy ! # modified
+hn hz !
+ho ia ! # modified
+hp ib !
+hq ic !
+hr id !
+hs ie ! # modified
+ht if ! # modified
+hu ig !
+hv ih !
+hw ii ! # modified
+hx ij !
+hy ik !
+hz il !
+i i = # modified
+ia im !
+ib in ! # modified
+ic io !
+id ip ! # modified
+ie iq ! # modified
+if is ! # modified
+ig it !
+ih iu ! # modified
+ii iw ! # modified
+ij ix !
+ik iz ! # modified
+il jb ! # modified
+im jc !
+in jd ! # modified
+io je ! # modified
+ip jf ! # modified
+iq jg !
+ir jh ! # modified
+is ji ! # modified
+it jj ! # modified
+iu jk ! # modified
+iv jl ! # modified
+iw jm !
+ix jn !
+iy jo !
+iz jp ! # modified
+j j =
+ja jq ! # modified
+jb jr !
+jc js !
+jd jt !
+je ju !
+jf jv !
+jg jw !
+jh jx !
+ji jy !
+jj jz ! # modified
+jk ka ! # modified
+jl kb !
+jm kc !
+jn kd !
+jo ke ! # modified
+jp kj !
+jq kg !
+jr kh !
+js ki ! # modified
+jt kk !
+ju km !
+jv kf !
+jw kn !
+jx ko !
+jy kq !
+jz kr ! # modified
+k k =
+ka ks !
+kb kt ! # modified
+kc ku ! # modified
+kd kv !
+ke kw ! # modified
+kf kx !
+kg ky !
+kh kz ! # modified
+ki la ! # modified
+kj lb !
+kk lc ! # modified
+kl ld !
+km le !
+kn lf !
+ko lg ! # modified
+kp lh ! # modified
+kq li ! # modified
+kr lj ! # modified
+ks lk ! # modified
+kt ll !
+ku lm ! # modified
+kv ln ! # modified
+kw lo ! # modified
+kx lp ! # modified
+ky lq ! # modified
+kz lr ! # modified
+l l = # modified
+la ls !
+lb lt ! # modified
+lc lu !
+ld lv !
+le lw !
+lf lx !
+lg ly ! # modified
+lh lz ! # modified
+li ma !
+lj mb ! # modified
+lk mc !
+ll md !
+lm me !
+ln mf !
+lo mg ! # modified
+lp mh ! # modified
+lq mi ! # modified
+lr mk ! # modified
+ls mj !
+lt ml !
+lu mm ! # modified
+lv mo ! # modified
+lw mn !
+lx mp !
+ly mq !
+lz mt !
+m m = # modified
+ma ms !
+mb mr !
+mc mu ! # modified
+md mw ! # modified
+me mv ! # modified
+mf my ! # modified
+mg mx ! # modified
+mh mz !
+mi na !
+mj nb !
+mk nc !
+ml nd ! # modified
+mm ne !
+mn nf ! # modified
+mo ng !
+mp nh !
+mq ni ! # modified
+mr nj ! # modified
+ms nk ! # modified
+mt nl ! # modified
+mu nm !
+mv nn !
+mw no !
+mx np !
+my nq ! # modified
+mz nr !
+n n = # modified
+na ns ! # modified
+nb nt !
+nc nu ! # modified
+nd nv !
+ne nw !
+net/minecraft/client/Minecraft net/minecraft/client/Minecraft = # modified
+net/minecraft/client/MinecraftApplet net/minecraft/client/MinecraftApplet = # modified
+nf nx ! # modified
+ng ny ! # modified
+nh nz !
+ni oa !
+nj ob !
+nk oc ! # modified
+nl od !
+nm oe ! # modified
+nn of !
+no oh !
+np oi ! # modified
+nq oj ! # modified
+nr ok !
+ns ol !
+nt on !
+nu oo ! # modified
+nv op ! # modified
+nw or ! # modified
+nx os ! # modified
+ny ot ! # modified
+nz ou ! # modified
+o o =
+oa ov ! # modified
+ob ow ! # modified
+oc ox !
+od oy ! # modified
+oe oz ! # modified
+of pa !
+og pb ! # modified
+oh pc !
+oi pd ! # modified
+oj pe !
+ok pf !
+ol pg !
+om ph ! # modified
+on pi ! # modified
+oo pj ! # modified
+op pk ! # modified
+oq pl !
+or pm !
+os pn ! # modified
+ot po !
+ou pp !
+ov pq !
+ow pr ! # modified
+ox ps !
+oy pt ! # modified
+oz pu ! # modified
+p p =
+pa pv !
+pb pw !
+pc px !
+pd py !
+pe pz !
+pf qa !
+pg qb !
+ph qc !
+pi qd !
+pj qe ! # modified
+pk qf !
+pl qg !
+pm qh !
+pn qi ! # modified
+po qj ! # modified
+pp qk !
+pq ql !
+pr qm !
+ps qn ! # modified
+pt qo ! # modified
+pu qp !
+pv qq ! # modified
+pw qr ! # modified
+px qs ! # modified
+py qt !
+pz qu !
+q q =
+qa qv ! # modified
+qb qw ! # modified
+qc qx !
+qd qy !
+qe qz ! # modified
+qf ra ! # modified
+qg rb !
+qh rd !
+qi re !
+qj rf !
+qk rg ! # modified
+ql rh !
+qm ri !
+qn rj ! # modified
+qo rk ! # modified
+qp rl ! # modified
+qq rm !
+qr rn !
+qs ro ! # modified
+qt rq !
+qu rr !
+qv rs !
+qw ru !
+qx rv !
+qy rw !
+qz rx ! # modified
+r r =
+ra ry !
+rb rz !
+rc sa ! # modified
+rd sb ! # modified
+re sc ! # modified
+rf se ! # modified
+rg sf !
+rh sg ! # modified
+ri sh ! # modified
+rj si ! # modified
+rk sj ! # modified
+rl sk !
+rm sl !
+rn sm ! # modified
+ro sn ! # modified
+rp so ! # modified
+rq sp ! # modified
+rr sq !
+rs sr !
+rt ss !
+ru st !
+rv su !
+rw sv !
+rx sw ! # modified
+ry sx ! # modified
+rz sy ! # modified
+s s = # modified
+sa sz !
+sb ta !
+sc tb !
+sd tc ! # modified
+se td ! # modified
+sf te ! # modified
+sg tf ! # modified
+sh tg ! # modified
+si th ! # modified
+sj ti !
+sk tj ! # modified
+sl tk !
+sm tl !
+sn tm ! # modified
+so tn ! # modified
+sp to ! # modified
+sq tp !
+sr tq !
+ss tr !
+st ts ! # modified
+su tt ! # modified
+sv tu !
+sw tv ! # modified
+sx tw !
+sy tx ! # modified
+sz ty ! # modified
+t t =
+ta tz ! # modified
+tb ua !
+tc ub !
+td uc !
+te ud !
+tf ue !
+tg uf !
+th ug !
+ti uh ! # modified
+tj ui !
+tk uj ! # modified
+tl uk ! # modified
+tm ul ! # modified
+tn um !
+to un ! # modified
+tp uo ! # modified
+tq up ! # modified
+tr uq !
+ts ur !
+tt us !
+tu ut !
+tv uu !
+tw uv ! # modified
+tx uw ! # modified
+ty ux ! # modified
+tz uy !
+u u = # modified
+ua uz !
+ub va !
+uc vb ! # modified
+ud vc ! # modified
+ue vd !
+uf ve !
+ug vf ! # modified
+uh vg ! # modified
+ui vh ! # modified
+uj vi ! # modified
+uk vj ! # modified
+ul vk !
+um vl !
+un vm ! # modified
+uo vn ! # modified
+up vo !
+uq vp ! # modified
+ur vq !
+us vr ! # modified
+ut vs !
+uu vt ! # modified
+uv vu ! # modified
+uw vv !
+ux vw !
+uy vx !
+uz vy !
+v v =
+va vz ! # modified
+vb wa !
+vc wb !
+vd wc !
+ve wd ! # modified
+vf we ! # modified
+vg wf ! # modified
+vh wg ! # modified
+vi wh !
+vj wj !
+vk wk ! # modified
+vl wl !
+vm wm !
+vn wn ! # modified
+vo wo !
+vp wp ! # modified
+vq wq ! # modified
+vr wr ! # modified
+vs ws !
+vt wt !
+vu wu !
+vv wv !
+vw ww !
+vx wx ! # modified
+vy wz ! # modified
+vz xa ! # modified
+w x !
+wa xb ! # modified
+wb xc ! # modified
+wc xd ! # modified
+wd xe !
+we xf !
+wf xg ! # modified
+wg xh ! # modified
+wh xi ! # modified
+wi xj !
+wj xk !
+wk xl !
+wl xm ! # modified
+wm xn !
+wn xo !
+wo xp !
+wp xq ! # modified
+wq xr ! # modified
+wr xs !
+ws xt ! # modified
+wt xu !
+wu xv !
+wv xw ! # modified
+ww xx !
+wx xy !
+wy xz !
+wz ya !
+x y !
+xa yb !
+xb yc ! # modified
+xc yd !
+xd ye !
+xe yf ! # modified
+xf yg !
+xg yh ! # modified
+xh yi !
+xi yj !
+xj yk !
+xk yl !
+xl ym ! # modified
+xm yn !
+xn yo !
+xo yp !
+y z ! # modified
+z aa ! # modified
+# Unmatched source classes
+# Unmatched target classes
+* ah !
+* ao !
+* aw !
+* ax !
+* cn !
+* dv !
+* ee !
+* fl !
+* ha !
+* hk !
+* hu !
+* ir !
+* iv !
+* iy !
+* ja !
+* kl !
+* kp !
+* og !
+* om !
+* oq !
+* rc !
+* rp !
+* rt !
+* sd !
+* w !
+* wi !
+* wy !
+[FIELDS]
+a.a a.a =
+a.b a.b =
+a.c a.c =
+ac.a ad.a !
+ae.b af.b !
+aj.a al.a !
+aj.b al.b !
+aj.c al.c !
+aj.d al.d !
+al.a an.a !
+ap.a as.a !
+ap.b as.b !
+ap.c as.c !
+ap.d as.d !
+ap.e as.e !
+ap.f as.f !
+ap.g as.g !
+ap.h as.h !
+aq.bi at.bj !
+ar.g au.g !
+ar.h au.h !
+ar.i au.i !
+ar.j au.j !
+as.a av.a !
+as.b av.b !
+as.c av.c !
+as.d av.d !
+as.e av.e !
+as.f av.f !
+at.a ay.a !
+at.b ay.b !
+av.a ba.a !
+av.e ba.e !
+av.f ba.f !
+aw.a bb.a !
+ax.a bc.a !
+ax.b bc.b !
+ax.c bc.c !
+ax.d bc.d !
+ax.e bc.e !
+ax.f bc.f !
+ax.g bc.g !
+ax.h bc.h !
+ax.i bc.i !
+ax.j bc.j !
+ax.k bc.k !
+ax.l bc.l !
+ay.a bd.a !
+b.a b.a =
+b.b b.b =
+bb.a bg.a !
+bb.b bg.b !
+bd.a bi.a !
+bd.b bi.b !
+be.a bj.a !
+be.c bj.c !
+bf.a bk.a !
+bf.b bk.b !
+bf.c bk.c !
+bf.h bk.h !
+bi.a bn.a !
+bi.b bn.b !
+bi.c bn.c !
+bi.d bn.d !
+bi.e bn.e !
+bi.f bn.f !
+bi.g bn.g !
+bi.h bn.h !
+bk.a bp.a !
+bk.b bp.b !
+bk.c bp.c !
+bl.a bq.a !
+bm.a br.a !
+bm.b br.b !
+bm.c br.c !
+bm.d br.d !
+bm.e br.e !
+bn.a bs.a !
+bn.b bs.b !
+bn.c bs.c !
+bn.d bs.d !
+bn.e bs.e !
+bn.f bs.f !
+bn.g bs.g !
+bn.h bs.h !
+bn.i bs.i !
+bn.j bs.j !
+bo.a bt.a !
+bp.a bu.a !
+bp.b bu.b !
+bp.c bu.c !
+bp.d bu.d !
+bp.e bu.e !
+br.a bw.a !
+br.b bw.b !
+br.c bw.c !
+br.d bw.d !
+br.e bw.e !
+br.f bw.f !
+br.g bw.g !
+br.h bw.h !
+br.i bw.i !
+bt.a by.a !
+bt.b by.b !
+bv.a ca.a !
+bv.b ca.b !
+bv.c ca.c !
+bv.d ca.d !
+bv.e ca.e !
+bv.f ca.f !
+bv.g ca.g !
+bw.a cb.a !
+bw.b cb.b !
+bx.a cc.a !
+bx.i cc.i !
+by.a cd.a !
+by.b cd.c !
+by.c cd.d !
+by.d cd.e !
+by.e cd.f !
+by.f cd.g !
+by.g cd.h !
+by.h cd.i !
+by.i cd.j !
+by.j cd.b !
+by.k cd.k !
+by.l cd.l !
+bz.g ce.g !
+bz.h ce.h !
+bz.i ce.i !
+bz.j ce.j !
+c.a c.a =
+c.b c.b =
+c.c c.c =
+cb.a cg.a !
+cc.a ci.a !
+cd.a ch.a !
+cd.b ch.b !
+cd.c ch.c !
+cd.d ch.d !
+cd.e ch.e !
+cd.f ch.f !
+cd.g ch.g !
+cd.h ch.h !
+cd.i ch.i !
+cd.j ch.j !
+cd.k ch.k !
+cd.l ch.l !
+cd.m ch.m !
+ce.a ck.a !
+ch.a cm.a !
+ch.i cm.i !
+ch.j cm.j !
+ch.l cm.l !
+ci.a co.a !
+ci.b co.b !
+cl.a cr.a !
+cl.b cr.b !
+cl.c cr.c !
+cm.a cs.a !
+cm.b cs.b !
+cm.c cs.c !
+cn.A ct.A !
+cn.B ct.B !
+cn.C ct.C !
+cn.D ct.D !
+cn.E ct.E !
+cn.F ct.F !
+cn.G ct.G !
+cn.H ct.H !
+cn.I ct.I !
+cn.J ct.J !
+cn.K ct.K !
+cn.L ct.L !
+cn.M ct.M !
+cn.N ct.N !
+cn.O ct.O !
+cn.P ct.P !
+cn.Q ct.Q !
+cn.R ct.R !
+cn.S ct.S !
+cn.T ct.T !
+cn.U ct.U !
+cn.V ct.V !
+cn.W ct.W !
+cn.X ct.X !
+cn.Y ct.Y !
+cn.Z ct.Z !
+cn.a ct.a !
+cn.aa ct.aa !
+cn.ab ct.ab !
+cn.ac ct.ac !
+cn.ad ct.ad !
+cn.ae ct.ae !
+cn.af ct.af !
+cn.b ct.b !
+cn.c ct.c !
+cn.d ct.d !
+cn.e ct.e !
+cn.f ct.f !
+cn.g ct.g !
+cn.h ct.h !
+cn.i ct.i !
+cn.j ct.j !
+cn.k ct.k !
+cn.l ct.l !
+cn.m ct.m !
+cn.n ct.n !
+cn.o ct.o !
+cn.p ct.p !
+cn.q ct.q !
+cn.r ct.r !
+cn.s ct.s !
+cn.t ct.t !
+cn.u ct.u !
+cn.v ct.v !
+cn.w ct.w !
+cn.x ct.x !
+cn.y ct.y !
+cn.z ct.z !
+co.a cu.a !
+co.b cu.b !
+co.c cu.c !
+co.d cu.d !
+co.e cu.e !
+co.f cu.f !
+cp.a cv.a !
+cq.a cw.a !
+cq.b cw.b !
+cq.c cw.c !
+cq.h cw.h !
+cr.a cx.a !
+cr.b cx.b !
+cr.c cx.c !
+cs.a cy.a !
+cs.b cy.b !
+cs.c cy.c !
+cs.d cy.d !
+cs.e cy.e !
+cs.f cy.f !
+cs.g cy.g !
+cs.h cy.h !
+ct.a cz.a !
+ct.b cz.b !
+cu.a da.a !
+cu.b da.b !
+cu.bK da.bL !
+cu.bL da.bM !
+cu.bM da.bN !
+cw.a dc.a !
+cy.a de.a !
+cz.a df.a !
+cz.b df.b !
+cz.c df.c !
+d.a d.a =
+d.b d.b =
+d.c d.c =
+d.d d.d =
+d.e d.e =
+d.f d.f =
+d.g d.g =
+d.h d.h =
+d.i d.i =
+d.j d.j =
+da.a dg.a !
+da.b dg.b !
+db.a dh.a !
+dc.A di.A !
+dc.B di.B !
+dc.C di.C !
+dc.D di.D !
+dc.E di.E !
+dc.F di.F !
+dc.a di.a !
+dc.b di.b !
+dc.c di.c !
+dc.d di.d !
+dc.e di.e !
+dc.f di.f !
+dc.g di.g !
+dc.h di.h !
+dc.i di.i !
+dc.j di.j !
+dc.k di.k !
+dc.l di.l !
+dc.m di.m !
+dc.n di.n !
+dc.o di.o !
+dc.p di.p !
+dc.q di.q !
+dc.r di.r !
+dc.s di.s !
+dc.t di.t !
+dc.u di.u !
+dc.v di.v !
+dc.w di.w !
+dc.x di.x !
+dc.y di.y !
+dc.z di.z !
+dd.a dj.a !
+df.a dl.a !
+df.b dl.b !
+df.c dl.c !
+df.d dl.d !
+dg.a dm.a !
+di.a do.a !
+di.bi do.bj !
+di.bj do.bk !
+di.bk do.bl !
+dj.a dp.a !
+dj.b dp.b !
+dj.c dp.c !
+dj.d dp.d !
+dk.a dq.a !
+dk.g dq.g !
+dk.h dq.h !
+dk.i dq.i !
+dm.a ds.a !
+dm.b ds.b !
+dn.a dt.a !
+dn.i dt.i !
+dn.j dt.j !
+dn.l dt.l !
+dn.m dt.m !
+dn.n dt.n !
+dn.o dt.o !
+dn.p dt.p !
+do.a du.a !
+do.b du.b !
+do.d du.d !
+do.e du.e !
+do.f du.f !
+do.g du.g !
+dp.a dw.a !
+dq.a dx.a !
+dq.b dx.b !
+dq.c dx.c !
+ds.a dz.a !
+ds.b dz.b !
+ds.c dz.c !
+ds.d dz.d !
+du.a eb.a !
+dw.a ed.a !
+dw.b ed.b !
+dw.c ed.c !
+dw.d ed.d !
+dw.e ed.e !
+dw.f ed.f !
+dw.g ed.g !
+dw.h ed.h !
+dy.a eg.a !
+dy.b eg.b !
+dy.c eg.c !
+dy.d eg.d !
+dy.e eg.e !
+dy.f eg.f !
+dy.g eg.g !
+dy.h eg.h !
+dy.i eg.i !
+dy.j eg.j !
+dy.k eg.k !
+dy.l eg.l !
+dy.m eg.m !
+dy.n eg.n !
+dy.o eg.o !
+e.a e.a =
+ea.a ei.a !
+ea.b ei.b !
+ea.c ei.c !
+ea.d ei.d !
+ec.a ek.a !
+ec.o ek.o !
+ec.p ek.p !
+ec.q ek.q !
+ec.r ek.r !
+ef.a en.a !
+ef.b en.b !
+ef.c en.c !
+ef.d en.d !
+ef.e en.e !
+ef.f en.f !
+ef.g en.g !
+ef.h en.h !
+ef.i en.i !
+ef.j en.j !
+ef.k en.k !
+ef.l en.l !
+ef.m en.m !
+ef.n en.n !
+ef.o en.o !
+ef.p en.p !
+ef.q en.q !
+ef.r en.r !
+ef.s en.s !
+ef.t en.t !
+ef.u en.u !
+eg.a eo.a !
+eg.b eo.b !
+eg.c eo.c !
+eg.d eo.d !
+eg.e eo.e !
+eg.f eo.f !
+eg.g eo.g !
+eg.h eo.h !
+ek.a es.a !
+em.a eu.a !
+em.b eu.b !
+em.c eu.c !
+em.d eu.d !
+en.a ev.a !
+en.i ev.i !
+eo.a ew.a !
+eo.b ew.b !
+ep.a ex.a !
+eq.a ey.a !
+eq.b ey.b !
+eq.c ey.c !
+eq.d ey.d !
+eq.e ey.e !
+es.a fa.a !
+et.A fb.G !
+et.B fb.i !
+et.C fb.j !
+et.D fb.k !
+et.E fb.l !
+et.F fb.m !
+et.G fb.H !
+et.H fb.I !
+et.I fb.J !
+et.J fb.K !
+et.K fb.L !
+et.L fb.M !
+et.M fb.N !
+et.N fb.O !
+et.O fb.P !
+et.a fb.a !
+et.b fb.b !
+et.c fb.c !
+et.d fb.d !
+et.e fb.e !
+et.f fb.f !
+et.g fb.g !
+et.h fb.h !
+et.i fb.n !
+et.j fb.o !
+et.k fb.p !
+et.l fb.q !
+et.m fb.r !
+et.n fb.s !
+et.o fb.t !
+et.p fb.u !
+et.q fb.v !
+et.r fb.w !
+et.s fb.x !
+et.t fb.y !
+et.u fb.A !
+et.v fb.B !
+et.w fb.C !
+et.x fb.D !
+et.y fb.E !
+et.z fb.F !
+eu.a fc.a !
+ew.a fe.a !
+ex.a ff.a !
+ex.b ff.b !
+ex.c ff.c !
+ex.d ff.d !
+ex.e ff.e !
+ex.f ff.f !
+ex.g ff.g !
+ex.h ff.h !
+ex.i ff.i !
+ex.j ff.j !
+ex.k ff.k !
+ex.l ff.l !
+ez.a fh.a !
+ez.i fh.i !
+ez.j fh.j !
+ez.l fh.l !
+ez.m fh.m !
+f.a f.a =
+fb.a fj.a !
+fb.b fj.b !
+fc.a fk.a !
+fc.b fk.b !
+fc.c fk.c !
+fc.d fk.e !
+fe.a fn.a !
+fe.b fn.b !
+ff.a fo.a !
+fg.a fp.a !
+fh.a fs.a !
+fh.i fs.i !
+fh.j fs.j !
+fh.l fs.l !
+fi.a fq.a !
+fi.i fq.i !
+fi.j fq.j !
+fi.l fq.l !
+fk.a ft.a !
+fk.b ft.b !
+fl.a fu.a !
+fl.b fu.b !
+fl.c fu.c !
+fl.d fu.d !
+fn.a fw.a !
+fo.a fx.a !
+fo.b fx.b !
+fo.c fx.c !
+fo.d fx.d !
+fo.e fx.e !
+fo.f fx.f !
+fo.g fx.g !
+fo.h fx.h !
+fo.i fx.i !
+fo.j fx.j !
+fo.k fx.k !
+fo.l fx.l !
+fp.a fy.a !
+fq.a fz.a !
+fq.b fz.b !
+fr.a ga.a !
+fr.i ga.i !
+fr.j ga.j !
+ft.a gc.a !
+ft.b gc.b !
+fu.a gd.a !
+fu.b gd.b !
+fv.a ge.a !
+fv.i ge.i !
+fx.a gg.a !
+fx.b gg.b !
+fx.c gg.c !
+fx.f gg.f !
+fx.g gg.g !
+fx.h gg.h !
+fx.i gg.i !
+fy.a gh.a !
+fy.b gh.b !
+fy.c gh.c !
+fy.d gh.d !
+fz.a gi.a !
+ga.a gj.a !
+ga.o gj.o !
+ga.p gj.p !
+gb.A gk.A !
+gb.B gk.B !
+gb.C gk.C !
+gb.D gk.D !
+gb.E gk.E !
+gb.F gk.F !
+gb.G gk.G !
+gb.H gk.H !
+gb.I gk.I !
+gb.J gk.J !
+gb.K gk.K !
+gb.L gk.L !
+gb.M gk.M !
+gb.N gk.N !
+gb.O gk.O !
+gb.P gk.P !
+gb.Q gk.Q !
+gb.R gk.R !
+gb.S gk.S !
+gb.T gk.T !
+gb.U gk.U !
+gb.V gk.V !
+gb.W gk.W !
+gb.X gk.X !
+gb.Y gk.Y !
+gb.Z gk.Z !
+gb.a gk.a !
+gb.aA gk.aA !
+gb.aB gk.aB !
+gb.aC gk.aC !
+gb.aD gk.aD !
+gb.aE gk.aE !
+gb.aF gk.aF !
+gb.aG gk.aG !
+gb.aH gk.aH !
+gb.aI gk.aI !
+gb.aJ gk.aJ !
+gb.aK gk.aK !
+gb.aL gk.aL !
+gb.aM gk.aM !
+gb.aN gk.aN !
+gb.aO gk.aO !
+gb.aP gk.aP !
+gb.aQ gk.aQ !
+gb.aR gk.aR !
+gb.aS gk.aS !
+gb.aT gk.aT !
+gb.aU gk.aU !
+gb.aV gk.aV !
+gb.aW gk.aW !
+gb.aX gk.aX !
+gb.aY gk.aY !
+gb.aZ gk.aZ !
+gb.aa gk.aa !
+gb.ab gk.ab !
+gb.ac gk.ac !
+gb.ad gk.ad !
+gb.ae gk.ae !
+gb.af gk.af !
+gb.ag gk.ag !
+gb.ah gk.ah !
+gb.ai gk.ai !
+gb.aj gk.aj !
+gb.ak gk.ak !
+gb.al gk.al !
+gb.am gk.am !
+gb.an gk.an !
+gb.ao gk.ao !
+gb.ap gk.ap !
+gb.aq gk.aq !
+gb.ar gk.ar !
+gb.as gk.as !
+gb.at gk.at !
+gb.au gk.au !
+gb.av gk.av !
+gb.aw gk.aw !
+gb.ax gk.ax !
+gb.ay gk.ay !
+gb.az gk.az !
+gb.b gk.b !
+gb.ba gk.ba !
+gb.bb gk.bc !
+gb.bc gk.bd !
+gb.bd gk.be !
+gb.be gk.bf !
+gb.bf gk.bg !
+gb.bg gk.bh !
+gb.bh gk.bi !
+gb.bi gk.bj !
+gb.bj gk.bk !
+gb.c gk.c !
+gb.d gk.d !
+gb.e gk.e !
+gb.f gk.f !
+gb.g gk.g !
+gb.h gk.h !
+gb.i gk.i !
+gb.j gk.j !
+gb.k gk.k !
+gb.l gk.l !
+gb.m gk.m !
+gb.n gk.n !
+gb.o gk.o !
+gb.p gk.p !
+gb.q gk.q !
+gb.r gk.r !
+gb.s gk.s !
+gb.t gk.t !
+gb.u gk.u !
+gb.v gk.v !
+gb.w gk.w !
+gb.x gk.x !
+gb.y gk.y !
+gb.z gk.z !
+gc.a gl.a !
+ge.a gn.a !
+ge.b gn.b !
+ge.c gn.c !
+ge.d gn.d !
+ge.e gn.e !
+gg.a gp.a !
+gg.b gp.b !
+gg.c gp.c !
+gg.d gp.d !
+gh.A gq.x !
+gh.B gq.C !
+gh.a gq.a !
+gh.b gq.b !
+gh.c gq.bL !
+gh.d gq.bM !
+gh.e gq.bN !
+gh.f gq.c !
+gh.g gq.d !
+gh.h gq.e !
+gh.i gq.f !
+gh.j gq.g !
+gh.k gq.h !
+gh.l gq.i !
+gh.m gq.j !
+gh.n gq.k !
+gh.o gq.l !
+gh.p gq.m !
+gh.q gq.n !
+gh.r gq.o !
+gh.s gq.p !
+gh.t gq.q !
+gh.u gq.r !
+gh.v gq.s !
+gh.w gq.t !
+gh.x gq.u !
+gh.y gq.v !
+gh.z gq.w !
+gk.e gt.e !
+gk.f gt.f !
+gm.a gv.a !
+gm.b gv.b !
+gm.c gv.c !
+gm.d gv.d !
+gm.e gv.e !
+go.c gx.c !
+gp.a gy.a !
+gp.b gy.b !
+gr.e hb.e !
+gr.f hb.f !
+gr.g hb.g !
+gt.a hd.a !
+gu.a he.a !
+gv.a hf.a !
+gv.b hf.b !
+gv.c hf.c !
+gx.a hh.a !
+gx.b hh.b !
+gx.c hh.c !
+gx.d hh.d !
+gy.a hi.a !
+gy.b hi.b !
+gz.a hj.a !
+gz.b hj.b !
+gz.c hj.c !
+gz.d hj.d !
+gz.e hj.e !
+gz.f hj.f !
+h.a h.a =
+h.b h.b =
+h.c h.c =
+h.d h.d =
+ha.a hl.a !
+hb.a hm.a !
+hc.l hn.l !
+hc.m hn.m !
+hc.n hn.n !
+hd.a ho.a !
+hd.b ho.b !
+hd.c ho.c !
+he.a hp.a !
+he.b hp.b !
+he.c hp.c !
+he.d hp.d !
+he.e hp.e !
+hf.g hq.g !
+hf.h hq.h !
+hg.a hr.a !
+hg.b hr.b !
+hg.c hr.c !
+hg.d hr.d !
+hg.e hr.e !
+hg.f hr.f !
+hg.g hr.g !
+hg.h hr.h !
+hg.i hr.i !
+hg.j hr.j !
+hg.k hr.k !
+hg.l hr.l !
+hg.m hr.m !
+hg.n hr.n !
+hg.o hr.o !
+hg.p hr.p !
+hg.q hr.q !
+hh.a hs.a !
+hk.a hw.a !
+hk.b hw.b !
+hk.c hw.c !
+hl.a hx.a !
+hm.a hy.a !
+hm.b hy.b !
+hm.c hy.c !
+ho.a ia.a !
+ho.i ia.i !
+ho.j ia.j !
+ho.l ia.l !
+hq.g ic.g !
+hq.h ic.h !
+hq.i ic.i !
+hq.j ic.j !
+hq.k ic.k !
+hr.a id.a !
+hr.b id.b !
+hr.c id.c !
+hr.d id.d !
+hr.e id.e !
+hr.f id.f !
+hr.g id.g !
+hr.h id.h !
+hr.i id.i !
+hs.a ie.a !
+hs.b ie.b !
+hs.c ie.c !
+hs.d ie.d !
+hs.e ie.e !
+hs.f ie.f !
+hs.g ie.g !
+hs.h ie.h !
+hs.i ie.i !
+hs.j ie.j !
+hs.k ie.k !
+hs.l ie.l !
+hs.m ie.m !
+hs.n ie.n !
+hs.o ie.o !
+ht.a if.a !
+ht.d if.d !
+ht.e if.e !
+hu.a ig.a !
+hv.a ih.a !
+hv.b ih.b !
+hv.c ih.c !
+hv.d ih.d !
+hv.e ih.e !
+hv.f ih.f !
+hv.g ih.g !
+hw.a ii.a !
+hw.b ii.b !
+hw.c ii.c !
+hw.d ii.d !
+hw.e ii.e !
+hw.f ii.f !
+hw.g ii.g !
+hx.a ij.a !
+hy.a ik.a !
+i.a i.a =
+i.b i.b =
+ib.A in.A !
+ib.B in.B !
+ib.C in.C !
+ib.D in.D !
+ib.E in.E !
+ib.F in.F !
+ib.a in.a !
+ib.b in.b !
+ib.c in.c !
+ib.d in.d !
+ib.e in.e !
+ib.f in.f !
+ib.g in.g !
+ib.h in.h !
+ib.i in.i !
+ib.j in.j !
+ib.k in.k !
+ib.l in.l !
+ib.m in.m !
+ib.n in.n !
+ib.o in.o !
+ib.p in.p !
+ib.q in.q !
+ib.r in.r !
+ib.s in.s !
+ib.t in.t !
+ib.u in.u !
+ib.v in.v !
+ib.w in.w !
+ib.x in.x !
+ib.y in.y !
+ib.z in.z !
+id.a ip.a !
+id.b ip.b !
+id.c ip.c !
+id.d ip.d !
+id.e ip.e !
+ie.a iq.a !
+ie.b iq.b !
+ie.c iq.c !
+ie.h iq.h !
+ie.i iq.i !
+ie.j iq.j !
+if.b is.b !
+if.c is.c !
+if.d is.d !
+if.e is.e !
+if.f is.f !
+if.g is.g !
+ig.a it.a !
+ig.b it.b !
+ig.c it.c !
+ig.d it.d !
+ih.a iu.a !
+ih.b iu.b !
+ih.c iu.c !
+ih.d iu.d !
+ih.e iu.e !
+ih.f iu.f !
+ii.a iw.a !
+ii.b iw.b !
+ii.c iw.c !
+ii.d iw.d !
+ij.a ix.a !
+ij.b ix.b !
+ik.a iz.a !
+ik.b iz.b !
+ik.c iz.c !
+ik.d iz.d !
+il.a jb.a !
+im.a jc.a !
+im.b jc.b !
+in.a jd.a !
+in.b jd.b !
+in.c jd.c !
+io.a je.a !
+ip.a jf.a !
+ip.b jf.b !
+ip.c jf.d !
+ip.d jf.e !
+ip.e jf.f !
+ip.f jf.g !
+ip.g jf.h !
+ip.h jf.i !
+ip.i jf.j !
+ip.j jf.k !
+ip.k jf.l !
+ip.l jf.m !
+iq.a jg.a !
+iq.b jg.b !
+iq.c jg.c !
+ir.a jh.a !
+ir.i jh.i !
+ir.j jh.j !
+is.A ji.A !
+is.B ji.B !
+is.C ji.C !
+is.D ji.D !
+is.E ji.E !
+is.F ji.F !
+is.G ji.G !
+is.H ji.H !
+is.a ji.a !
+is.b ji.b !
+is.c ji.c !
+is.d ji.d !
+is.e ji.e !
+is.f ji.f !
+is.g ji.g !
+is.h ji.h !
+is.i ji.i !
+is.j ji.j !
+is.k ji.k !
+is.l ji.l !
+is.m ji.m !
+is.n ji.n !
+is.o ji.o !
+is.p ji.p !
+is.q ji.q !
+is.r ji.r !
+is.s ji.s !
+is.t ji.t !
+is.u ji.u !
+is.v ji.v !
+is.w ji.w !
+is.x ji.x !
+is.y ji.y !
+is.z ji.z !
+it.a jj.a !
+it.b jj.b !
+it.c jj.c !
+it.d jj.d !
+it.e jj.e !
+it.f jj.f !
+it.g jj.g !
+it.h jj.h !
+it.i jj.i !
+iu.a jk.a !
+iu.b jk.b !
+iu.c jk.c !
+iu.d jk.d !
+iu.e jk.e !
+iu.f jk.f !
+iv.a jl.a !
+iw.a jm.a !
+iy.a jo.a !
+iz.a jp.a !
+ja.a jq.a !
+ja.b jq.b !
+jb.a jr.a !
+jb.b jr.b !
+jb.c jr.c !
+jb.d jr.d !
+jb.e jr.e !
+jd.a jt.a !
+jd.b jt.b !
+jd.c jt.c !
+jd.d jt.d !
+jd.e jt.e !
+jf.a jv.a !
+jf.b jv.b !
+jf.c jv.c !
+jf.d jv.d !
+jf.e jv.e !
+jh.a jx.a !
+jh.b jx.b !
+ji.a jy.a !
+jj.a jz.a !
+jj.b jz.b !
+jj.c jz.c !
+jj.d jz.d !
+jj.e jz.e !
+jj.f jz.f !
+jj.g jz.g !
+jj.h jz.h !
+jj.i jz.i !
+jj.j jz.j !
+jj.k jz.k !
+jj.l jz.l !
+jj.m jz.n !
+jj.n jz.o !
+jj.o jz.p !
+jj.p jz.q !
+jj.q jz.r !
+jj.r jz.s !
+jj.s jz.t !
+jj.t jz.u !
+jj.u jz.v !
+jj.v jz.w !
+jj.w jz.x !
+jk.a ka.a !
+jk.b ka.b !
+jk.c ka.c !
+jk.d ka.d !
+jk.e ka.e !
+jk.f ka.f !
+jk.g ka.g !
+jk.h ka.h !
+jm.a kc.a !
+jn.a kd.a !
+jo.a ke.a !
+jo.b ke.b !
+jo.c ke.c !
+jo.d ke.d !
+jo.e ke.e !
+jo.f ke.f !
+jo.j ke.j !
+jo.k ke.k !
+jp.a kj.a !
+js.a ki.a !
+jt.m kk.m !
+jt.n kk.n !
+ju.a km.a !
+jv.a kf.a !
+jv.b kf.b !
+jw.a kn.a !
+jy.g kq.g !
+jy.h kq.h !
+jy.i kq.i !
+jy.j kq.j !
+jy.k kq.k !
+jz.A kr.A !
+jz.B kr.B !
+jz.C kr.C !
+jz.D kr.D !
+jz.E kr.E !
+jz.F kr.F !
+jz.G kr.G !
+jz.H kr.H !
+jz.I kr.I !
+jz.J kr.J !
+jz.K kr.K !
+jz.L kr.L !
+jz.M kr.M !
+jz.a kr.a !
+jz.b kr.b !
+jz.c kr.c !
+jz.d kr.d !
+jz.e kr.e !
+jz.f kr.f !
+jz.g kr.g !
+jz.h kr.h !
+jz.i kr.i !
+jz.j kr.j !
+jz.k kr.k !
+jz.l kr.l !
+jz.m kr.m !
+jz.n kr.n !
+jz.o kr.o !
+jz.p kr.p !
+jz.q kr.q !
+jz.r kr.r !
+jz.s kr.s !
+jz.t kr.t !
+jz.u kr.u !
+jz.v kr.v !
+jz.w kr.w !
+jz.x kr.x !
+jz.y kr.y !
+jz.z kr.z !
+ka.a ks.a !
+ka.b ks.b !
+ka.c ks.c !
+ka.d ks.d !
+ka.e ks.e !
+ka.f ks.f !
+ka.g ks.g !
+ka.h ks.h !
+ka.i ks.i !
+ka.j ks.j !
+ka.k ks.k !
+ka.l ks.l !
+ka.m ks.m !
+ka.n ks.n !
+ka.o ks.o !
+ka.p ks.p !
+ka.q ks.q !
+ka.r ks.r !
+ka.s ks.s !
+kb.a kt.a !
+kb.b kt.b !
+kb.c kt.c !
+kb.d kt.d !
+kb.e kt.e !
+kb.f kt.f !
+kb.g kt.g !
+kb.h kt.h !
+kb.i kt.i !
+kb.j kt.j !
+kc.a ku.a !
+kd.a kv.a !
+kh.a kz.a !
+kj.a lb.a !
+kj.b lb.b !
+kk.a lc.a !
+kk.b lc.b !
+kk.c lc.c !
+kk.d lc.d !
+kk.e lc.e !
+kk.f lc.f !
+kk.g lc.g !
+kk.h lc.h !
+kk.i lc.i !
+kk.j lc.j !
+kk.k lc.k !
+kk.l lc.l !
+kk.m lc.m !
+kk.n lc.n !
+kk.o lc.o !
+kk.p lc.p !
+kk.q lc.q !
+kk.r lc.r !
+kn.a lf.a !
+kn.b lf.b !
+kn.c lf.c !
+kn.d lf.d !
+ko.a lg.a !
+ko.b lg.b !
+ko.c lg.c !
+ko.d lg.d !
+ko.e lg.e !
+ko.f lg.f !
+ko.g lg.g !
+ko.h lg.h !
+kp.a lh.a !
+kp.b lh.b !
+kp.c lh.c !
+kp.d lh.d !
+kp.e lh.e !
+kp.f lh.f !
+kp.g lh.g !
+kp.h lh.h !
+kp.i lh.i !
+kp.j lh.j !
+kp.k lh.k !
+kp.l lh.l !
+kp.m lh.m !
+kp.n lh.n !
+kq.a li.a !
+kq.b li.b !
+kq.c li.c !
+kq.d li.d !
+kq.e li.e !
+kq.f li.f !
+kq.g li.g !
+kq.h li.h !
+kq.i li.i !
+kq.j li.j !
+kq.k li.k !
+kq.l li.l !
+kq.m li.m !
+kq.n li.n !
+kq.o li.o !
+kq.p li.p !
+kq.q li.q !
+kq.r li.r !
+kr.A lj.C !
+kr.a lj.a !
+kr.b lj.c !
+kr.c lj.d !
+kr.d lj.e !
+kr.e lj.f !
+kr.f lj.g !
+kr.g lj.h !
+kr.h lj.i !
+kr.i lj.j !
+kr.j lj.k !
+kr.k lj.l !
+kr.l lj.m !
+kr.m lj.n !
+kr.n lj.o !
+kr.o lj.p !
+kr.p lj.q !
+kr.q lj.r !
+kr.r lj.s !
+kr.s lj.t !
+kr.t lj.u !
+kr.u lj.v !
+kr.v lj.w !
+kr.w lj.x !
+kr.x lj.y !
+kr.y lj.z !
+kr.z lj.B !
+ks.a lk.a !
+ks.b lk.b !
+ku.a lm.a !
+ku.i lm.i !
+kv.f ln.f !
+kv.g ln.g !
+kw.C lo.D !
+kw.D lo.E !
+kw.E lo.F !
+kw.F lo.G !
+kw.G lo.H !
+kw.H lo.I !
+kw.I lo.J !
+kw.J lo.K !
+kw.K lo.L !
+kw.L lo.M !
+kw.M lo.N !
+kw.N lo.O !
+kw.O lo.P !
+kw.P lo.Q !
+kw.Q lo.R !
+kw.R lo.S !
+kw.S lo.T !
+kw.T lo.U !
+kw.U lo.V !
+kw.V lo.W !
+kw.W lo.X !
+kw.X lo.Y !
+kw.Y lo.Z !
+kw.Z lo.aa !
+kw.a lo.a !
+kw.aA lo.aB !
+kw.aa lo.ab !
+kw.ab lo.ac !
+kw.ac lo.ad !
+kw.ad lo.ae !
+kw.ae lo.af !
+kw.af lo.ag !
+kw.ag lo.ah !
+kw.ah lo.ai !
+kw.ai lo.aj !
+kw.aj lo.ak !
+kw.ak lo.al !
+kw.al lo.am !
+kw.am lo.an !
+kw.an lo.ao !
+kw.ao lo.ap !
+kw.ap lo.aq !
+kw.aq lo.ar !
+kw.ar lo.as !
+kw.as lo.at !
+kw.at lo.au !
+kw.au lo.av !
+kw.av lo.aw !
+kw.aw lo.ax !
+kw.ax lo.ay !
+kw.ay lo.az !
+kw.az lo.aA !
+kw.b lo.b !
+kx.a lp.a !
+kx.b lp.b !
+kz.a lr.a !
+l.a l.a =
+lb.a lt.a !
+lb.b lt.b !
+lb.c lt.c !
+lb.d lt.d !
+lb.e lt.e !
+lb.f lt.f !
+lb.g lt.g !
+lb.h lt.h !
+lb.i lt.i !
+lb.j lt.j !
+lb.k lt.k !
+lb.l lt.l !
+lb.m lt.m !
+lb.n lt.n !
+lb.o lt.o !
+lb.p lt.p !
+lb.q lt.q !
+lb.r lt.r !
+lb.s lt.s !
+lb.t lt.t !
+le.a lw.a !
+le.b lw.b !
+le.c lw.c !
+le.d lw.d !
+lh.a lz.a !
+lj.a mb.a !
+lk.a mc.a !
+lk.b mc.b !
+ll.a md.a !
+lm.a me.a !
+lm.b me.b !
+lm.c me.c !
+lm.d me.d !
+lm.e me.e !
+lm.f me.f !
+lm.g me.g !
+lm.h me.h !
+lo.a mg.a !
+lo.b mg.b !
+lo.c mg.c !
+lo.d mg.d !
+lo.e mg.e !
+lp.a mh.a !
+lq.A mi.G !
+lq.B mi.H !
+lq.w mi.C !
+lq.x mi.D !
+lq.y mi.E !
+lq.z mi.F !
+ls.a mj.a !
+lt.a ml.a !
+lu.a mm.a !
+lu.b mm.b !
+lu.c mm.c !
+lv.a mo.a !
+lv.b mo.b !
+ly.a mq.a !
+m.A m.A =
+m.B m.B =
+m.C m.C =
+m.D m.D =
+m.E m.E =
+m.F m.F =
+m.G m.G =
+m.H m.H =
+m.I m.I =
+m.J m.J =
+m.K m.K =
+m.L m.L =
+m.M m.M =
+m.N m.N =
+m.O m.O =
+m.P m.P =
+m.Q m.Q =
+m.R m.R =
+m.S m.S =
+m.T m.T =
+m.a m.a =
+m.b m.b =
+m.c m.c =
+m.d m.d =
+m.e m.e =
+m.f m.f =
+m.g m.g =
+m.h m.h =
+m.i m.i =
+m.j m.j =
+m.k m.k =
+m.l m.l =
+m.m m.m =
+m.n m.n =
+m.o m.o =
+m.p m.p =
+m.q m.q =
+m.r m.r =
+m.s m.s =
+m.t m.t =
+m.u m.u =
+m.v m.v =
+m.w m.w =
+m.x m.x =
+m.y m.y =
+m.z m.z =
+mb.a mr.a !
+mb.b mr.b !
+mb.c mr.c !
+mc.a mu.a !
+mc.b mu.b !
+md.a mw.a !
+md.b mw.b !
+me.a mv.a !
+me.b mv.b !
+mf.a my.a !
+mf.b my.b !
+mg.a mx.a !
+mg.b mx.c !
+mg.c mx.d !
+mg.d mx.e !
+mg.e mx.f !
+mg.f mx.g !
+mg.g mx.h !
+mh.a mz.a !
+mh.b mz.b !
+mh.c mz.c !
+mh.d mz.d !
+mh.e mz.e !
+mh.f mz.f !
+mh.g mz.g !
+mh.h mz.h !
+mh.i mz.i !
+mh.l mz.l !
+ml.a nd.a !
+ml.b nd.b !
+mn.a nf.a !
+mn.i nf.i !
+mn.j nf.j !
+mn.l nf.l !
+mq.a ni.a !
+mq.b ni.b !
+mr.d nj.d !
+mr.e nj.e !
+mr.f nj.f !
+mr.g nj.g !
+mr.h nj.h !
+mr.i nj.i !
+ms.a nk.a !
+ms.b nk.b !
+ms.c nk.c !
+ms.d nk.d !
+mt.a nl.a !
+mt.b nl.b !
+mt.c nl.c !
+mt.d nl.d !
+mu.a nm.a !
+mv.b nn.b !
+mw.a no.a !
+mw.b no.b !
+my.a nq.a !
+mz.a nr.a !
+mz.b nr.b !
+n.a n.a =
+n.b n.b =
+n.c n.c =
+n.d n.d =
+n.e n.e =
+n.f n.f =
+n.g n.g =
+n.h n.h =
+n.i n.i =
+n.j n.j =
+n.k n.k =
+na.A ns.A !
+na.B ns.B !
+na.a ns.a !
+na.b ns.b !
+na.c ns.c !
+na.d ns.d !
+na.e ns.e !
+na.f ns.f !
+na.g ns.g !
+na.h ns.h !
+na.i ns.i !
+na.j ns.j !
+na.k ns.k !
+na.l ns.l !
+na.m ns.m !
+na.n ns.n !
+na.o ns.o !
+na.p ns.p !
+na.q ns.q !
+na.r ns.r !
+na.s ns.s !
+na.t ns.t !
+na.u ns.u !
+na.v ns.v !
+na.w ns.w !
+na.x ns.x !
+na.y ns.y !
+na.z ns.z !
+nc.a nu.a !
+nc.b nu.b !
+nc.c nu.c !
+nc.d nu.d !
+nc.l nu.l !
+nc.m nu.m !
+nc.n nu.n !
+nd.a nv.a !
+nd.b nv.b !
+nd.c nv.c !
+nd.d nv.d !
+net/minecraft/client/Minecraft.A net/minecraft/client/Minecraft.B !
+net/minecraft/client/Minecraft.B net/minecraft/client/Minecraft.C !
+net/minecraft/client/Minecraft.C net/minecraft/client/Minecraft.D !
+net/minecraft/client/Minecraft.D net/minecraft/client/Minecraft.E !
+net/minecraft/client/Minecraft.E net/minecraft/client/Minecraft.F !
+net/minecraft/client/Minecraft.F net/minecraft/client/Minecraft.G !
+net/minecraft/client/Minecraft.G net/minecraft/client/Minecraft.I !
+net/minecraft/client/Minecraft.H net/minecraft/client/Minecraft.J !
+net/minecraft/client/Minecraft.I net/minecraft/client/Minecraft.K !
+net/minecraft/client/Minecraft.J net/minecraft/client/Minecraft.L !
+net/minecraft/client/Minecraft.K net/minecraft/client/Minecraft.M !
+net/minecraft/client/Minecraft.L net/minecraft/client/Minecraft.N !
+net/minecraft/client/Minecraft.M net/minecraft/client/Minecraft.O !
+net/minecraft/client/Minecraft.N net/minecraft/client/Minecraft.P !
+net/minecraft/client/Minecraft.O net/minecraft/client/Minecraft.Q !
+net/minecraft/client/Minecraft.P net/minecraft/client/Minecraft.S !
+net/minecraft/client/Minecraft.Q net/minecraft/client/Minecraft.T !
+net/minecraft/client/Minecraft.R net/minecraft/client/Minecraft.U !
+net/minecraft/client/Minecraft.S net/minecraft/client/Minecraft.V !
+net/minecraft/client/Minecraft.T net/minecraft/client/Minecraft.W !
+net/minecraft/client/Minecraft.U net/minecraft/client/Minecraft.X !
+net/minecraft/client/Minecraft.V net/minecraft/client/Minecraft.Y !
+net/minecraft/client/Minecraft.W net/minecraft/client/Minecraft.Z !
+net/minecraft/client/Minecraft.X net/minecraft/client/Minecraft.aa !
+net/minecraft/client/Minecraft.Y net/minecraft/client/Minecraft.ab !
+net/minecraft/client/Minecraft.Z net/minecraft/client/Minecraft.ac !
+net/minecraft/client/Minecraft.a net/minecraft/client/Minecraft.a =
+net/minecraft/client/Minecraft.aa net/minecraft/client/Minecraft.ad !
+net/minecraft/client/Minecraft.ab net/minecraft/client/Minecraft.ae !
+net/minecraft/client/Minecraft.ac net/minecraft/client/Minecraft.af !
+net/minecraft/client/Minecraft.ad net/minecraft/client/Minecraft.ag !
+net/minecraft/client/Minecraft.ae net/minecraft/client/Minecraft.ah !
+net/minecraft/client/Minecraft.b net/minecraft/client/Minecraft.c !
+net/minecraft/client/Minecraft.c net/minecraft/client/Minecraft.d !
+net/minecraft/client/Minecraft.d net/minecraft/client/Minecraft.e !
+net/minecraft/client/Minecraft.e net/minecraft/client/Minecraft.f !
+net/minecraft/client/Minecraft.f net/minecraft/client/Minecraft.g !
+net/minecraft/client/Minecraft.g net/minecraft/client/Minecraft.h !
+net/minecraft/client/Minecraft.h net/minecraft/client/Minecraft.i !
+net/minecraft/client/Minecraft.i net/minecraft/client/Minecraft.j !
+net/minecraft/client/Minecraft.j net/minecraft/client/Minecraft.k !
+net/minecraft/client/Minecraft.k net/minecraft/client/Minecraft.l !
+net/minecraft/client/Minecraft.l net/minecraft/client/Minecraft.m !
+net/minecraft/client/Minecraft.m net/minecraft/client/Minecraft.n !
+net/minecraft/client/Minecraft.n net/minecraft/client/Minecraft.o !
+net/minecraft/client/Minecraft.o net/minecraft/client/Minecraft.p !
+net/minecraft/client/Minecraft.p net/minecraft/client/Minecraft.q !
+net/minecraft/client/Minecraft.q net/minecraft/client/Minecraft.r !
+net/minecraft/client/Minecraft.r net/minecraft/client/Minecraft.s !
+net/minecraft/client/Minecraft.s net/minecraft/client/Minecraft.t !
+net/minecraft/client/Minecraft.t net/minecraft/client/Minecraft.u !
+net/minecraft/client/Minecraft.u net/minecraft/client/Minecraft.v !
+net/minecraft/client/Minecraft.v net/minecraft/client/Minecraft.w !
+net/minecraft/client/Minecraft.w net/minecraft/client/Minecraft.x !
+net/minecraft/client/Minecraft.x net/minecraft/client/Minecraft.y !
+net/minecraft/client/Minecraft.y net/minecraft/client/Minecraft.z !
+net/minecraft/client/Minecraft.z net/minecraft/client/Minecraft.A !
+net/minecraft/client/MinecraftApplet.a net/minecraft/client/MinecraftApplet.a =
+net/minecraft/client/MinecraftApplet.b net/minecraft/client/MinecraftApplet.b =
+net/minecraft/client/MinecraftApplet.c net/minecraft/client/MinecraftApplet.c =
+nf.a nx.a !
+nf.b nx.b !
+ng.a ny.a !
+ni.a oa.a !
+nj.a ob.a !
+nj.b ob.b !
+nk.a oc.a !
+nk.b oc.b !
+nk.c oc.c !
+nl.g od.g !
+nl.h od.h !
+nl.i od.i !
+nl.j od.j !
+nl.k od.k !
+nn.a of.a !
+nn.b of.b !
+nn.c of.c !
+np.a oi.a !
+np.b oi.b !
+np.c oi.c !
+nq.a oj.a !
+ns.a ol.a !
+ns.o ol.o !
+ns.p ol.p !
+ns.q ol.q !
+nu.c oo.c !
+nu.d oo.d !
+nu.e oo.e !
+nu.f oo.f !
+nu.g oo.g !
+nu.h oo.h !
+nu.i oo.i !
+nw.l or.l !
+nx.a os.a !
+nx.b os.b !
+nx.d os.d !
+nx.e os.e !
+nx.f os.f !
+nx.g os.g !
+nz.a ou.a !
+o.a o.a =
+oa.a ov.a !
+oa.i ov.i !
+ob.e ow.e !
+ob.f ow.f !
+od.a oy.a !
+oe.a oz.a !
+oe.b oz.b !
+oe.c oz.c !
+oe.d oz.d !
+oe.e oz.e !
+oe.f oz.f !
+of.a pa.a !
+og.a pb.a !
+og.b pb.b !
+og.c pb.c !
+og.d pb.f !
+og.e pb.g !
+og.f pb.h !
+og.g pb.i !
+og.h pb.j !
+og.i pb.k !
+og.j pb.l !
+og.k pb.m !
+og.l pb.n !
+og.m pb.o !
+og.n pb.p !
+og.o pb.q !
+og.p pb.r !
+og.q pb.s !
+og.r pb.t !
+og.s pb.u !
+og.t pb.v !
+og.u pb.w !
+og.v pb.x !
+og.w pb.z !
+oo.a pj.a !
+oo.b pj.b !
+op.b pk.b !
+oq.a pl.a !
+os.a pn.a !
+os.b pn.b !
+ot.a po.a !
+ot.b po.b !
+ot.c po.c !
+ot.d po.d !
+ot.e po.e !
+ot.f po.f !
+ot.g po.g !
+ot.h po.h !
+ot.i po.i !
+ot.j po.j !
+ot.k po.k !
+ot.l po.l !
+ot.m po.m !
+ot.n po.n !
+ot.o po.o !
+ow.d pr.d !
+ow.e pr.e !
+oy.A pt.C !
+oy.B pt.D !
+oy.C pt.E !
+oy.D pt.F !
+oy.E pt.G !
+oy.F pt.H !
+oy.G pt.J !
+oy.H pt.K !
+oy.I pt.L !
+oy.J pt.M !
+oy.a pt.c !
+oy.b pt.d !
+oy.c pt.e !
+oy.d pt.f !
+oy.e pt.g !
+oy.f pt.h !
+oy.g pt.i !
+oy.h pt.j !
+oy.i pt.k !
+oy.j pt.l !
+oy.k pt.m !
+oy.l pt.n !
+oy.m pt.o !
+oy.n pt.p !
+oy.o pt.q !
+oy.p pt.r !
+oy.q pt.s !
+oy.r pt.t !
+oy.s pt.u !
+oy.t pt.v !
+oy.u pt.w !
+oy.v pt.x !
+oy.w pt.y !
+oy.x pt.z !
+oy.y pt.A !
+oy.z pt.B !
+oz.a pu.a !
+oz.b pu.b !
+oz.c pu.c !
+oz.d pu.d !
+oz.e pu.e !
+oz.f pu.f !
+oz.g pu.g !
+oz.h pu.h !
+oz.i pu.j !
+p.a p.a =
+pb.a pw.a !
+pc.a px.a !
+pc.b px.b !
+pd.a py.a !
+pe.a pz.a !
+ph.a qc.a !
+pi.a qd.a !
+pj.a qe.a !
+pk.a qf.a !
+pk.b qf.b !
+pk.c qf.c !
+pk.d qf.d !
+pk.e qf.e !
+pk.f qf.f !
+pk.g qf.g !
+pk.h qf.h !
+pm.a qh.a !
+pm.b qh.b !
+pm.c qh.c !
+pm.d qh.d !
+pm.e qh.e !
+pm.f qh.f !
+pn.a qi.a !
+po.a qj.a !
+po.b qj.b !
+po.c qj.c !
+po.d qj.d !
+po.e qj.e !
+po.f qj.f !
+po.g qj.g !
+po.h qj.h !
+po.i qj.i !
+po.j qj.j !
+po.k qj.k !
+po.l qj.l !
+po.m qj.m !
+po.n qj.n !
+po.o qj.o !
+po.p qj.p !
+po.q qj.q !
+po.r qj.r !
+po.s qj.s !
+pp.a qk.a !
+pp.b qk.b !
+pp.c qk.c !
+pp.d qk.d !
+pq.a ql.a !
+pr.a qm.a !
+pr.b qm.b !
+pr.c qm.c !
+pr.d qm.d !
+pr.e qm.e !
+ps.a qn.a !
+ps.b qn.b !
+ps.c qn.c !
+ps.d qn.d !
+ps.e qn.e !
+ps.f qn.f !
+pt.a qo.a !
+pt.i qo.i !
+pt.j qo.j !
+pt.l qo.l !
+pt.m qo.m !
+pt.n qo.n !
+pu.a qp.a !
+pv.a qq.a !
+pv.b qq.b !
+pv.c qq.c !
+pv.d qq.d !
+pv.e qq.e !
+pv.f qq.f !
+pw.a qr.a !
+px.a qs.a !
+px.b qs.b !
+px.c qs.c !
+px.d qs.d !
+px.e qs.e !
+px.f qs.f !
+px.g qs.g !
+px.h qs.h !
+px.i qs.i !
+py.a qt.a !
+py.b qt.b !
+py.c qt.c !
+py.d qt.d !
+py.e qt.e !
+py.f qt.f !
+py.g qt.g !
+q.a q.a =
+qa.a qv.a !
+qa.b qv.b !
+qa.c qv.c !
+qa.d qv.d !
+qa.e qv.e !
+qa.f qv.g !
+qc.a qx.a !
+qc.b qx.b !
+qc.c qx.c !
+qe.a qz.a !
+qe.b qz.b !
+qe.c qz.c !
+qe.d qz.d !
+qe.e qz.e !
+qe.f qz.f !
+qe.g qz.g !
+qe.h qz.h !
+qf.a ra.a !
+qf.b ra.b !
+qg.a rb.a !
+qg.b rb.b !
+qg.c rb.c !
+qg.d rb.d !
+qg.e rb.e !
+qg.f rb.f !
+qi.a re.a !
+qj.a rf.a !
+qk.a rg.a !
+ql.a rh.a !
+ql.b rh.b !
+ql.c rh.c !
+ql.d rh.d !
+ql.e rh.e !
+qn.a rj.a !
+qn.b rj.b !
+qn.c rj.c !
+qn.d rj.d !
+qn.e rj.e !
+qn.f rj.f !
+qn.g rj.g !
+qn.h rj.h !
+qn.i rj.i !
+qn.j rj.j !
+qn.l rj.l !
+qp.a rl.a !
+qp.i rl.i !
+qp.j rl.j !
+qp.l rl.l !
+qp.m rl.m !
+qp.n rl.n !
+qp.o rl.o !
+qp.p rl.p !
+qp.q rl.q !
+qp.r rl.r !
+qp.s rl.s !
+qp.t rl.t !
+qp.u rl.u !
+qq.a rm.a !
+qq.b rm.b !
+qq.c rm.c !
+qr.a rn.a !
+qs.a ro.a !
+qs.b ro.b !
+qs.c ro.c !
+qs.d ro.d !
+qt.a rq.a !
+qz.a rx.a !
+qz.b rx.b !
+qz.c rx.c !
+qz.d rx.d !
+qz.e rx.e !
+qz.f rx.f !
+qz.g rx.g !
+qz.h rx.h !
+qz.i rx.i !
+qz.j rx.j !
+qz.k rx.k !
+r.a r.a =
+r.b r.b =
+r.c r.c =
+r.d r.d =
+ra.g ry.g !
+ra.h ry.h !
+rb.a rz.a !
+rb.b rz.b !
+rb.c rz.c !
+re.a sc.a !
+rf.a se.a !
+rf.b se.b !
+rf.c se.c !
+rf.d se.d !
+rg.a sf.a !
+rg.b sf.b !
+rg.c sf.c !
+rg.h sf.h !
+rh.a sg.b !
+rh.b sg.c !
+rh.c sg.d !
+rh.d sg.e !
+rh.e sg.f !
+rh.f sg.g !
+rh.g sg.i !
+rh.h sg.j !
+rh.i sg.k !
+ri.a sh.a !
+ri.b sh.b !
+rj.a si.a !
+rj.aB si.aC !
+rj.aC si.aD !
+rj.aD si.aE !
+rj.aE si.aF !
+rj.aF si.aG !
+rj.aG si.aH !
+rj.aH si.aI !
+rj.aI si.aJ !
+rj.aJ si.aK !
+rj.aK si.aL !
+rj.aL si.aM !
+rj.aM si.aN !
+rj.aN si.aO !
+rj.aO si.aP !
+rj.aP si.aQ !
+rj.aQ si.aR !
+rj.aR si.aS !
+rj.aS si.aT !
+rj.aT si.aU !
+rj.aU si.aV !
+rj.aV si.aW !
+rj.aW si.aX !
+rj.aX si.aY !
+rj.aY si.aZ !
+rj.aZ si.ba !
+rj.b si.b !
+rj.bA si.bB !
+rj.bB si.bC !
+rj.bC si.bD !
+rj.bD si.bE !
+rj.bE si.bF !
+rj.bF si.bG !
+rj.bG si.bH !
+rj.bH si.bI !
+rj.bI si.bJ !
+rj.ba si.bb !
+rj.bb si.bc !
+rj.bc si.bd !
+rj.bd si.be !
+rj.be si.bf !
+rj.bf si.bg !
+rj.bg si.bh !
+rj.bh si.bi !
+rj.bi si.bj !
+rj.bj si.bk !
+rj.bk si.bl !
+rj.bl si.bm !
+rj.bm si.bn !
+rj.bn si.bo !
+rj.bo si.bp !
+rj.bp si.bq !
+rj.bq si.br !
+rj.br si.bs !
+rj.bs si.bt !
+rj.bt si.bu !
+rj.bu si.bv !
+rj.bv si.bw !
+rj.bw si.bx !
+rj.bx si.by !
+rj.by si.bz !
+rj.bz si.bA !
+rj.c si.c !
+rj.d si.d !
+rj.e si.e !
+rk.a sj.a !
+rk.b sj.b !
+rk.c sj.c !
+rk.d sj.d !
+rk.e sj.h !
+rl.a sk.a !
+rl.b sk.b !
+rn.a sm.a !
+rn.b sm.b !
+rn.c sm.c !
+rn.d sm.d !
+ro.a sn.a !
+rp.a so.a !
+rp.b so.b !
+rp.c so.c !
+rp.d so.d !
+rp.e so.e !
+rp.f so.f !
+rp.g so.g !
+rq.a sp.a !
+rs.a sr.a !
+rs.b sr.b !
+rt.a ss.a !
+rv.a su.a !
+rw.bi sv.bj !
+rx.a sw.a !
+ry.a sx.b !
+rz.a sy.a !
+rz.b sy.b !
+rz.c sy.c !
+rz.d sy.d !
+rz.e sy.e !
+rz.f sy.f !
+rz.g sy.g !
+rz.h sy.h !
+sc.a tb.a !
+sc.b tb.b !
+sc.c tb.c !
+sc.d tb.d !
+sc.e tb.e !
+sc.f tb.f !
+sc.g tb.g !
+sc.h tb.h !
+sc.i tb.i !
+sd.a tc.a !
+sd.b tc.b !
+sd.c tc.c !
+sd.d tc.d !
+sd.e tc.e !
+sd.f tc.f !
+sd.g tc.g !
+sd.h tc.h !
+sd.i tc.i !
+sd.j tc.j !
+sd.k tc.k !
+sd.l tc.l !
+sd.m tc.m !
+sd.n tc.n !
+sd.o tc.o !
+sd.p tc.p !
+sf.a te.a !
+sf.b te.b !
+sf.c te.c !
+sg.bJ tf.bL !
+sg.bK tf.bM !
+sg.bL tf.bN !
+sg.bM tf.bO !
+sg.bN tf.bP !
+sg.bO tf.bQ !
+sg.bP tf.bR !
+sg.bQ tf.bS !
+sg.bR tf.bT !
+sg.bS tf.bU !
+sg.bT tf.bV !
+sg.bU tf.bW !
+si.a th.a !
+si.b th.b !
+si.c th.c !
+si.d th.d !
+si.e th.e !
+si.f th.f !
+si.g th.g !
+sj.a ti.a !
+sj.b ti.b !
+sk.a tj.a !
+sk.b tj.b !
+sl.a tk.a !
+sm.a tl.a !
+sn.a tm.a !
+so.a tn.a !
+so.b tn.b !
+sp.a to.a !
+sp.b to.b !
+sq.a tp.a !
+sr.a tq.a !
+sr.b tq.b !
+sr.c tq.c !
+sr.d tq.d !
+sr.e tq.e !
+ss.a tr.a !
+st.a ts.a !
+sv.a tu.a !
+sv.b tu.b !
+sv.c tu.c !
+sx.k tw.k !
+sz.a ty.a !
+sz.b ty.b !
+sz.c ty.c !
+t.a t.a =
+ta.l tz.l !
+ta.m tz.m !
+tb.a ua.a !
+tb.b ua.b !
+tc.a ub.a !
+tc.b ub.b !
+td.a uc.a !
+td.b uc.b !
+td.c uc.c !
+td.d uc.d !
+td.e uc.e !
+td.f uc.f !
+td.g uc.g !
+te.a ud.a !
+te.b ud.b !
+te.c ud.c !
+te.d ud.d !
+tf.a ue.a !
+tf.b ue.b !
+tg.a uf.a !
+ti.a uh.a !
+ti.b uh.b !
+ti.c uh.c !
+ti.d uh.d !
+ti.e uh.e !
+ti.f uh.f !
+ti.g uh.g !
+tj.a ui.a !
+tj.b ui.b !
+tj.c ui.c !
+tj.d ui.d !
+tj.e ui.e !
+tk.a uj.a !
+tk.i uj.i !
+tk.j uj.j !
+tk.l uj.l !
+tl.a uk.a !
+tl.b uk.b !
+tl.c uk.c !
+tl.d uk.d !
+tl.e uk.e !
+tl.f uk.f !
+tl.g uk.g !
+tl.h uk.h !
+tl.i uk.i !
+tl.j uk.j !
+tl.l uk.l !
+tm.a ul.a !
+to.A un.B !
+to.B un.C !
+to.C un.D !
+to.D un.E !
+to.E un.F !
+to.F un.G !
+to.G un.H !
+to.H un.I !
+to.I un.J !
+to.J un.K !
+to.K un.L !
+to.L un.M !
+to.M un.N !
+to.N un.O !
+to.O un.P !
+to.P un.Q !
+to.Q un.R !
+to.R un.S !
+to.S un.T !
+to.T un.U !
+to.U un.V !
+to.V un.W !
+to.W un.X !
+to.X un.Y !
+to.Y un.Z !
+to.Z un.aa !
+to.a un.a !
+to.aA un.aB !
+to.aB un.aC !
+to.aC un.aD !
+to.aD un.aE !
+to.aE un.aF !
+to.aF un.aG !
+to.aG un.aH !
+to.aH un.aI !
+to.aI un.aJ !
+to.aJ un.aK !
+to.aK un.aL !
+to.aL un.aM !
+to.aM un.aN !
+to.aN un.aO !
+to.aO un.aP !
+to.aP un.aQ !
+to.aQ un.aR !
+to.aR un.aS !
+to.aS un.aT !
+to.aT un.aU !
+to.aU un.aV !
+to.aV un.aW !
+to.aW un.aX !
+to.aX un.aY !
+to.aY un.aZ !
+to.aZ un.ba !
+to.aa un.ab !
+to.ab un.ac !
+to.ac un.ad !
+to.ad un.ae !
+to.ae un.af !
+to.af un.ag !
+to.ag un.ah !
+to.ah un.ai !
+to.ai un.aj !
+to.aj un.ak !
+to.ak un.al !
+to.al un.am !
+to.am un.an !
+to.an un.ao !
+to.ao un.ap !
+to.ap un.aq !
+to.aq un.ar !
+to.ar un.as !
+to.as un.at !
+to.at un.au !
+to.au un.av !
+to.av un.aw !
+to.aw un.ax !
+to.ax un.ay !
+to.ay un.az !
+to.az un.aA !
+to.ba un.bb !
+to.bb un.bc !
+to.bc un.bd !
+to.bd un.be !
+to.be un.bf !
+to.bf un.bg !
+to.bg un.bh !
+to.bh un.bi !
+to.bi un.bj !
+to.bj un.bk !
+to.bk un.bm !
+to.bl un.bn !
+to.bm un.bo !
+to.bn un.bp !
+to.bo un.bq !
+to.bp un.br !
+to.bq un.bs !
+to.br un.bt !
+to.bs un.bu !
+to.bt un.bv !
+to.bu un.bw !
+to.bv un.bx !
+to.bw un.by !
+to.bx un.bz !
+to.by un.bA !
+to.bz un.bB !
+to.d un.d !
+to.e un.e !
+to.f un.f !
+to.g un.g !
+to.h un.h !
+to.i un.i !
+to.j un.j !
+to.k un.k !
+to.l un.l !
+to.m un.m !
+to.n un.n !
+to.o un.o !
+to.p un.p !
+to.q un.q !
+to.r un.r !
+to.s un.s !
+to.t un.u !
+to.u un.v !
+to.v un.w !
+to.w un.x !
+to.x un.y !
+to.y un.z !
+to.z un.A !
+tp.a uo.a !
+tp.b uo.b !
+tp.c uo.c !
+tp.d uo.d !
+tq.a up.a !
+tq.b up.b !
+tq.c up.c !
+tr.a uq.a !
+tr.b uq.b !
+tu.a ut.a !
+tu.b ut.b !
+tu.c ut.c !
+tu.d ut.d !
+tu.e ut.e !
+tx.a uw.a !
+ty.a ux.a !
+ty.b ux.b !
+ty.c ux.c !
+ty.d ux.d !
+ty.e ux.e !
+ty.f ux.f !
+ty.g ux.g !
+u.a u.a =
+ub.a va.a !
+uc.a vb.a !
+uc.b vb.b !
+ud.a vc.a !
+ug.a vf.a !
+ug.b vf.b !
+ug.c vf.c !
+ug.d vf.d !
+uh.a vg.a !
+uh.b vg.b !
+uh.c vg.c !
+uh.d vg.d !
+uh.e vg.e !
+uh.f vg.f !
+uh.g vg.g !
+ui.e vh.e !
+ui.f vh.f !
+ui.g vh.g !
+ui.h vh.h !
+uj.d vi.d !
+uk.a vj.a !
+uk.b vj.b !
+uk.c vj.c !
+uk.e vj.e !
+uk.f vj.f !
+uk.g vj.g !
+uk.h vj.h !
+uk.i vj.i !
+uk.j vj.j !
+uk.k vj.k !
+ul.g vk.g !
+ul.h vk.h !
+ul.i vk.i !
+ul.j vk.j !
+ul.k vk.k !
+um.a vl.a !
+um.b vl.b !
+um.c vl.c !
+um.d vl.d !
+um.e vl.e !
+um.f vl.f !
+un.a vm.a !
+un.b vm.b !
+un.c vm.c !
+un.d vm.d !
+un.e vm.e !
+un.f vm.f !
+un.g vm.g !
+un.h vm.h !
+un.i vm.i !
+uo.a vn.a !
+uo.b vn.b !
+uo.c vn.c !
+uo.d vn.d !
+uo.e vn.e !
+uo.f vn.f !
+uo.g vn.g !
+uo.h vn.h !
+uo.i vn.i !
+up.a vo.a !
+up.b vo.b !
+up.c vo.c !
+up.d vo.d !
+up.e vo.e !
+uq.a vp.a !
+uq.i vp.i !
+ur.a vq.a !
+ur.b vq.b !
+ur.c vq.c !
+ur.d vq.d !
+ur.e vq.e !
+us.i vr.i !
+us.j vr.j !
+us.l vr.l !
+ut.a vs.a !
+ut.bi vs.bj !
+ut.bj vs.bk !
+ut.bk vs.bl !
+ut.bl vs.bm !
+ut.bm vs.bn !
+uv.bi vu.bj !
+uy.a vx.a !
+uy.b vx.b !
+uy.c vx.c !
+v.e v.e =
+v.f v.f =
+v.g v.g =
+v.h v.h =
+vb.a wa.a !
+vd.a wc.a !
+ve.a wd.a !
+ve.b wd.b !
+ve.c wd.c !
+ve.d wd.d !
+vf.a we.a !
+vf.b we.b !
+vg.a wf.a !
+vg.b wf.b !
+vg.c wf.c !
+vl.a wl.a !
+vl.b wl.b !
+vl.c wl.c !
+vl.d wl.d !
+vl.e wl.e !
+vl.f wl.f !
+vn.a wn.a !
+vn.b wn.b !
+vn.c wn.c !
+vn.f wn.f !
+vn.g wn.g !
+vn.h wn.h !
+vn.i wn.i !
+vq.a wq.a !
+vq.b wq.b !
+vq.c wq.c !
+vq.d wq.d !
+vr.a wr.a !
+vr.b wr.b !
+vr.c wr.c !
+vr.d wr.d !
+vr.e wr.e !
+vr.f wr.f !
+vr.g wr.g !
+vr.h wr.h !
+vs.a ws.a !
+vt.a wt.a !
+vt.b wt.b !
+vv.a wv.a !
+vv.b wv.b !
+vx.a wx.a !
+vy.a wz.a !
+vy.b wz.b !
+vy.c wz.c !
+vy.d wz.d !
+vz.a xa.a !
+w.a x.a !
+wa.c xb.c !
+wa.d xb.d !
+wa.e xb.e !
+wa.f xb.f !
+wa.g xb.g !
+wa.h xb.h !
+wa.i xb.i !
+wa.j xb.j !
+wa.k xb.k !
+wa.l xb.l !
+wb.a xc.a !
+wc.a xd.a !
+wc.i xd.i !
+wc.j xd.j !
+wc.l xd.l !
+wc.m xd.m !
+wc.n xd.n !
+wc.o xd.o !
+wc.p xd.p !
+wc.q xd.q !
+wc.r xd.r !
+wc.s xd.s !
+wc.t xd.t !
+wc.u xd.u !
+wc.v xd.v !
+wc.w xd.w !
+wc.x xd.x !
+wd.a xe.a !
+we.a xf.a !
+wj.a xk.a !
+wj.b xk.b !
+wj.c xk.c !
+wj.f xk.f !
+wj.g xk.g !
+wj.h xk.h !
+wj.i xk.i !
+wj.j xk.j !
+wj.k xk.k !
+wj.l xk.l !
+wj.m xk.m !
+wj.n xk.n !
+wj.o xk.o !
+wj.p xk.p !
+wk.a xl.a !
+wk.b xl.b !
+wk.c xl.c !
+wk.d xl.d !
+wl.a xm.a !
+wl.b xm.b !
+wl.c xm.c !
+wl.d xm.d !
+wl.e xm.e !
+wl.f xm.f !
+wl.g xm.g !
+wm.b xn.b !
+wm.c xn.c !
+wm.d xn.d !
+wm.e xn.e !
+wm.f xn.f !
+wm.g xn.g !
+wm.h xn.h !
+wm.i xn.i !
+wm.j xn.j !
+wm.k xn.k !
+wm.l xn.l !
+wm.m xn.m !
+wm.n xn.n !
+wp.a xq.a !
+wp.b xq.b !
+wp.bJ xq.bO !
+wp.bK xq.bP !
+wp.c xq.bL !
+wp.d xq.bM !
+wp.e xq.bN !
+wq.a xr.a !
+wq.b xr.b !
+wq.f xr.f !
+ws.a xt.a !
+ws.i xt.i !
+ws.j xt.j !
+ws.l xt.l !
+ws.m xt.m !
+wv.a xw.a !
+wv.b xw.b !
+wv.c xw.c !
+wv.d xw.d !
+wv.e xw.e !
+wv.f xw.f !
+wv.g xw.g !
+wv.h xw.h !
+wv.i xw.i !
+wv.j xw.j !
+wv.k xw.k !
+wv.l xw.l !
+wv.m xw.m !
+wv.n xw.n !
+wv.o xw.o !
+wv.p xw.p !
+wv.q xw.q !
+wv.r xw.r !
+wv.s xw.s !
+wv.t xw.t !
+wv.u xw.u !
+wv.v xw.v !
+wv.w xw.w !
+ww.a xx.a !
+x.a y.a !
+x.b y.b !
+xa.a yb.a !
+xa.b yb.b !
+xa.c yb.c !
+xb.a yc.a !
+xb.b yc.b !
+xb.c yc.c !
+xb.d yc.d !
+xb.e yc.e !
+xb.f yc.f !
+xb.g yc.g !
+xb.h yc.h !
+xb.i yc.i !
+xb.j yc.j !
+xb.k yc.k !
+xb.l yc.l !
+xb.m yc.m !
+xb.n yc.n !
+xb.o yc.o !
+xb.p yc.p !
+xb.q yc.q !
+xb.r yc.r !
+xb.s yc.s !
+xe.a yf.a !
+xe.b yf.b !
+xe.c yf.c !
+xe.d yf.d !
+xe.e yf.e !
+xe.f yf.f !
+xe.g yf.g !
+xe.h yf.h !
+xe.i yf.i !
+xg.a yh.a !
+xg.b yh.b !
+xh.a yi.a !
+xi.a yj.a !
+xi.b yj.b !
+xj.a yk.a !
+xl.d ym.d !
+xl.e ym.e !
+xm.a yn.a !
+xm.bi yn.bj !
+xo.a yp.a !
+xo.b yp.b !
+y.a z.a !
+y.b z.b !
+y.c z.c !
+z.i aa.i !
+# Unmatched source fields
+cu.bJ * !
+cu.c * !
+cu.d * !
+cu.e * !
+# Unmatched target fields
+* ah.a !
+* ah.b !
+* ah.c !
+* ao.a !
+* ao.b !
+* aw.a !
+* aw.b !
+* aw.c !
+* aw.d !
+* aw.e !
+* da.bO !
+* dv.a !
+* dv.b !
+* dv.c !
+* dv.d !
+* dv.e !
+* dv.f !
+* dv.g !
+* dv.h !
+* dv.i !
+* dv.j !
+* dv.k !
+* dv.l !
+* dv.m !
+* dv.n !
+* dv.o !
+* dv.p !
+* dv.q !
+* ee.a !
+* fb.z !
+* fk.d !
+* fl.a !
+* fl.b !
+* fl.c !
+* fl.d !
+* fl.e !
+* gk.bb !
+* gq.A !
+* gq.B !
+* gq.y !
+* gq.z !
+* ha.a !
+* ha.b !
+* ha.c !
+* ha.d !
+* hk.a !
+* hk.b !
+* hu.a !
+* ir.b !
+* ir.c !
+* ir.d !
+* ir.e !
+* ir.f !
+* ir.g !
+* ir.h !
+* ir.i !
+* ir.j !
+* iv.a !
+* iv.b !
+* iv.c !
+* iv.d !
+* ja.a !
+* ja.b !
+* ja.c !
+* ja.d !
+* ja.e !
+* ja.f !
+* ja.g !
+* ja.h !
+* ja.i !
+* ja.j !
+* ja.k !
+* ja.l !
+* ja.m !
+* ja.n !
+* ja.o !
+* ja.p !
+* ja.q !
+* ja.r !
+* ja.s !
+* ja.t !
+* ja.u !
+* ja.v !
+* ja.w !
+* jf.c !
+* jz.m !
+* kl.a !
+* kp.a !
+* lj.A !
+* lj.D !
+* lj.b !
+* mx.b !
+* net/minecraft/client/Minecraft.H !
+* net/minecraft/client/Minecraft.R !
+* net/minecraft/client/Minecraft.b !
+* og.a !
+* og.b !
+* og.c !
+* og.d !
+* og.e !
+* og.f !
+* og.g !
+* ot.a !
+* pb.d !
+* pb.e !
+* pb.y !
+* pt.I !
+* pt.a !
+* pt.b !
+* pu.i !
+* qv.f !
+* sd.a !
+* sd.b !
+* sd.c !
+* sd.d !
+* sd.e !
+* sd.f !
+* sg.a !
+* sg.h !
+* si.bK !
+* si.f !
+* sj.e !
+* sj.f !
+* sj.g !
+* sj.i !
+* sx.a !
+* sx.c !
+* un.bl !
+* un.t !
+* w.a !
+* wy.a !
+* xh.a !
+[METHODS]
+ae.a (Lcq;DDDF)V af.a (Lcw;DDDF)V !
+ah.a_ (Let;III)Z aj.a_ (Lfb;III)Z ! # modified 97% equal
+aj.a (DD)D al.a (DD)D !
+aj.a (DDD)D al.a (DDD)D !
+aj.a (IDD)D al.a (IDD)D !
+aj.a (IDDD)D al.a (IDDD)D !
+aj.a ([DDDDIIIDDDD)V al.a ([DDDDIIIDDDD)V !
+aj.b (DDD)D al.b (DDD)D !
+ak.a (Ljava/io/Reader;Luz;)V am.a (Ljava/io/Reader;Lvy;)V !
+ak.a (Lkn;)Ljava/lang/String; am.a (Llf;)Ljava/lang/String; !
+ak.a (Lkn;Luz;)V am.a (Llf;Lvy;)V !
+ak.b (Lkn;)Ljava/lang/String; am.b (Llf;)Ljava/lang/String; !
+ak.b (Lkn;Luz;)V am.b (Llf;Lvy;)V !
+ak.c (Lkn;)C am.c (Llf;)C !
+ak.c (Lkn;Luz;)V am.c (Llf;Lvy;)V !
+ak.d (Lkn;)C am.d (Llf;)C !
+ak.d (Lkn;Luz;)V am.d (Llf;Lvy;)V !
+ak.e (Lkn;)Ljava/lang/String; am.e (Llf;)Ljava/lang/String; !
+ak.f (Lkn;)Ljava/lang/String; am.f (Llf;)Ljava/lang/String; !
+ak.g (Lkn;)Ljava/lang/String; am.g (Llf;)Ljava/lang/String; !
+ak.h (Lkn;)Ljava/lang/String; am.h (Llf;)Ljava/lang/String; !
+ak.i (Lkn;)Ljava/lang/String; am.i (Llf;)Ljava/lang/String; !
+ak.j (Lkn;)C am.j (Llf;)C !
+ak.k (Lkn;)I am.k (Llf;)I !
+ak.l (Lkn;)I am.l (Llf;)I !
+al.a (Lme;[Ljava/lang/Object;Lpf;)Lal; an.a (Lmv;[Ljava/lang/Object;Lqa;)Lan; !
+al.a ([Ljava/lang/Object;)Ljava/lang/String; an.a ([Ljava/lang/Object;)Ljava/lang/String; !
+al.b (Lme;[Ljava/lang/Object;Lpf;)Ljava/lang/String; an.b (Lmv;[Ljava/lang/Object;Lqa;)Ljava/lang/String; !
+ao.a (Ljava/io/DataInput;)Lmy; ar.a (Ljava/io/DataInput;)Lnq; !
+ao.a (Ljava/io/InputStream;)Lmy; ar.a (Ljava/io/InputStream;)Lnq; !
+ao.a (Lmy;Ljava/io/DataOutput;)V ar.a (Lnq;Ljava/io/DataOutput;)V !
+ao.a (Lmy;Ljava/io/OutputStream;)V ar.a (Lnq;Ljava/io/OutputStream;)V !
+ap.valueOf (Ljava/lang/String;)Lap; as.valueOf (Ljava/lang/String;)Las; ! # modified 0% equal
+ap.values ()[Lap; as.values ()[Las; !
+as.a ()V av.a ()V !
+as.a (Lip;)V av.a (Ljf;)V !
+at.b ()Lii; ay.b ()Liw; ! # modified 77% equal
+au.c (Ljava/lang/Object;)Ljava/lang/Object; az.c (Ljava/lang/Object;)Ljava/lang/Object; !
+av.a (IIIIII)V ba.a (IIIIII)V !
+av.a (Lgz;DDDFF)V ba.a (Lhj;DDDFF)V !
+av.a (Lna;IIIII)V ba.a (Lns;IIIII)V !
+av.a (Lrf;Lip;IIIII)V ba.a (Lse;Ljf;IIIII)V ! # modified 69% equal
+av.a (Lrf;Lip;Lii;II)V ba.a (Lse;Ljf;Liw;II)V !
+av.b (Lrf;Lip;Lii;II)V ba.b (Lse;Ljf;Liw;II)V !
+ax.a ()Ljava/io/File; bc.a ()Ljava/io/File; !
+ax.a (I)V bc.a (I)V !
+ax.a (II)Lqe; bc.a (II)Lqz; !
+ax.a (Lax;)Z bc.a (Lbc;)Z !
+ax.a (Ljava/awt/Graphics2D;)V bc.a (Ljava/awt/Graphics2D;)V ! # modified 81% equal
+ax.a (Ljava/lang/String;)Ljava/io/File; bc.a (Ljava/lang/String;)Ljava/io/File; !
+ax.b ()V bc.b ()V !
+ax.b (Ljava/lang/String;)V bc.b (Ljava/lang/String;)V !
+ax.c ()V bc.c ()V !
+ax.d ()V bc.d ()V !
+ax.e ()Liu; bc.e ()Ljk; !
+ax.keyPressed (Ljava/awt/event/KeyEvent;)V bc.keyPressed (Ljava/awt/event/KeyEvent;)V !
+ax.keyReleased (Ljava/awt/event/KeyEvent;)V bc.keyReleased (Ljava/awt/event/KeyEvent;)V !
+ax.keyTyped (Ljava/awt/event/KeyEvent;)V bc.keyTyped (Ljava/awt/event/KeyEvent;)V !
+ax.mouseClicked (Ljava/awt/event/MouseEvent;)V bc.mouseClicked (Ljava/awt/event/MouseEvent;)V !
+ax.mouseDragged (Ljava/awt/event/MouseEvent;)V bc.mouseDragged (Ljava/awt/event/MouseEvent;)V !
+ax.mouseEntered (Ljava/awt/event/MouseEvent;)V bc.mouseEntered (Ljava/awt/event/MouseEvent;)V !
+ax.mouseExited (Ljava/awt/event/MouseEvent;)V bc.mouseExited (Ljava/awt/event/MouseEvent;)V !
+ax.mouseMoved (Ljava/awt/event/MouseEvent;)V bc.mouseMoved (Ljava/awt/event/MouseEvent;)V !
+ax.mousePressed (Ljava/awt/event/MouseEvent;)V bc.mousePressed (Ljava/awt/event/MouseEvent;)V !
+ax.mouseReleased (Ljava/awt/event/MouseEvent;)V bc.mouseReleased (Ljava/awt/event/MouseEvent;)V !
+ax.paint (Ljava/awt/Graphics;)V bc.paint (Ljava/awt/Graphics;)V !
+ax.run ()V bc.run ()V !
+ax.update (Ljava/awt/Graphics;)V bc.update (Ljava/awt/Graphics;)V !
+az.a ()V be.a ()V !
+az.a (Let;II)Lkq; be.a (Lfb;II)Lli; !
+az.a (Let;Lkq;)V be.a (Lfb;Lli;)V !
+az.b ()V be.b ()V !
+az.b (Let;Lkq;)V be.b (Lfb;Lli;)V !
+b.a (I)Ljava/lang/String; b.a (I)Ljava/lang/String; =
+be.a (Z)V bj.a (Z)V !
+be.h (Let;III)V bj.h (Lfb;III)V !
+bi.a (DDDD)Z bn.a (DDDD)Z !
+bk.a (III)D bp.a (III)D !
+bk.a (Lbk;)I bp.a (Lbp;)I !
+bk.compareTo (Ljava/lang/Object;)I bp.compareTo (Ljava/lang/Object;)I !
+bk.equals (Ljava/lang/Object;)Z bp.equals (Ljava/lang/Object;)Z !
+bk.hashCode ()I bp.hashCode ()I !
+bl.h (Let;III)V bq.h (Lfb;III)V !
+bl.i (Let;III)V bq.i (Lfb;III)V !
+bm.a ()V br.b ()V !
+bm.a (DDD)Lbm; br.a (DDD)Lbr; !
+bm.a (F)V br.a (F)V !
+bm.a (Lbm;)Lbm; br.a (Lbr;)Lbr; !
+bm.a (Lbm;D)Lbm; br.a (Lbr;D)Lbr; !
+bm.b ()Lbm; br.c ()Lbr; !
+bm.b (DDD)Lbm; br.b (DDD)Lbr; !
+bm.b (F)V br.b (F)V !
+bm.b (Lbm;)Lbm; br.b (Lbr;)Lbr; !
+bm.b (Lbm;D)Lbm; br.b (Lbr;D)Lbr; !
+bm.c ()D br.d ()D !
+bm.c (DDD)Lbm; br.c (DDD)Lbr; !
+bm.c (Lbm;)D br.c (Lbr;)D !
+bm.c (Lbm;D)Lbm; br.c (Lbr;D)Lbr; !
+bm.d (DDD)D br.d (DDD)D !
+bm.d (Lbm;)D br.d (Lbr;)D !
+bm.e (DDD)Lbm; br.e (DDD)Lbr; !
+bm.toString ()Ljava/lang/String; br.toString ()Ljava/lang/String; !
+bn.a ()I bs.a ()I !
+bn.b ()F bs.b ()F !
+bn.c ()I bs.c ()I !
+bn.d ()I bs.d ()I !
+bn.valueOf (Ljava/lang/String;)Lbn; bs.valueOf (Ljava/lang/String;)Lbs; ! # modified 0% equal
+bn.values ()[Lbn; bs.values ()[Lbs; !
+bo.h (Let;III)V bt.h (Lfb;III)V ! # modified 90% equal
+bp.a ()Lrf; bu.a ()Lse; !
+bp.a (Leg;)V bu.a (Leo;)V !
+bp.a (Leg;DDD)V bu.a (Leo;DDD)V !
+bp.a (Ljava/lang/String;)V bu.a (Ljava/lang/String;)V !
+bp.a (Ljava/lang/String;Ljava/lang/String;)Z bu.a (Ljava/lang/String;Ljava/lang/String;)Z !
+bp.a (Lrj;DDDF)V bu.a (Lsi;DDDF)V ! # modified 11% equal
+bp.a (Lrj;DDDFF)V bu.a (Lsi;DDDFF)V !
+bp.a (Lsd;)V bu.a (Ltc;)V !
+bp.a (Lto;DDDIIIFFDDD)V bu.a (Lun;DDDIIIFFDDD)V !
+bp.b ()Let; bu.b ()Lfb; !
+bp.b (Lrj;DDDFF)V bu.b (Lsi;DDDFF)V !
+bp.c (Lrj;DDDFF)V bu.c (Lsi;DDDFF)V !
+br.a (DDDFF)V bw.a (DDDFF)V !
+bv.a (D)I ca.a (D)I !
+bv.a ([DDDIIDDD)V ca.a ([DDDIIDDD)V !
+bv.a ([IDD)D ca.a ([IDD)D !
+cd.a ()V ch.a ()V !
+cd.a (Lcd;)Ljava/util/Map; ch.a (Lch;)Ljava/util/Map; !
+cd.a (Lcd;Ljava/io/File;Ljava/io/File;Ljava/io/File;)Ljava/util/Map; ch.a (Lch;Ljava/io/File;Ljava/io/File;Ljava/io/File;)Ljava/util/Map; !
+cd.a (Lcd;Ljava/util/Map;)Ljava/util/Map; ch.a (Lch;Ljava/util/Map;)Ljava/util/Map; !
+cd.a (Lcd;Ljava/util/Map;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V ch.a (Lch;Ljava/util/Map;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V !
+cd.a (Lcd;Z)Z ch.a (Lch;Z)Z !
+cd.a (Ljava/io/File;)Ljava/util/Map; ch.a (Ljava/io/File;)Ljava/util/Map; !
+cd.a (Ljava/io/File;Ljava/io/File;Ljava/io/File;)Ljava/util/Map; ch.a (Ljava/io/File;Ljava/io/File;Ljava/io/File;)Ljava/util/Map; !
+cd.a (Ljava/util/Map;)V ch.a (Ljava/util/Map;)V !
+cd.a (Ljava/util/Map;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V ch.a (Ljava/util/Map;Ljava/io/File;Ljava/io/File;Ljava/io/File;)V !
+cd.b ()Z ch.b ()Z !
+cd.b (Lcd;)Ljava/io/File; ch.b (Lch;)Ljava/io/File; !
+cd.b (Ljava/util/Map;)V ch.b (Ljava/util/Map;)V !
+cd.c ()V ch.c ()V !
+cd.c (Lcd;)Ljava/io/File; ch.c (Lch;)Ljava/io/File; !
+cd.d (Lcd;)Ljava/io/File; ch.d (Lch;)Ljava/io/File; !
+cd.e (Lcd;)Ljava/io/File; ch.e (Lch;)Ljava/io/File; !
+cd.f (Lcd;)Ljava/io/File; ch.f (Lch;)Ljava/io/File; !
+cd.g (Lcd;)Ljava/io/File; ch.g (Lch;)Ljava/io/File; !
+ce.accept (Ljava/io/File;)Z ck.accept (Ljava/io/File;)Z !
+cf.a ()Z cj.a ()Z !
+cf.a (II)Z cj.a (II)Z !
+cf.a (Lcf;II)V cj.a (Lcj;II)V !
+cf.a (ZLwr;)Z cj.a (ZLxs;)Z !
+cf.b ()Z cj.b ()Z !
+cf.b (II)Lkq; cj.b (II)Lli; !
+cf.c ()Ljava/lang/String; cj.c ()Ljava/lang/String; !
+cf.c (II)Lkq; cj.c (II)Lli; !
+ci.a (Let;II)Luy; co.a (Lfb;II)Lvx; !
+ci.a (Let;Ljava/util/List;)Z co.a (Lfb;Ljava/util/List;)Z ! # modified 94% equal
+ci.a (Let;ZZ)I co.a (Lfb;ZZ)I ! # modified 96% equal
+ci.a (Lko;Let;III)Z co.a (Llg;Lfb;III)Z ! # modified 69% equal
+ci.a (Lkw;Let;FFF)V co.a (Llo;Lfb;FFF)V !
+cl.a ()Ljava/lang/String; cr.a ()Ljava/lang/String; !
+cl.b ()F cr.b ()F !
+cl.c ()F cr.c ()F !
+cl.d ()Ljava/lang/String; cr.d ()Ljava/lang/String; !
+cm.a (FF)F cs.a (FF)F !
+cn.a (I)Z ct.a (I)Z !
+cn.a (IIILkr;)F ct.a (IIILlj;)F !
+cn.a (Lod;III)Z ct.a (Loy;III)Z !
+cn.a (Lto;DDDDD)V ct.a (Lun;DDDDD)V !
+cn.a (Lto;DDDI)V ct.a (Lun;DDDI)V !
+cn.a (Lto;I)V ct.a (Lun;I)V !
+cn.a (Lto;IDDD)V ct.a (Lun;IDDD)V !
+cn.a (Lto;III)Z ct.a (Lun;III)Z !
+cn.a (Lto;IIIFFF)Z ct.a (Lun;IIIFFF)Z ! # modified 90% equal
+cn.a (Lto;IIII)V ct.a (Lun;IIII)V !
+cn.a (Lto;Let;III)V ct.a (Lun;Lfb;III)V !
+cn.b (Lto;DDDI)V ct.b (Lun;DDDI)V !
+cn.b (Lto;IDDD)V ct.b (Lun;IDDD)V !
+cn.b (Lto;III)Z ct.b (Lun;III)Z !
+cn.b (Lto;IIIFFF)Z ct.b (Lun;IIIFFF)Z ! # modified 66% equal
+cn.c (Lto;DDDI)V ct.c (Lun;DDDI)V !
+cn.c (Lto;III)Z ct.c (Lun;III)Z !
+cn.c (Lto;IIIFFF)Z ct.c (Lun;IIIFFF)Z !
+cn.d (Lto;DDDI)V ct.d (Lun;DDDI)V !
+cn.d (Lto;III)Z ct.d (Lun;III)Z ! # modified 95% equal
+cn.e (Lto;DDDI)V ct.e (Lun;DDDI)V !
+cn.e (Lto;III)Z ct.e (Lun;III)Z ! # modified 84% equal
+cn.f (Lto;DDDI)V ct.f (Lun;DDDI)V !
+cn.f (Lto;III)Z ct.f (Lun;III)Z !
+cn.g (Lto;III)Z ct.g (Lun;III)Z ! # modified 0% equal
+cn.h (Lto;III)Z ct.h (Lun;III)Z !
+cn.i (Lto;III)Z ct.i (Lun;III)Z ! # modified 4% equal
+cn.j (Lto;III)Z ct.j (Lun;III)Z ! # modified 40% equal
+cn.k (Lto;III)Z ct.k (Lun;III)Z ! # modified 0% equal
+cn.l (Lto;III)Z ct.l (Lun;III)Z ! # modified 78% equal
+cn.m (Lto;III)Z ct.m (Lun;III)Z ! # modified 11% equal
+cn.n (Lto;III)Z ct.n (Lun;III)Z !
+cn.o (Lto;III)Z ct.o (Lun;III)Z !
+cn.p (Lto;III)Z ct.p (Lun;III)Z !
+co.valueOf (Ljava/lang/String;)Lco; cu.valueOf (Ljava/lang/String;)Lcu; ! # modified 0% equal
+co.values ()[Lco; cu.values ()[Lcu; !
+cp.a ()Z cv.a ()Z ! # modified 80% equal
+cq.a ()Ljava/lang/String; cw.a ()Ljava/lang/String; !
+cq.a (Ljava/lang/String;)V cw.a (Ljava/lang/String;)V !
+cq.b ()Z cw.b ()Z !
+cq.d ()V cw.d ()V !
+cr.a ()V cx.a ()V !
+cr.a (Ljava/io/File;Ljava/lang/String;)V cx.a (Ljava/io/File;Ljava/lang/String;)V ! # modified 87% equal
+cr.a (Ljava/net/URL;Ljava/io/File;J)V cx.a (Ljava/net/URL;Ljava/io/File;J)V !
+cr.a (Ljava/net/URL;Ljava/lang/String;JI)V cx.a (Ljava/net/URL;Ljava/lang/String;JI)V !
+cr.b ()V cx.b ()V !
+cr.run ()V cx.run ()V !
+cs.a ()V cy.b ()V !
+cs.a (CI)V cy.a (CI)V !
+cs.a (I)V cy.a (I)V !
+cs.a (IIF)V cy.a (IIF)V !
+cs.a (III)V cy.a (III)V !
+cs.a (Ljk;)V cy.a (Lka;)V !
+cs.a (Lnet/minecraft/client/Minecraft;II)V cy.a (Lnet/minecraft/client/Minecraft;II)V !
+cs.a (ZI)V cy.a (ZI)V !
+cs.b ()Z cy.c ()Z !
+cs.b (I)V cy.b (I)V !
+cs.b (III)V cy.b (III)V !
+cs.c ()Ljava/lang/String; cy.d ()Ljava/lang/String; ! # modified 66% equal
+cs.d ()V cy.e ()V !
+cs.e ()V cy.f ()V !
+cs.f ()V cy.g ()V !
+cs.g ()V cy.a ()V !
+cs.h ()V cy.h ()V !
+cs.i ()V cy.i ()V !
+cs.j ()V cy.j ()V !
+ct.a (Let;IIIZ)Z cz.a (Lfb;IIIZ)Z !
+cu.a (IZ)V da.a (IZ)V !
+cu.a (Ljava/lang/String;)V da.a (Ljava/lang/String;)V !
+cu.b_ (I)V da.b_ (I)V ! # modified 40% equal
+cu.n_ ()V da.n_ ()V !
+cu.s ()I da.s ()I !
+cz.a ()V df.a ()V !
+cz.a (Lrj;)Lbm; df.a (Lsi;)Lbr; !
+cz.b ()Z df.b ()Z !
+cz.c ()Ld; df.c ()Ld; !
+d.a ()Z d.a ()Z =
+d.a (III)I d.a (III)I =
+d.a (Ld;)F d.a (Ld;)F =
+d.equals (Ljava/lang/Object;)Z d.equals (Ljava/lang/Object;)Z =
+d.hashCode ()I d.hashCode ()I =
+d.toString ()Ljava/lang/String; d.toString ()Ljava/lang/String; =
+dc.a ()V di.a ()V !
+dc.a (I)I di.a (I)I !
+dc.a (III)V di.a (III)V !
+dc.a (Lrj;)F di.a (Lsi;)F !
+dc.a (Lxd;)V di.a (Lye;)V !
+dc.b ()V di.b ()V !
+dc.c ()V di.c ()V !
+dc.d ()V di.d ()V !
+dc.e ()Z di.e ()Z !
+dc.f ()V di.f ()V !
+dc.g ()V di.g ()V !
+dd.a (Ljava/util/Random;)I dj.a (Ljava/util/Random;)I !
+dd.a (Z)V dj.a (Z)V !
+dd.c_ (I)V dj.c_ (I)V !
+dd.r ()Z dj.r ()Z !
+dd.r_ ()I dj.r_ ()I !
+df.a ()V dl.a ()V !
+df.a (III)V dl.a (IIIII)V ! # modified 25% equal
+df.a (IIII)V dl.a (IIII)V !
+df.a (Let;)V dl.a (Lfb;)V !
+df.a (Lrj;F)V dl.a (Lsi;F)V !
+df.a (Lwm;)V dl.a (Lxn;)V ! # modified 0% equal
+df.b ()Ljava/lang/String; dl.b ()Ljava/lang/String; !
+df.b (Lrj;F)V dl.b (Lsi;F)V !
+dg.a (Ljava/lang/String;)Ljava/lang/String; dm.a (Ljava/lang/String;)Ljava/lang/String; !
+dg.a (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; dm.a (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; !
+dj.a (DDDDDD)Z dp.a (DDDDDD)Z !
+dk.a (Lgh;DDD)V dq.a (Lgq;DDD)V !
+dk.a (Lgh;DDDFF)V dq.a (Lgq;DDDFF)V !
+dk.a (Lgh;F)V dq.a (Lgq;F)V ! # modified 72% equal
+dk.a (Lgh;FFF)V dq.a (Lgq;FFF)V !
+dk.a (Lgh;IF)Z dq.a (Lgq;IF)Z !
+dk.b ()V dq.b ()V !
+dk.b (Lgh;DDD)V dq.b (Lgq;DDD)V !
+dk.b (Lgh;F)V dq.b (Lgq;F)V !
+dl.a ()I dr.a ()I !
+dl.a (Llu;)Z dr.a (Lmm;)Z !
+dl.b ()Lii; dr.b ()Liw; !
+dl.b (Llu;)Lii; dr.b (Lmm;)Liw; !
+dm.a ()V ds.a ()V !
+dm.a (F)V ds.a (F)V !
+dn.a (II)V dt.a (II)V !
+dn.a (Ldn;)Lnet/minecraft/client/Minecraft; dt.a (Ldt;)Lnet/minecraft/client/Minecraft; !
+dn.a (Ldn;III)V dt.a (Ldt;III)V !
+dn.a (Ldn;IIII)V dt.a (Ldt;IIII)V !
+dn.a (Ldn;IIIIII)V dt.a (Ldt;IIIIII)V !
+dn.b (Ldn;)Lrf; dt.b (Ldt;)Lse; !
+dn.b (Ldn;IIIIII)V dt.b (Ldt;IIIIII)V !
+dn.c (III)V dt.c (III)V !
+dn.c (IIII)V dt.c (IIII)V !
+dn.c (Ldn;)Lvy; dt.c (Ldt;)Lwz; !
+dn.d (Ldn;)Lrf; dt.d (Ldt;)Lse; !
+dn.e (Ldn;)Lrf; dt.e (Ldt;)Lse; !
+dn.f (Ldn;)Lnet/minecraft/client/Minecraft; dt.f (Ldt;)Lnet/minecraft/client/Minecraft; !
+dn.g (Ldn;)Lnet/minecraft/client/Minecraft; dt.g (Ldt;)Lnet/minecraft/client/Minecraft; !
+dn.h (Ldn;)Lrf; dt.h (Ldt;)Lse; !
+dn.i (Ldn;)Lrf; dt.i (Ldt;)Lse; !
+dn.j (Ldn;)Lrf; dt.j (Ldt;)Lse; !
+dn.k ()V dt.k ()V !
+dn.k (Ldn;)Lrf; dt.k (Ldt;)Lse; !
+dn.l (Ldn;)Lrf; dt.l (Ldt;)Lse; !
+dn.m (Ldn;)Lrf; dt.m (Ldt;)Lse; !
+dn.n (Ldn;)Lrf; dt.n (Ldt;)Lse; !
+dn.o (Ldn;)Lrf; dt.o (Ldt;)Lse; !
+do.a ()V du.a ()V !
+do.a (I)Lii; du.a (I)Liw; !
+do.a (II)V du.a (II)V !
+do.a (IIZLgh;)Lii; du.a (IIZLgq;)Liw; ! # modified 52% equal
+do.a (ILii;)V du.a (ILiw;)V !
+do.a (Lge;)V du.a (Lgn;)V !
+do.a (Lgh;)V du.a (Lgq;)V !
+do.a (Lih;)S du.a (Liu;)S !
+do.a (Lla;)V du.a (Lls;)V !
+do.a (S)V du.a (S)V !
+do.a ([Lii;)V du.a ([Liw;)V !
+do.b (I)Lge; du.b (I)Lgn; !
+do.b (Lgh;)Z du.b (Lgq;)Z !
+do.b (S)V du.b (S)V !
+dp.a (Lpv;DDDFF)V dw.a (Lqq;DDDFF)V !
+dp.a (Lpv;FF)V dw.a (Lqq;FF)V !
+dp.a (Lpv;IIII)V dw.a (Lqq;IIII)V !
+dq.a ()Ljava/io/File; dx.a ()Ljava/io/File; !
+dq.a (Ldq;)I dx.a (Ldx;)I !
+dq.b ()I dx.b ()I !
+dq.c ()I dx.c ()I !
+dq.compareTo (Ljava/lang/Object;)I dx.compareTo (Ljava/lang/Object;)I !
+ds.valueOf (Ljava/lang/String;)Lds; dz.valueOf (Ljava/lang/String;)Ldz; ! # modified 0% equal
+ds.values ()[Lds; dz.values ()[Ldz; !
+dt.a (Ldo;II)V ea.a (Ldu;II)V !
+dt.a (Ldo;ILii;)V ea.a (Ldu;ILiw;)V !
+du.a ()Lpf; eb.a ()Lqa; !
+du.a (Lkf;)Ldu; eb.a (Lkx;)Leb; !
+dv.c (I)I ec.c (I)I !
+dv.d (I)I ec.d (I)I !
+dy.a ()Lmy; eg.a ()Lnq; !
+dy.a (I)V eg.a (I)V !
+dy.a (III)V eg.a (III)V !
+dy.a (J)V eg.a (J)V !
+dy.a (Ljava/lang/String;)V eg.a (Ljava/lang/String;)V !
+dy.a (Ljava/util/List;)Lmy; eg.a (Ljava/util/List;)Lnq; !
+dy.a (Lmy;)V eg.a (Lnq;)V !
+dy.a (Lmy;Lmy;)V eg.a (Lnq;Lnq;)V !
+dy.a (Z)V eg.a (Z)V !
+dy.b ()J eg.b ()J !
+dy.b (I)V eg.b (I)V !
+dy.b (J)V eg.b (J)V !
+dy.b (Z)V eg.b (Z)V !
+dy.c ()I eg.c ()I !
+dy.c (I)V eg.c (I)V !
+dy.d ()I eg.d ()I !
+dy.d (I)V eg.d (I)V !
+dy.e ()I eg.e ()I !
+dy.e (I)V eg.e (I)V !
+dy.f ()J eg.f ()J !
+dy.f (I)V eg.f (I)V !
+dy.g ()J eg.g ()J !
+dy.h ()Lmy; eg.h ()Lnq; !
+dy.i ()I eg.i ()I !
+dy.j ()Ljava/lang/String; eg.j ()Ljava/lang/String; !
+dy.k ()I eg.k ()I !
+dy.l ()J eg.l ()J !
+dy.m ()Z eg.m ()Z !
+dy.n ()I eg.n ()I !
+dy.o ()Z eg.o ()Z !
+dy.p ()I eg.p ()I !
+e.h (Let;III)Z e.h (Lfb;III)Z !
+eb.a (Lgj;Ljava/io/Writer;)V ej.a (Lgs;Ljava/io/Writer;)V !
+eb.a (Lpf;Ljava/io/Writer;)V ej.a (Lqa;Ljava/io/Writer;)V !
+ef.a ()V en.a ()V !
+eg.a ()V eo.b ()V !
+eg.a (DDD)Leg; eo.a (DDD)Leo; !
+eg.a (DDDDDD)Leg; eo.a (DDDDDD)Leo; !
+eg.a (Lbm;)Z eo.a (Lbr;)Z !
+eg.a (Lbm;Lbm;)Lty; eo.a (Lbr;Lbr;)Lux; !
+eg.a (Leg;)Z eo.a (Leo;)Z !
+eg.a (Leg;D)D eo.a (Leo;D)D !
+eg.b ()D eo.c ()D !
+eg.b (DDD)Leg; eo.b (DDD)Leo; !
+eg.b (DDDDDD)Leg; eo.b (DDDDDD)Leo; !
+eg.b (Lbm;)Z eo.b (Lbr;)Z !
+eg.b (Leg;)V eo.b (Leo;)V !
+eg.b (Leg;D)D eo.b (Leo;D)D !
+eg.c ()Leg; eo.d ()Leo; !
+eg.c (DDD)Leg; eo.c (DDD)Leo; !
+eg.c (DDDDDD)Leg; eo.c (DDDDDD)Leo; !
+eg.c (Lbm;)Z eo.c (Lbr;)Z !
+eg.c (Leg;D)D eo.c (Leo;D)D !
+eg.d (DDD)Leg; eo.d (DDD)Leo; !
+eg.d (Lbm;)Z eo.d (Lbr;)Z !
+eg.toString ()Ljava/lang/String; eo.toString ()Ljava/lang/String; !
+eh.a (Ljava/util/Random;)Lii; ep.a (Ljava/util/Random;)Liw; !
+eh.b (Ljava/util/Random;)Ljava/lang/String; ep.b (Ljava/util/Random;)Ljava/lang/String; !
+ei.a (Lwj;DDDFF)V eq.a (Lxk;DDDFF)V !
+ei.a (Lwj;F)V eq.a (Lxk;F)V !
+ei.a (Lwj;FFF)V eq.a (Lxk;FFF)V !
+ei.b (Lwj;F)F eq.b (Lxk;F)F !
+ej.a ()I er.a ()I !
+ej.b ()I er.b ()I !
+em.a (IIIZ)I eu.a (IIIZ)I ! # modified 80% equal
+em.d (III)I eu.d (III)I !
+eo.a ()Leo; ew.a ()Lew; !
+eo.a (I)Lii; ew.a (I)Liw; !
+eo.a (ILii;)V ew.a (ILiw;)V !
+eo.b ()Ljava/util/Map; ew.b ()Ljava/util/Map; !
+et.A ()Z fb.A ()Z !
+et.B ()Z fb.B ()Z !
+et.C ()Z fb.C ()Z !
+et.D ()V fb.D ()V ! # modified 0% equal
+et.E ()V fb.E ()V !
+et.F ()V fb.F ()V !
+et.a (DDDD)Lgh; fb.a (DDDD)Lgq; !
+et.a (DDDLjava/lang/String;FF)V fb.a (DDDLjava/lang/String;FF)V !
+et.a (F)I fb.a (F)I !
+et.a (I)Z fb.a (I)Z !
+et.a (II)I fb.a (II)I !
+et.a (IIII)Z fb.b (IIII)Z !
+et.a (IIIII)Z fb.a (IIIII)Z !
+et.a (IIIIII)Z fb.a (IIIIII)Z !
+et.a (IIIIII[B)V fb.a (IIIIII[B)V !
+et.a (IIIIZ)Z fb.a (IIIIZI)Z ! # modified 17% equal
+et.a (IIILnx;)V fb.a (IIILos;)V !
+et.a (IIIZ)I fb.a (IIIZ)I ! # modified 70% equal
+et.a (J)V fb.a (J)V !
+et.a (Lbk;)V fb.a (Lbp;)V !
+et.a (Lbm;Lbm;)Lty; fb.a (Lbr;Lbr;)Lux; ! # modified 0% equal
+et.a (Lbm;Lbm;Z)Lty; fb.a (Lbr;Lbr;Z)Lux; ! # modified 0% equal
+et.a (Lbm;Leg;)F fb.a (Lbr;Leo;)F !
+et.a (Lds;III)I fb.a (Ldz;III)I !
+et.a (Lds;IIII)V fb.a (Ldz;IIII)V !
+et.a (Lds;IIIIII)V fb.a (Ldz;IIIIII)V !
+et.a (Lds;IIIIIIZ)V fb.a (Ldz;IIIIIIZ)V ! # modified 95% equal
+et.a (Leg;)Z fb.a (Leo;)Z !
+et.a (Leg;Lkr;)Z fb.a (Leo;Llj;)Z !
+et.a (Leg;Lkr;Lrj;)Z fb.a (Leo;Llj;Lsi;)Z !
+et.a (Lgh;)V fb.a (Lgq;)V !
+et.a (Lgh;III)Z fb.a (Lgq;III)Z !
+et.a (Ljava/lang/Class;)Lrj; fb.a (Ljava/lang/Class;)Lsi; !
+et.a (Ljava/lang/Class;Leg;)Ljava/util/List; fb.a (Ljava/lang/Class;Leo;)Ljava/util/List; !
+et.a (Ljava/lang/String;)Lgh; fb.a (Ljava/lang/String;)Lgq; !
+et.a (Ljava/lang/String;DDDDDD)V fb.a (Ljava/lang/String;DDDDDD)V !
+et.a (Ljava/lang/String;III)V fb.a (Ljava/lang/String;III)V !
+et.a (Ljava/util/List;)V fb.a (Ljava/util/List;)V !
+et.a (Lon;)V fb.a (Lpi;)V !
+et.a (Lrj;)Z fb.a (Lsi;)Z !
+et.a (Lrj;B)V fb.a (Lsi;B)V !
+et.a (Lrj;D)Lgh; fb.a (Lsi;D)Lgq; !
+et.a (Lrj;DDDF)Lpx; fb.a (Lsi;DDDF)Lqs; !
+et.a (Lrj;DDDFZ)Lpx; fb.a (Lsi;DDDFZ)Lqs; !
+et.a (Lrj;F)Lbm; fb.a (Lsi;F)Lbr; !
+et.a (Lrj;IIIF)Lcz; fb.a (Lsi;IIIF)Ldf; !
+et.a (Lrj;Leg;)Ljava/util/List; fb.a (Lsi;Leo;)Ljava/util/List; !
+et.a (Lrj;Ljava/lang/String;FF)V fb.a (Lsi;Ljava/lang/String;FF)V !
+et.a (Lrj;Lrj;F)Lcz; fb.a (Lsi;Lsi;F)Ldf; !
+et.a (Lrj;Z)V fb.a (Lsi;Z)V !
+et.a (Lwr;)V fb.a (Lxs;)V !
+et.a (Z)Z fb.a (Z)Z !
+et.a (ZLwr;)V fb.a (ZLxs;)V !
+et.a (ZZ)V fb.a (ZZ)V !
+et.b ()Lcf; fb.b ()Lcj; ! # modified 0% equal
+et.b (F)F fb.b (F)F !
+et.b (II)Lkq; fb.b (II)Lli; !
+et.b (IIII)Z fb.c (IIII)Z !
+et.b (IIIII)Z fb.b (IIIII)Z !
+et.b (IIIIII)V fb.b (IIIIII)V !
+et.b (IIILnx;)V fb.b (IIILos;)V !
+et.b (Lds;IIII)V fb.b (Ldz;IIII)V !
+et.b (Leg;)Z fb.b (Leo;)Z !
+et.b (Leg;Lkr;)Z fb.b (Leo;Llj;)Z !
+et.b (Ljava/lang/Class;)I fb.b (Ljava/lang/Class;)I !
+et.b (Ljava/util/List;)V fb.b (Ljava/util/List;)V !
+et.b (Lon;)V fb.b (Lpi;)V !
+et.b (Lrj;)Z fb.b (Lsi;)Z !
+et.b (Lrj;Leg;)Ljava/util/List; fb.b (Lsi;Leo;)Ljava/util/List; !
+et.c ()V fb.c ()V !
+et.c (F)Lbm; fb.c (F)Lbr; !
+et.c (II)Lkq; fb.c (II)Lli; !
+et.c (IIII)V fb.d (IIII)V ! # modified 33% equal
+et.c (IIIII)V fb.c (IIIII)V !
+et.c (Leg;)Z fb.c (Leo;)Z !
+et.c (Lrj;)V fb.c (Lsi;)V !
+et.d ()V fb.d ()V !
+et.d (F)Lbm; fb.d (F)Lbr; !
+et.d (II)I fb.d (II)I !
+et.d (III)Z fb.d (III)Z !
+et.d (IIII)Z fb.e (IIII)Z !
+et.d (IIIII)V fb.d (IIIII)V !
+et.d (Lrj;)V fb.d (Lsi;)V !
+et.e ()V fb.e ()V !
+et.e (F)F fb.e (F)F !
+et.e (II)I fb.e (II)I ! # modified 36% equal
+et.e (IIII)Z fb.f (IIII)Z !
+et.e (Lrj;)V fb.e (Lsi;)V !
+et.f ()Z fb.f ()Z !
+et.f (F)F fb.f (F)F !
+et.f (II)Z fb.f (II)Z !
+et.f (IIII)V fb.g (IIII)V !
+et.f (Lrj;)V fb.f (Lsi;)V !
+et.g ()V fb.g ()V !
+et.g (F)F fb.g (F)F !
+et.g (IIII)V fb.h (IIII)V !
+et.g (Lrj;)V fb.g (Lsi;)V !
+et.h ()Ljava/lang/String; fb.h ()Ljava/lang/String; !
+et.h (F)V fb.h (F)V !
+et.h (III)Z fb.i (III)Z !
+et.h (IIII)V fb.i (IIII)V !
+et.i ()Ljava/lang/String; fb.i ()Ljava/lang/String; !
+et.i (III)V fb.j (III)V !
+et.i (IIII)V fb.a (Lgq;IIII)V ! # modified 20% equal
+et.j ()Z fb.j ()Z !
+et.j (III)V fb.k (III)V !
+et.j (IIII)Z fb.j (IIII)Z !
+et.k ()V fb.k ()V !
+et.k (III)Z fb.l (III)Z !
+et.k (IIII)Z fb.k (IIII)Z ! # modified 80% equal
+et.l ()V fb.l ()V !
+et.l (III)I fb.n (III)I !
+et.l (IIII)V fb.l (IIII)V !
+et.m ()V fb.m ()V !
+et.m (III)Z fb.o (III)Z !
+et.n ()V fb.n ()V ! # modified 85% equal
+et.n (III)V fb.p (III)V !
+et.o ()Ljava/util/List; fb.o ()Ljava/util/List; !
+et.o (III)V fb.q (III)V !
+et.p ()V fb.p ()V !
+et.p (III)Z fb.r (III)Z !
+et.q ()V fb.q ()V !
+et.q (III)Z fb.s (III)Z !
+et.r ()V fb.r ()V !
+et.r (III)Z fb.t (III)Z !
+et.s ()J fb.s ()J !
+et.t ()J fb.t ()J !
+et.u ()Lbk; fb.u ()Lbp; !
+et.v ()V fb.v ()V !
+et.w ()Lcf; fb.w ()Lcj; !
+et.x ()Ldy; fb.x ()Leg; !
+et.y ()V fb.y ()V !
+et.z ()V fb.z ()V !
+eu.a (Lfo;DDDFF)V fc.a (Lfx;DDDFF)V !
+ex.a (F)V ff.a (F)V !
+ex.b (F)V ff.b (F)V !
+ez.a (Lmp;Ljava/lang/String;)Ljava/lang/String; fh.a (Lnh;Ljava/lang/String;)Ljava/lang/String; !
+ez.k ()V fh.k ()V !
+f.a ()Lpb; f.a ()Lpw; !
+fc.a ()Ljava/io/File; fk.a ()Ljava/io/File; !
+fc.d ()V fk.d ()V !
+fd.e (Let;IIII)V fm.a_ (Lfb;IIII)V ! # modified 0% equal
+fe.a ()Ljava/lang/String; fn.a ()Ljava/lang/String; ! # modified 85% equal
+fi.a (Lfi;)Lnet/minecraft/client/Minecraft; fq.a (Lfq;)Lnet/minecraft/client/Minecraft; !
+fi.b (Lfi;)Lnet/minecraft/client/Minecraft; fq.b (Lfq;)Lnet/minecraft/client/Minecraft; !
+fi.c (Lfi;)Lnet/minecraft/client/Minecraft; fq.c (Lfq;)Lnet/minecraft/client/Minecraft; !
+fi.d (Lfi;)Lnet/minecraft/client/Minecraft; fq.d (Lfq;)Lnet/minecraft/client/Minecraft; !
+fi.e (Lfi;)Lnet/minecraft/client/Minecraft; fq.e (Lfq;)Lnet/minecraft/client/Minecraft; !
+fi.f (Lfi;)Lnet/minecraft/client/Minecraft; fq.f (Lfq;)Lnet/minecraft/client/Minecraft; !
+fi.g (Lfi;)Lnet/minecraft/client/Minecraft; fq.g (Lfq;)Lnet/minecraft/client/Minecraft; !
+fi.h (Lfi;)Lnet/minecraft/client/Minecraft; fq.h (Lfq;)Lnet/minecraft/client/Minecraft; !
+fi.i (Lfi;)Lnet/minecraft/client/Minecraft; fq.i (Lfq;)Lnet/minecraft/client/Minecraft; !
+fi.j (Lfi;)Lrf; fq.j (Lfq;)Lse; !
+fi.k (Lfi;)Lrf; fq.k (Lfq;)Lse; !
+fi.l (Lfi;)Lrf; fq.l (Lfq;)Lse; !
+fk.a (Lcf;Let;II[B)V ft.a (Lcj;Lfb;II[B)V !
+fk.a (Let;IIII[B)V ft.a (Lfb;IIII[B)V !
+fl.a (III)Ld; fu.a (III)Ld; !
+fl.a (Ld;Ld;)Lcz; fu.a (Ld;Ld;)Ldf; !
+fl.a (Lrj;DDDF)Lcz; fu.a (Lsi;DDDF)Ldf; !
+fl.a (Lrj;IIIF)Lcz; fu.a (Lsi;IIIF)Ldf; !
+fl.a (Lrj;IIILd;)I fu.a (Lsi;IIILd;)I !
+fl.a (Lrj;IIILd;I)Ld; fu.a (Lsi;IIILd;I)Ld; !
+fl.a (Lrj;Ld;Ld;Ld;F)Lcz; fu.a (Lsi;Ld;Ld;Ld;F)Ldf; !
+fl.a (Lrj;Lrj;F)Lcz; fu.a (Lsi;Lsi;F)Ldf; !
+fl.b (Lrj;Ld;Ld;Ld;F)I fu.b (Lsi;Ld;Ld;Ld;F)I !
+fn.paint (Ljava/awt/Graphics;)V fw.paint (Ljava/awt/Graphics;)V !
+fq.a_ (F)F fz.a_ (F)F !
+fq.e (I)V fz.e (I)V !
+fq.s ()Z fz.s ()Z !
+fq.w ()I fz.v ()I !
+ft.a ()V gc.a ()V !
+ft.a (I)I gc.a (I)I !
+ft.a (Ljava/nio/IntBuffer;)V gc.a (Ljava/nio/IntBuffer;)V !
+ft.b (I)Ljava/nio/ByteBuffer; gc.c (I)Ljava/nio/ByteBuffer; !
+ft.c (I)Ljava/nio/IntBuffer; gc.d (I)Ljava/nio/IntBuffer; !
+ft.d (I)Ljava/nio/FloatBuffer; gc.e (I)Ljava/nio/FloatBuffer; !
+fu.a (Lss;Lss;)I gd.a (Ltr;Ltr;)I !
+fu.compare (Ljava/lang/Object;Ljava/lang/Object;)I gd.compare (Ljava/lang/Object;Ljava/lang/Object;)I !
+fw.k ()V gf.k ()V !
+fx.A ()F gg.z ()F !
+fx.B ()Ljava/lang/String; gg.A ()Ljava/lang/String; !
+fx.C ()Z gg.B ()Z !
+fx.D ()Z gg.C ()Z !
+fx.E ()Z gg.D ()Z !
+fx.a (FF)F gg.a (FF)F !
+fx.a (Ljava/lang/String;)V gg.a (Ljava/lang/String;)V !
+fx.a (Z)V gg.a (Z)V !
+fx.b (Lrj;F)V gg.c (Lsi;F)V ! # modified 85% equal
+fx.b (Z)V gg.b (Z)V !
+fx.b_ (F)F gg.b_ (F)F !
+fx.c (F)F gg.c (F)F !
+fx.c (Z)V gg.c (Z)V !
+fx.d (Z)V gg.d (Z)V !
+fx.w ()Z gg.v ()Z !
+fz.b_ (Let;III)Z gi.c_ (Lfb;III)Z !
+fz.h (Let;III)V gi.h (Lfb;III)V !
+gb.a ()Ljava/lang/String; gk.a ()Ljava/lang/String; !
+gb.a (I)I gk.a (I)I !
+gb.a (II)Lgb; gk.a (II)Lgk; !
+gb.a (Lgb;)Lgb; gk.a (Lgk;)Lgk; !
+gb.a (Lii;)Ljava/lang/String; gk.a (Liw;)Ljava/lang/String; !
+gb.a (Lii;IIIILkw;)Z gk.a (Liw;IIIILlo;)Z !
+gb.a (Lii;Let;Lgh;)Lii; gk.a (Liw;Lfb;Lgq;)Liw; !
+gb.a (Lii;Lgh;Let;IIII)Z gk.a (Liw;Lgq;Lfb;IIII)Z !
+gb.a (Lii;Lkw;)V gk.a (Liw;Llo;)V !
+gb.a (Lii;Lkw;Lkw;)Z gk.a (Liw;Llo;Llo;)Z !
+gb.a (Lii;Lto;)F gk.a (Liw;Lun;)F !
+gb.a (Ljava/lang/String;)Lgb; gk.a (Ljava/lang/String;)Lgk; !
+gb.a (Lrj;)I gk.a (Lsi;)I !
+gb.a (Lto;)Z gk.a (Lun;)Z !
+gb.a (Z)Lgb; gk.a (Z)Lgk; !
+gb.b ()Z gk.b ()Z !
+gb.b (I)I gk.b (I)I !
+gb.b (Lii;)I gk.b (Liw;)I !
+gb.c ()Z gk.c ()Z !
+gb.c (I)Lgb; gk.c (I)Lgk; !
+gb.d ()I gk.d ()I !
+gb.d (I)Lgb; gk.d (I)Lgk; !
+gb.e ()Z gk.e ()Z !
+gb.e (I)Lgb; gk.e (I)Lgk; !
+gb.f ()I gk.f ()I !
+gb.f (I)I gk.f (I)I !
+gb.g ()Z gk.g ()Z !
+gb.h ()Lgb; gk.h ()Lgk; !
+gb.i ()Lgb; gk.i ()Lgk; !
+gb.j ()Z gk.j ()Z !
+gb.k ()Ljava/lang/String; gk.k ()Ljava/lang/String; !
+gc.a (Lja;DDDFF)V gl.a (Ljq;DDDFF)V !
+ge.a ()Lii; gn.a ()Liw; !
+ge.a (I)Lii; gn.a (I)Liw; !
+ge.a (Lii;)V gn.a (Liw;)V !
+ge.b ()Z gn.b ()Z !
+ge.b (Lii;)Z gn.b (Liw;)Z !
+ge.c ()V gn.c ()V !
+ge.c (Lii;)V gn.c (Liw;)V !
+ge.d ()I gn.d ()I !
+ge.e ()I gn.e ()I !
+gh.D ()I gq.C ()I !
+gh.E ()V gq.D ()V !
+gh.F ()V gq.E ()V !
+gh.G ()Z gq.F ()Z !
+gh.H ()Lii; gq.G ()Liw; !
+gh.I ()V gq.H ()V !
+gh.K ()V gq.J ()V !
+gh.N ()F gq.M ()F !
+gh.P ()Z gq.O ()Z !
+gh.Q ()I gq.P ()I !
+gh.R ()Lbk; gq.Q ()Lbp; !
+gh.a (III)V gq.a (III)V !
+gh.a (Lat;)V gq.a (Lay;)V !
+gh.a (Lbk;)V gq.a (Lbp;)V !
+gh.a (Let;Lbk;)Lbk; gq.a (Lfb;Lbp;)Lbp; !
+gh.a (Lgz;)V gq.a (Lhj;)V !
+gh.a (Lii;)V gq.a (Liw;)V !
+gh.a (Lii;Z)V gq.a (Liw;Z)V !
+gh.a (Lkw;Z)V gq.a (Llo;Z)V ! # modified 95% equal
+gh.a (Lla;)V gq.a (Lls;)V !
+gh.a (Lrg;)V gq.a (Lsf;)V !
+gh.a (Lto;)F gq.a (Lun;)F !
+gh.a (Luk;)V gq.a (Lvj;)V !
+gh.a (Luk;I)V gq.a (Lvj;I)V !
+gh.a (Lxa;)V gq.a (Lyb;)V !
+gh.a (ZZZ)V gq.a (ZZZ)V !
+gh.am ()Z gq.am ()Z !
+gh.b (III)Lco; gq.b (III)Lcu; !
+gh.b (Lii;)V gq.b (Liw;)V !
+gh.b (Ljava/lang/String;)V gq.b (Ljava/lang/String;)V !
+gh.b (Lrj;I)V gq.b (Lsi;I)V !
+gh.b (Lto;)Z gq.b (Lun;)Z !
+gh.c (Lrj;)V gq.c (Lsi;)V !
+gh.d (Lrj;)V gq.d (Lsi;)V !
+gh.e (I)V gq.e (I)V !
+gh.h (DDD)V gq.i (DDD)V !
+gh.i (DDD)V gq.j (DDD)V !
+gh.j (Lrj;)V gq.j (Lsi;)V !
+gh.o_ ()V gq.o_ ()V !
+gh.r ()V gq.r ()V !
+gh.w ()V gq.v ()V !
+gi.a (Ljava/lang/String;)Ljava/lang/String; gr.a (Ljava/lang/String;)Ljava/lang/String; !
+gj.a ()Lap; gs.a ()Las; !
+gj.a (Liz;Lgj;[Ljava/lang/Object;)Ljava/lang/Object; gs.a (Ljp;Lgs;[Ljava/lang/Object;)Ljava/lang/Object; !
+gj.a ([Ljava/lang/Object;)Ljava/lang/String; gs.a ([Ljava/lang/Object;)Ljava/lang/String; !
+gj.b ()Ljava/lang/String; gs.b ()Ljava/lang/String; !
+gj.b ([Ljava/lang/Object;)Ljava/util/List; gs.b ([Ljava/lang/Object;)Ljava/util/List; !
+gj.c ()Ljava/util/Map; gs.c ()Ljava/util/Map; !
+gj.d ()Ljava/util/List; gs.d ()Ljava/util/List; !
+gk.a (Ljt;)V gt.a (Lkk;)V !
+gk.a (Lkw;)F gt.a (Llo;)F !
+gk.a (Lkw;DDD)V gt.a (Llo;DDD)V !
+gk.a (Lkw;DDDFF)V gt.a (Llo;DDDFF)V ! # modified 90% equal
+gk.a (Lkw;F)V gt.a (Llo;F)V !
+gk.a (Lkw;FF)I gt.a (Llo;FF)I !
+gk.a (Lkw;FFF)V gt.a (Llo;FFF)V !
+gk.a (Lkw;IF)Z gt.a (Llo;IF)Z !
+gk.a (Lkw;Ljava/lang/String;DDDI)V gt.a (Llo;Ljava/lang/String;DDDI)V !
+gk.b (Lkw;DDD)V gt.b (Llo;DDD)V !
+gk.b (Lkw;F)V gt.b (Llo;F)V !
+gk.b (Lkw;IF)Z gt.b (Llo;IF)Z !
+gk.c (Lkw;F)F gt.c (Llo;F)F !
+gk.d (Lkw;F)F gt.d (Llo;F)F !
+gp.a (Lgy;)V gy.a (Lhi;)V !
+gs.c (Let;IIILjava/util/Random;)V hc.c (Lfb;IIILjava/util/Random;)V !
+gt.a (Ljava/lang/String;)Ljava/lang/String; hd.a (Ljava/lang/String;)Ljava/lang/String; !
+gw.a (Ljava/io/File;Ljava/util/ArrayList;IILwr;)V hg.a (Ljava/io/File;Ljava/util/ArrayList;IILxs;)V !
+gw.a (Ljava/io/File;Ljava/util/ArrayList;Ljava/util/ArrayList;)V hg.a (Ljava/io/File;Ljava/util/ArrayList;Ljava/util/ArrayList;)V !
+gw.a (Ljava/util/ArrayList;IILwr;)V hg.a (Ljava/util/ArrayList;IILxs;)V !
+gx.a (Ljava/io/File;II)Ljava/lang/String; hh.a (Ljava/io/File;II)Ljava/lang/String; !
+gy.a ()Lgy; hi.a ()Lhi; !
+gy.a (Lii;[Ljava/lang/Object;)V hi.a (Liw;[Ljava/lang/Object;)V !
+gy.a (Llu;)Lii; hi.a (Lmm;)Liw; !
+gy.b ()Ljava/util/List; hi.b ()Ljava/util/List; !
+gy.b (Lii;[Ljava/lang/Object;)V hi.b (Liw;[Ljava/lang/Object;)V !
+h.a ()V h.a ()V =
+h.a (Ljava/lang/String;)Ljava/io/InputStream; h.a (Ljava/lang/String;)Ljava/io/InputStream; =
+h.a (Lnet/minecraft/client/Minecraft;)V h.a (Lnet/minecraft/client/Minecraft;)V =
+h.b ()V h.b ()V =
+h.b (Lnet/minecraft/client/Minecraft;)V h.b (Lnet/minecraft/client/Minecraft;)V =
+h.c (Lnet/minecraft/client/Minecraft;)V h.c (Lnet/minecraft/client/Minecraft;)V =
+ha.toString ()Ljava/lang/String; hl.toString ()Ljava/lang/String; !
+he.a ()Lbb; hp.a ()Lbg; !
+he.a (Ljava/lang/String;)Lbb; hp.a (Ljava/lang/String;)Lbg; !
+he.a (Ljava/lang/String;Ljava/io/File;)Lbb; hp.a (Ljava/lang/String;Ljava/io/File;)Lbg; !
+hg.a ()Z hr.a ()Z !
+hg.a (I)Lhg; hr.a (I)Lhr; !
+hg.b ()Z hr.b ()Z !
+hg.c ()I hr.c ()I !
+hg.d ()Ljava/lang/String; hr.d ()Ljava/lang/String; !
+hg.valueOf (Ljava/lang/String;)Lhg; hr.valueOf (Ljava/lang/String;)Lhr; ! # modified 0% equal
+hg.values ()[Lhg; hr.values ()[Lhr; !
+hi.a (Lpp;)V ht.a (Lqk;)V !
+hj.a (Ljava/io/Reader;)Lpf; hv.a (Ljava/io/Reader;)Lqa; !
+hj.a (Ljava/lang/String;)Lpf; hv.a (Ljava/lang/String;)Lqa; !
+hk.close ()V hw.close ()V !
+hl.a (DD)I hx.a (DD)I !
+hm.a (FF)Lhm; hy.a (FF)Lhy; !
+ho.a (F)V ia.a (F)V !
+ho.a (II)Lge; ia.a (II)Lgn; !
+ho.a (Lge;)V ia.a (Lgn;)V !
+ho.a (Lge;II)Z ia.a (Lgn;II)Z !
+ho.k ()V ia.k ()V !
+hs.a ()V ie.a ()V ! # modified 73% equal
+hs.a (I)F ie.a (I)F !
+hs.a (III)V ie.a (III)V !
+hs.a (IIIFBI)V ie.a (IIIFBI)V !
+hs.a ([I[I)I ie.a ([I[I)I ! # modified 84% equal
+hs.a ([I[II)V ie.a ([I[II)V !
+hs.b ()V ie.b ()V !
+hs.b (I)F ie.b (I)F !
+hs.c ()V ie.c ()V !
+hs.c (I)Z ie.c (I)Z !
+hs.d ()V ie.d ()V !
+hs.e ()Z ie.e ()Z !
+ht.F ()Z if.E ()Z !
+ht.G ()Lrj; if.F ()Lsi; !
+ht.a (III)F if.a (III)F !
+ht.a (Lcz;)V if.a (Ldf;)V !
+ht.a (Lrj;F)V if.a (Lsi;F)V !
+ht.c (Lrj;)V if.c (Lsi;)V !
+ht.d_ ()Z if.d_ ()Z !
+ht.f_ ()Lrj; if.f_ ()Lsi; !
+hu.a ()B ig.a ()B !
+hu.a (B)Lhu; ig.a (B)Lig; !
+hu.a (Lhu;Ljava/io/DataOutput;)V ig.a (Lig;Ljava/io/DataOutput;)V !
+hu.a (Ljava/io/DataInput;)V ig.a (Ljava/io/DataInput;)V !
+hu.a (Ljava/io/DataOutput;)V ig.a (Ljava/io/DataOutput;)V !
+hu.a (Ljava/lang/String;)Lhu; ig.a (Ljava/lang/String;)Lig; !
+hu.b ()Ljava/lang/String; ig.b ()Ljava/lang/String; !
+hu.b (B)Ljava/lang/String; ig.b (B)Ljava/lang/String; !
+hu.b (Ljava/io/DataInput;)Lhu; ig.b (Ljava/io/DataInput;)Lig; !
+hv.a ()V ih.a ()V !
+hv.a (Lh;)Z ih.a (Lh;)Z !
+hv.b ()Ljava/util/List; ih.b ()Ljava/util/List; !
+hy.a (D)F ik.a (D)F !
+hy.a (DD)D ik.a (DD)D !
+hy.a (F)F ik.a (F)F !
+hy.a (II)I ik.a (II)I !
+hy.a (Ljava/lang/String;)Z ik.a (Ljava/lang/String;)Z !
+hy.b (D)I ik.b (D)I !
+hy.b (F)F ik.b (F)F !
+hy.c (F)F ik.c (F)F !
+hy.d (F)I ik.d (F)I !
+hy.e (F)F ik.e (F)F !
+hz.openInputStream ()Ljava/io/InputStream; il.openInputStream ()Ljava/io/InputStream; !
+i.toString ()Ljava/lang/String; i.toString ()Ljava/lang/String; =
+ia.a (Lvn;DDDFF)V im.a (Lwn;DDDFF)V !
+ia.a (Lvn;F)F im.a (Lwn;F)F !
+ib.valueOf (Ljava/lang/String;)Lib; in.valueOf (Ljava/lang/String;)Lin; ! # modified 0% equal
+ib.values ()[Lib; in.values ()[Lin; !
+id.a (Llu;IIZ)Z ip.a (Lmm;IIZ)Z !
+if.a (I)Ljava/lang/String; is.a (I)Ljava/lang/String; !
+if.a (Lss;II)V is.a (Ltr;II)V !
+if.a (Lss;IIZ)V is.a (Ltr;IIZ)V !
+if.b (I)Lss; is.b (I)Ltr; !
+if.c (I)V is.c (I)V !
+ih.a (IZ)V iu.a (IZ)V !
+ih.a (Lii;)Z iu.a (Liw;)Z ! # modified 10% equal
+ih.a (Lrj;)I iu.a (Lsi;)I !
+ih.a (Lrl;)Lrl; iu.a (Lsk;)Lsk; !
+ih.a (Lto;)F iu.a (Lun;)F !
+ih.b ()Lii; iu.b ()Liw; !
+ih.b (I)V iu.b (I)V !
+ih.b (Lii;)V iu.b (Liw;)V !
+ih.b (Lrl;)V iu.b (Lsk;)V !
+ih.b (Lto;)Z iu.b (Lun;)Z !
+ih.c (I)Z iu.c (I)Z !
+ih.c (Lii;)I iu.d (Liw;)I !
+ih.d (I)Lii; iu.d (I)Liw; !
+ih.d (Lii;)I iu.e (Liw;)I !
+ih.e ()V iu.e ()V ! # modified 22% equal
+ih.e (I)V iu.e (I)V !
+ih.f ()I iu.f ()I !
+ih.f (I)I iu.f (I)I !
+ih.g ()V iu.g ()V !
+ih.i ()Lii; iu.i ()Liw; !
+ih.j ()I iu.j ()I !
+ii.a ()Lgb; iw.a ()Lgk; !
+ii.a (I)Lii; iw.a (I)Liw; !
+ii.a (IIIILgh;)V iw.a (IIIILgq;)V !
+ii.a (ILrj;)V iw.a (ILsi;)V !
+ii.a (Let;Lgh;)Lii; iw.a (Lfb;Lgq;)Liw; !
+ii.a (Lgh;)V iw.a (Lgq;)V !
+ii.a (Lgh;Let;IIII)Z iw.a (Lgq;Lfb;IIII)Z !
+ii.a (Lii;)Z iw.a (Liw;)Z !
+ii.a (Lii;Lii;)Z iw.a (Liw;Liw;)Z !
+ii.a (Lkw;)V iw.a (Llo;)V !
+ii.a (Lkw;Lgh;)V iw.a (Llo;Lgq;)V !
+ii.a (Lmy;)Lmy; iw.a (Lnq;)Lnq; !
+ii.a (Lrj;)I iw.a (Lsi;)I !
+ii.a (Lto;)F iw.a (Lun;)F !
+ii.b ()I iw.b ()I !
+ii.b (Lii;)Z iw.c (Liw;)Z !
+ii.b (Lmy;)V iw.b (Lnq;)V !
+ii.b (Lto;)Z iw.b (Lun;)Z !
+ii.c ()I iw.c ()I !
+ii.d ()Z iw.d ()Z !
+ii.e ()Z iw.e ()Z !
+ii.f ()Z iw.f ()Z !
+ii.g ()Z iw.g ()Z !
+ii.h ()I iw.h ()I !
+ii.i ()I iw.i ()I !
+ii.j ()I iw.j ()I !
+ii.k ()Lii; iw.k ()Liw; !
+ii.l ()Ljava/lang/String; iw.l ()Ljava/lang/String; !
+ii.toString ()Ljava/lang/String; iw.toString ()Ljava/lang/String; !
+ij.equals (Ljava/lang/Object;)Z ix.equals (Ljava/lang/Object;)Z !
+ij.hashCode ()I ix.hashCode ()I !
+ij.toString ()Ljava/lang/String; ix.toString ()Ljava/lang/String; !
+ik.a (ILet;)Lrj; iz.a (ILfb;)Lsi; ! # modified 75% equal
+ik.a (Ljava/lang/Class;Ljava/lang/String;I)V iz.a (Ljava/lang/Class;Ljava/lang/String;I)V !
+ik.a (Ljava/lang/String;Let;)Lrj; iz.a (Ljava/lang/String;Lfb;)Lsi; ! # modified 80% equal
+ik.a (Lmy;Let;)Lrj; iz.a (Lnq;Lfb;)Lsi; ! # modified 75% equal
+ik.a (Lrj;)I iz.a (Lsi;)I !
+ik.b (Lrj;)Ljava/lang/String; iz.b (Lsi;)Ljava/lang/String; !
+il.a ()Lrf; jb.a ()Lse; !
+il.a (Ljava/lang/String;)V jb.a (Ljava/lang/String;)V !
+il.a (Lkp;)V jb.a (Llh;)V !
+il.a (Lnx;DDDF)V jb.a (Los;DDDF)V !
+in.valueOf (Ljava/lang/String;)Lin; jd.valueOf (Ljava/lang/String;)Ljd; ! # modified 0% equal
+in.values ()[Lin; jd.values ()[Ljd; !
+io.a ()I je.a ()I !
+io.a (DD)I je.a (DD)I !
+io.b ()I je.b ()I !
+ip.a ()V jf.a ()V !
+ip.a (I)V jf.a (I)V !
+ip.a (II)I jf.a (II)I !
+ip.a (Las;)V jf.a (Lav;)V !
+ip.a (Ljava/awt/image/BufferedImage;)I jf.a (Ljava/awt/image/BufferedImage;)I !
+ip.a (Ljava/awt/image/BufferedImage;I)V jf.a (Ljava/awt/image/BufferedImage;I)V ! # modified 96% equal
+ip.a (Ljava/io/InputStream;)Ljava/awt/image/BufferedImage; jf.a (Ljava/io/InputStream;)Ljava/awt/image/BufferedImage; !
+ip.a (Ljava/lang/String;)I jf.b (Ljava/lang/String;)I !
+ip.a (Ljava/lang/String;Ljava/lang/String;)I jf.a (Ljava/lang/String;Ljava/lang/String;)I !
+ip.a (Ljava/lang/String;Lmj;)Lea; jf.a (Ljava/lang/String;Lnb;)Lei; !
+ip.b ()V jf.b ()V !
+ip.b (I)V jf.b (I)V !
+ip.b (II)I jf.b (II)I !
+ip.b (Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage; jf.c (Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage; !
+ip.b (Ljava/lang/String;)V jf.c (Ljava/lang/String;)V !
+is.a ()V ji.a ()V !
+is.a (I)Luk; ji.a (I)Lvj; !
+is.a (Ljava/lang/String;I)[Luk; ji.a (Ljava/lang/String;I)[Lvj; !
+is.a ([Luk;)V ji.a ([Lvj;)V !
+is.a ([Luk;II)V ji.a ([Lvj;II)V !
+is.a ([Luk;Ljava/lang/String;III)[Luk; ji.a ([Lvj;Ljava/lang/String;III)[Lvj; !
+is.b ()V ji.b ()V !
+is.b ([Luk;Ljava/lang/String;III)[Luk; ji.b ([Lvj;Ljava/lang/String;III)[Lvj; !
+is.c ()V ji.c ()V !
+is.d ()V ji.d ()V !
+it.b ()Ljava/util/List; jj.b ()Ljava/util/List; !
+iu.valueOf (Ljava/lang/String;)Liu; jk.valueOf (Ljava/lang/String;)Ljk; ! # modified 0% equal
+iu.values ()[Liu; jk.values ()[Ljk; !
+iv.a (Ldc;Ldc;)I jl.a (Ldi;Ldi;)I ! # modified 27% equal
+iv.compare (Ljava/lang/Object;Ljava/lang/Object;)I jl.compare (Ljava/lang/Object;Ljava/lang/Object;)I !
+ix.h (Let;III)Z jn.h (Lfb;III)Z !
+iz.a ()Ljava/lang/String; jp.a ()Ljava/lang/String; !
+iz.a (Liz;)Liz; jp.a (Ljp;)Ljp; !
+iz.a (Ljava/lang/Object;)Z jp.a (Ljava/lang/Object;)Z !
+iz.b (Ljava/lang/Object;)Ljava/lang/Object; jp.b (Ljava/lang/Object;)Ljava/lang/Object; !
+iz.toString ()Ljava/lang/String; jp.toString ()Ljava/lang/String; !
+ja.k ()Let; jq.k ()Lfb; !
+jd.a ()V jt.a ()V !
+jd.a (I)Ljava/lang/Object; jt.a (I)Ljava/lang/Object; !
+jd.a (II)I jt.a (II)I !
+jd.a (IILjava/lang/Object;I)V jt.a (IILjava/lang/Object;I)V !
+jd.a (ILjava/lang/Object;)V jt.a (ILjava/lang/Object;)V !
+jd.a ([Lve;)V jt.a ([Lwd;)V !
+jd.b (I)Ljava/lang/Object; jt.b (I)Ljava/lang/Object; !
+jd.c (I)Lve; jt.c (I)Lwd; !
+jd.d (I)I jt.d (I)I !
+jd.e (I)I jt.e (I)I !
+jd.f (I)V jt.f (I)V !
+je.a (Lgy;)V ju.a (Lhi;)V !
+jg.a (I)Liz; jw.a (I)Ljp; !
+jg.a (Liz;Liz;)Liz; jw.a (Ljp;Ljp;)Ljp; !
+jg.a (Ljava/lang/String;)Liz; jw.a (Ljava/lang/String;)Ljp; !
+jg.a (Lpb;)Liz; jw.a (Lpw;)Ljp; !
+jg.a ([Ljava/lang/Object;)Liz; jw.a ([Ljava/lang/Object;)Ljp; !
+jg.a ([Ljava/lang/Object;Liz;)Liz; jw.a ([Ljava/lang/Object;Ljp;)Ljp; !
+jg.b (I)Liz; jw.b (I)Ljp; !
+jg.b (Ljava/lang/String;)Liz; jw.b (Ljava/lang/String;)Ljp; !
+jg.b ([Ljava/lang/Object;)Liz; jw.b ([Ljava/lang/Object;)Ljp; !
+jg.c ([Ljava/lang/Object;)Liz; jw.c ([Ljava/lang/Object;)Ljp; !
+jj.a ()V jz.a ()V !
+jj.a (DD)Ljj; jz.a (DD)Ljz; !
+jj.a (F)I jz.a (F)I !
+jj.a (FF)Ljj; jz.a (FF)Ljz; !
+jj.a (I)Ljj; jz.a (I)Ljz; !
+jj.a (Ljava/lang/String;)Ljj; jz.a (Ljava/lang/String;)Ljz; !
+jj.a (Ljava/util/Random;)Loh; jz.a (Ljava/util/Random;)Lpc; !
+jj.a (Lko;)Ljava/util/List; jz.a (Llg;)Ljava/util/List; !
+jj.b ()Ljj; jz.b ()Ljz; !
+jj.b (I)Ljj; jz.b (I)Ljz; !
+jj.c ()Z jz.c ()Z !
+jj.d ()Z jz.d ()Z !
+jj.e ()Ljj; jz.e ()Ljz; !
+jk.a (II)V ka.a (II)V !
+jk.a (Lnet/minecraft/client/Minecraft;II)V ka.a (Lnet/minecraft/client/Minecraft;II)V !
+jk.a (Z)I ka.a (Z)I !
+jk.b (Lnet/minecraft/client/Minecraft;II)V ka.b (Lnet/minecraft/client/Minecraft;II)V !
+jk.c (Lnet/minecraft/client/Minecraft;II)Z ka.c (Lnet/minecraft/client/Minecraft;II)Z !
+jl.a (Lgj;)Z kb.a (Lgs;)Z !
+jl.b (Lgj;)Ljava/util/List; kb.b (Lgs;)Ljava/util/List; !
+jl.toString ()Ljava/lang/String; kb.toString ()Ljava/lang/String; !
+jm.run ()V kc.run ()V !
+jo.a ()I ke.a ()I !
+jo.a (I)Ljo; ke.a (I)Lke; ! # modified 75% equal
+jo.a (IZZLjava/lang/Class;)V ke.a (IZZLjava/lang/Class;)V !
+jo.a (Ljava/io/DataInputStream;)V ke.a (Ljava/io/DataInputStream;)V !
+jo.a (Ljava/io/DataInputStream;I)Ljava/lang/String; ke.a (Ljava/io/DataInputStream;I)Ljava/lang/String; !
+jo.a (Ljava/io/DataInputStream;Z)Ljo; ke.a (Ljava/io/DataInputStream;Z)Lke; ! # modified 93% equal
+jo.a (Ljava/io/DataOutputStream;)V ke.a (Ljava/io/DataOutputStream;)V !
+jo.a (Ljava/lang/String;Ljava/io/DataOutputStream;)V ke.a (Ljava/lang/String;Ljava/io/DataOutputStream;)V !
+jo.a (Ljo;Ljava/io/DataOutputStream;)V ke.a (Lke;Ljava/io/DataOutputStream;)V !
+jo.a (Lse;)V ke.a (Ltd;)V !
+jo.c ()I ke.c ()I !
+jq.a (Lgj;)Z kg.a (Lgs;)Z !
+jq.b (Lgj;)Ljava/lang/String; kg.b (Lgs;)Ljava/lang/String; !
+jq.toString ()Ljava/lang/String; kg.toString ()Ljava/lang/String; !
+jr.a (Lby;DDDFF)V kh.a (Lcd;DDDFF)V !
+jt.a (FFFFFF)V kk.a (FFFFFF)V !
+jt.a (Lkw;FFF)V kk.a (Llo;FFF)V !
+jt.b (FFFFFF)V kk.b (FFFFFF)V !
+jv.windowClosing (Ljava/awt/event/WindowEvent;)V kf.windowClosing (Ljava/awt/event/WindowEvent;)V !
+jw.equals (Ljava/lang/Object;)Z kn.equals (Ljava/lang/Object;)Z !
+jw.hashCode ()I kn.hashCode ()I !
+jw.toString ()Ljava/lang/String; kn.toString ()Ljava/lang/String; !
+jz.a ()V kr.a ()V ! # modified 91% equal
+jz.a (I)Ljava/lang/String; kr.a (I)Ljava/lang/String; !
+jz.a (II)V kr.a (II)V !
+jz.a (Lhg;)F kr.a (Lhr;)F !
+jz.a (Lhg;F)V kr.a (Lhr;F)V !
+jz.a (Lhg;I)V kr.a (Lhr;I)V !
+jz.a (Ljava/lang/String;)F kr.a (Ljava/lang/String;)F !
+jz.b ()V kr.b ()V ! # modified 66% equal
+jz.b (I)Ljava/lang/String; kr.b (I)Ljava/lang/String; !
+jz.b (Lhg;)Z kr.b (Lhr;)Z !
+jz.c (Lhg;)Ljava/lang/String; kr.c (Lhr;)Ljava/lang/String; !
+ka.a ()V ks.a ()V !
+ka.a (Ldm;)V ks.a (Lds;)V !
+ka.b ()V ks.b ()V !
+kb.a (Lkq;)V kt.a (Lli;)V !
+kb.b (Lkq;)V kt.b (Lli;)V !
+kb.d (II)V kt.d (II)V !
+kb.e (II)Z kt.e (II)Z !
+kb.f (II)Lkq; kt.f (II)Lli; !
+kc.a (Ldl;Ldl;)I ku.a (Ldr;Ldr;)I !
+kc.compare (Ljava/lang/Object;Ljava/lang/Object;)I ku.compare (Ljava/lang/Object;Ljava/lang/Object;)I !
+kf.b ()Lgj; kx.b ()Lgs; !
+ki.a (Let;IIIZ)V la.a (Lfb;IIIZ)V ! # modified 73% equal
+ki.c (I)V la.c (I)V !
+ki.d (I)I la.d (I)I !
+ki.e (I)Z la.e (I)Z !
+kj.a ()V lb.a ()V !
+kj.a (I)V lb.a (I)V !
+kj.a (Ld;)Ld; lb.a (Ld;)Ld; !
+kj.a (Ld;F)V lb.a (Ld;F)V !
+kj.b ()Ld; lb.b ()Ld; !
+kj.b (I)V lb.b (I)V !
+kj.c ()Z lb.c ()Z !
+kk.a ()I lc.a ()I !
+kk.a (II)V lc.a (II)V !
+kk.a (IIF)V lc.a (IIF)V !
+kk.a (IIII)V lc.a (IIII)V !
+kk.a (IIIILna;)V lc.a (IIIILns;)V !
+kk.a (IILna;)V lc.a (IILns;)V !
+kk.a (IZ)V lc.a (IZ)V !
+kk.a (Ljava/util/List;II)V lc.a (Ljava/util/List;II)V !
+kk.a (Ljk;)V lc.a (Lka;)V !
+kk.a (Z)V lc.a (Z)V !
+kk.a (ZI)V lc.a (ZI)V !
+kk.a_ (I)Z lc.a_ (I)Z !
+kk.b ()I lc.b ()I !
+kk.b (II)V lc.b (II)V !
+kk.c ()V lc.c ()V !
+kk.c (II)I lc.c (II)I !
+kk.d ()V lc.d ()V !
+kl.toString ()Ljava/lang/String; ld.toString ()Ljava/lang/String; !
+kn.a (C)V lf.a (C)V !
+kn.a (I)V lf.a (I)V !
+kn.a ([C)V lf.a ([C)V !
+kn.b ([C)I lf.b ([C)I !
+kn.c ()I lf.c ()I !
+ko.a ()Ljava/lang/Class; lg.a ()Ljava/lang/Class; !
+ko.b ()I lg.b ()I !
+ko.c ()Lkr; lg.c ()Llj; !
+ko.d ()Z lg.d ()Z !
+ko.valueOf (Ljava/lang/String;)Lko; lg.valueOf (Ljava/lang/String;)Llg; ! # modified 0% equal
+ko.values ()[Lko; lg.values ()[Llg; !
+kp.a ()Lrf; lh.a ()Lse; !
+kp.a (Let;Lip;Lrf;Lkw;F)V lh.a (Lfb;Ljf;Lse;Llo;F)V !
+kp.a (Ljava/lang/Class;)Lil; lh.a (Ljava/lang/Class;)Ljb; ! # modified 75% equal
+kp.a (Lnx;)Z lh.a (Los;)Z !
+kp.a (Lnx;DDDF)V lh.a (Los;DDDF)V !
+kp.a (Lnx;F)V lh.a (Los;F)V !
+kp.b (Lnx;)Lil; lh.b (Los;)Ljb; !
+kq.a ()V li.a ()V !
+kq.a (II)Z li.a (II)Z !
+kq.a (III)I li.a (III)I !
+kq.a (IIII)Z li.a (IIII)Z !
+kq.a (IIIII)Z li.a (IIIII)Z !
+kq.a (IIILnx;)V li.a (IIILos;)V ! # modified 87% equal
+kq.a (J)Ljava/util/Random; li.a (J)Ljava/util/Random; !
+kq.a (Lds;III)I li.a (Ldz;III)I !
+kq.a (Lds;IIII)V li.a (Ldz;IIII)V !
+kq.a (Ljava/lang/Class;Leg;Ljava/util/List;)V li.a (Ljava/lang/Class;Leo;Ljava/util/List;)V !
+kq.a (Lnx;)V li.a (Los;)V !
+kq.a (Lrj;)V li.a (Lsi;)V ! # modified 87% equal
+kq.a (Lrj;I)V li.a (Lsi;I)V !
+kq.a (Lrj;Leg;Ljava/util/List;)V li.a (Lsi;Leo;Ljava/util/List;)V !
+kq.a (Z)Z li.a (Z)Z !
+kq.a ([BIIIIIII)I li.a ([BIIIIIII)I !
+kq.b ()V li.b ()V !
+kq.b (II)I li.b (II)I !
+kq.b (III)I li.b (III)I !
+kq.b (IIII)V li.b (IIII)V !
+kq.b (Lrj;)V li.b (Lsi;)V !
+kq.c ()V li.c ()V !
+kq.c (II)V li.c (II)V !
+kq.c (III)Z li.c (III)Z !
+kq.c (IIII)I li.c (IIII)I !
+kq.d ()V li.d ()V !
+kq.d (III)Lnx; li.d (III)Los; !
+kq.e ()V li.e ()V !
+kq.e (III)V li.e (III)V !
+kq.f ()V li.f ()V !
+kq.f (III)V li.f (III)V !
+kq.g ()V li.g ()V !
+kq.g (III)V li.g (III)V !
+kq.h ()Z li.h ()Z !
+kq.i ()V li.i ()V !
+kr.a ()Z lj.a ()Z !
+kr.b ()Z lj.b ()Z !
+kr.c ()Z lj.c ()Z !
+kr.d ()Z lj.d ()Z !
+kr.e ()Z lj.e ()Z !
+kr.f ()Lkr; lj.f ()Llj; !
+kr.g ()Z lj.g ()Z !
+kr.h ()Lkr; lj.j ()Llj; !
+ku.a (Ljava/lang/String;I)I lm.a (Ljava/lang/String;I)I !
+kw.O ()Z lo.N ()Z !
+kw.S ()V lo.R ()V !
+kw.T ()V lo.T ()V !
+kw.V ()V lo.V ()V !
+kw.X ()V lo.X ()V !
+kw.Y ()Z lo.Y ()Z !
+kw.Z ()Lrj; lo.Z ()Lsi; !
+kw.a (DF)Lty; lo.a (DF)Lux; !
+kw.a (Lrj;FF)V lo.a (Lsi;FF)V !
+kw.a (Lrj;IDD)V lo.a (Lsi;IDD)V !
+kw.a_ (FF)V lo.a_ (FF)V ! # modified 72% equal
+kw.aa ()V lo.aa ()V !
+kw.b (FFF)F lo.b (FFF)F !
+kw.b (I)V lo.b (I)V !
+kw.b (Lrj;)V lo.b (Lsi;)V !
+kw.c (I)V lo.c (I)V !
+kw.c_ ()Z lo.c_ ()Z !
+kw.d ()Z lo.d ()Z !
+kw.d (F)F lo.d (F)F !
+kw.e ()I lo.e ()I !
+kw.e (F)Lbm; lo.e (F)Lbr; !
+kw.e (Lrj;)Z lo.e (Lsi;)Z !
+kw.e_ ()V lo.e_ ()V !
+kw.f (F)Lbm; lo.f (F)Lbr; !
+kw.g ()Ljava/lang/String; lo.g ()Ljava/lang/String; !
+kw.i ()Ljava/lang/String; lo.i ()Ljava/lang/String; !
+kw.i_ ()Ljava/lang/String; lo.i_ ()Ljava/lang/String; !
+kw.j ()I lo.j ()I !
+kw.k ()F lo.k ()F !
+kw.l ()I lo.l ()I !
+kw.o ()V lo.o ()V !
+kw.p ()Z lo.p ()Z !
+kw.q ()V lo.q ()V !
+kw.q_ ()Lii; lo.q_ ()Liw; !
+kw.v ()Z lo.u ()Z !
+kw.y ()I lo.x ()I !
+kw.z ()Z lo.y ()Z !
+kx.a ()Lpf; lp.a ()Lqa; !
+kx.a (Lkf;)V lp.a (Lkx;)V !
+kx.b (Lkf;)V lp.b (Lkx;)V !
+l.a (Lfq;F)V l.a (Lfz;F)V !
+l.a (Lfq;FF)I l.a (Lfz;FF)I !
+l.a (Lfq;IF)Z l.a (Lfz;IF)Z !
+l.b (Lfq;IF)Z l.b (Lfz;IF)Z !
+la.a ()I ls.a ()I !
+la.a (II)Lii; ls.a (II)Liw; !
+la.a (ILii;)V ls.a (ILiw;)V !
+la.a_ (Lgh;)Z ls.a_ (Lgq;)Z !
+la.c ()Ljava/lang/String; ls.c ()Ljava/lang/String; !
+la.d ()I ls.d ()I !
+la.d_ (I)Lii; ls.d_ (I)Liw; !
+la.y_ ()V ls.y_ ()V !
+lb.a (DDDFF)V lt.a (DDDFF)V !
+lb.k ()I lt.k ()I !
+le.a ()I lw.a ()I !
+le.a (Ljava/lang/Object;)V lw.a (Ljava/lang/Object;)V !
+le.a (Z)V lw.a (Z)V !
+le.b ()Ljava/lang/Object; lw.b ()Ljava/lang/Object; !
+le.c ()I lw.c ()I !
+lg.a (Lrh;DDDFF)V ly.a (Lsg;DDDFF)V !
+lh.a (Ldc;Ldc;)I lz.a (Ldi;Ldi;)I !
+lh.compare (Ljava/lang/Object;Ljava/lang/Object;)I lz.compare (Ljava/lang/Object;Ljava/lang/Object;)I !
+li.a (Lva;IF)Z ma.a (Lvz;IF)Z !
+ll.toString ()Ljava/lang/String; md.toString ()Ljava/lang/String; !
+ln.a (Lpf;)Ljava/lang/String; mf.a (Lqa;)Ljava/lang/String; !
+lo.a (Ljava/lang/String;)V mg.a (Ljava/lang/String;)V !
+lo.c (Ljava/lang/String;)V mg.c (Ljava/lang/String;)V !
+lp.a (Ltq;F)V mh.a (Lup;F)V !
+lp.a (Ltq;IF)Z mh.a (Lup;IF)Z !
+lq.a (IIZ)V mi.a (IIZ)V !
+lq.a (ILrj;)V mi.a (ILsi;)V !
+lq.b (I)Lrj; mi.b (I)Lsi; !
+lq.c (I)Lrj; mi.c (I)Lsi; !
+lq.c (IIIIII)V mi.c (IIIIII)V !
+lq.e (IIIII)Z mi.f (IIIII)Z !
+lu.b (II)Lii; mm.b (II)Liw; !
+m.a ()V m.a ()V =
+m.a (DDDF)Z m.a (DDDF)Z =
+m.a (F)V m.a (F)V = # modified 50% equal
+m.a (ID)V m.a (ID)V =
+m.a (II)V m.a (II)V =
+m.a (IIID)I m.a (IIID)I =
+m.a (IIIIII)V m.a (IIIIII)V =
+m.a (Lbm;Lxd;F)V m.a (Lbr;Lye;F)V ! # modified 60% equal
+m.a (Leg;)V m.a (Leo;)V !
+m.a (Let;)V m.a (Lfb;)V !
+m.a (Lgh;Lty;ILii;F)V m.a (Lgq;Lux;ILiw;F)V ! # modified 81% equal
+m.a (Lkw;ID)I m.a (Llo;ID)I ! # modified 78% equal
+m.a (Lkw;Z)Z m.a (Llo;Z)Z !
+m.a (Lxd;F)V m.a (Lye;F)V !
+m.b ()Ljava/lang/String; m.b ()Ljava/lang/String; =
+m.b (F)V m.b (F)V = # modified 92% equal
+m.b (III)V m.b (III)V =
+m.b (Lgh;Lty;ILii;F)V m.b (Lgq;Lux;ILiw;F)V !
+m.c ()Ljava/lang/String; m.c ()Ljava/lang/String; =
+m.c (F)V m.c (F)V = # modified 79% equal
+m.d ()V m.d ()V =
+m.f ()V m.g ()V !
+me.a (Ljava/util/List;)Ljava/lang/String; mv.a (Ljava/util/List;)Ljava/lang/String; !
+me.a (Lme;Liz;)Lab; mv.a (Lmv;Ljp;)Lac; !
+me.a (Lxf;)Lab; mv.a (Lyg;)Lac; !
+me.b (Lme;Liz;)Lab; mv.b (Lmv;Ljp;)Lac; !
+me.toString ()Ljava/lang/String; mv.toString ()Ljava/lang/String; !
+mg.a ()V mx.a ()V ! # modified 0% equal
+mg.a (I)Lrj; mx.a (I)Lsi; !
+mg.a (Ljo;)V mx.b (Lke;)V !
+mg.b ()V mx.b ()V ! # modified 0% equal
+mj.a (Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage; nb.a (Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage; !
+mk.a (Lgy;)V nc.a (Lhi;)V !
+ml.a ()Lml; nd.a ()Lnd; !
+ml.a (Ljava/lang/String;)Ljava/lang/String; nd.a (Ljava/lang/String;)Ljava/lang/String; !
+ml.a (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; nd.a (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; !
+ml.b (Ljava/lang/String;)Ljava/lang/String; nd.b (Ljava/lang/String;)Ljava/lang/String; !
+mm.c_ (Let;III)V ne.d_ (Lfb;III)V !
+mm.i (Let;III)F ne.i (Lfb;III)F !
+mp.a ()Ljava/lang/String; nh.a ()Ljava/lang/String; !
+mp.a (Ljava/lang/String;)Z nh.a (Ljava/lang/String;)Z !
+mp.a (Ljava/lang/String;Ljava/lang/String;)V nh.a (Ljava/lang/String;Ljava/lang/String;)V !
+mp.a (Ljava/lang/String;Lwr;)Z nh.a (Ljava/lang/String;Lxs;)Z !
+mp.a (Ljava/lang/String;Z)Lvk; nh.a (Ljava/lang/String;Z)Lwk; !
+mp.b ()Ljava/util/List; nh.b ()Ljava/util/List; !
+mp.b (Ljava/lang/String;)Ldy; nh.b (Ljava/lang/String;)Leg; !
+mp.c ()V nh.c ()V !
+mp.c (Ljava/lang/String;)V nh.c (Ljava/lang/String;)V !
+mt.read ()I nl.read ()I !
+mt.read ([BII)I nl.read ([BII)I !
+my.a (Ljava/lang/String;B)V nq.a (Ljava/lang/String;B)V !
+my.a (Ljava/lang/String;D)V nq.a (Ljava/lang/String;D)V !
+my.a (Ljava/lang/String;F)V nq.a (Ljava/lang/String;F)V !
+my.a (Ljava/lang/String;I)V nq.a (Ljava/lang/String;I)V !
+my.a (Ljava/lang/String;J)V nq.a (Ljava/lang/String;J)V !
+my.a (Ljava/lang/String;Lhu;)V nq.a (Ljava/lang/String;Lig;)V !
+my.a (Ljava/lang/String;Ljava/lang/String;)V nq.a (Ljava/lang/String;Ljava/lang/String;)V !
+my.a (Ljava/lang/String;Lmy;)V nq.a (Ljava/lang/String;Lnq;)V !
+my.a (Ljava/lang/String;S)V nq.a (Ljava/lang/String;S)V !
+my.a (Ljava/lang/String;Z)V nq.a (Ljava/lang/String;Z)V !
+my.a (Ljava/lang/String;[B)V nq.a (Ljava/lang/String;[B)V !
+my.b (Ljava/lang/String;)Z nq.b (Ljava/lang/String;)Z !
+my.c (Ljava/lang/String;)B nq.c (Ljava/lang/String;)B !
+my.d (Ljava/lang/String;)S nq.d (Ljava/lang/String;)S !
+my.e (Ljava/lang/String;)I nq.e (Ljava/lang/String;)I !
+my.f (Ljava/lang/String;)J nq.f (Ljava/lang/String;)J !
+my.g (Ljava/lang/String;)F nq.g (Ljava/lang/String;)F !
+my.h (Ljava/lang/String;)D nq.h (Ljava/lang/String;)D !
+my.i (Ljava/lang/String;)Ljava/lang/String; nq.i (Ljava/lang/String;)Ljava/lang/String; !
+my.j (Ljava/lang/String;)[B nq.j (Ljava/lang/String;)[B !
+my.k (Ljava/lang/String;)Lmy; nq.k (Ljava/lang/String;)Lnq; !
+my.l (Ljava/lang/String;)Lrl; nq.l (Ljava/lang/String;)Lsk; !
+my.m (Ljava/lang/String;)Z nq.m (Ljava/lang/String;)Z !
+my.toString ()Ljava/lang/String; nq.toString ()Ljava/lang/String; !
+mz.a (I)V nr.a (I)V !
+na.a ()V ns.a ()V !
+na.a (DD)V ns.a (DD)V !
+na.a (DDD)V ns.a (DDD)V !
+na.a (DDDDD)V ns.a (DDDDD)V !
+na.a (FFF)V ns.a (FFF)V !
+na.a (FFFF)V ns.a (FFFF)V !
+na.a (I)V ns.a (I)V !
+na.a (II)V ns.a (II)V !
+na.a (III)V ns.a (III)V !
+na.a (IIII)V ns.a (IIII)V ! # modified 95% equal
+na.b ()V ns.b ()V !
+na.b (DDD)V ns.b (DDD)V !
+na.b (FFF)V ns.b (FFF)V ! # modified 66% equal
+na.b (I)V ns.b (I)V !
+na.c ()V ns.c ()V !
+na.c (FFF)V ns.c (FFF)V !
+na.d ()V ns.d ()V !
+nb.k (Let;III)Z nt.k (Lfb;III)Z !
+nc.a ()Lnc; nu.a ()Lnu; !
+nc.a (Lgi;)Lnc; nu.a (Lgr;)Lnu; !
+nc.b ()Lnc; nu.b ()Lnu; !
+nc.c ()Lnc; nu.c ()Lnu; !
+nc.e ()Ljava/lang/String; nu.e ()Ljava/lang/String; !
+nc.f ()Z nu.f ()Z !
+net/minecraft/client/Minecraft.A ()V net/minecraft/client/Minecraft.C ()V ! # modified 0% equal
+net/minecraft/client/Minecraft.a ()V net/minecraft/client/Minecraft.a ()V = # modified 86% equal
+net/minecraft/client/Minecraft.a (I)V net/minecraft/client/Minecraft.a (I)V = # modified 58% equal
+net/minecraft/client/Minecraft.a (II)V net/minecraft/client/Minecraft.a (II)V =
+net/minecraft/client/Minecraft.a (IIIIII)V net/minecraft/client/Minecraft.a (IIIIII)V =
+net/minecraft/client/Minecraft.a (IZ)V net/minecraft/client/Minecraft.a (IZ)V =
+net/minecraft/client/Minecraft.a (J)V net/minecraft/client/Minecraft.a (J)V =
+net/minecraft/client/Minecraft.a (Lcs;)V net/minecraft/client/Minecraft.a (Lcy;)V !
+net/minecraft/client/Minecraft.a (Let;)V net/minecraft/client/Minecraft.a (Lfb;)V !
+net/minecraft/client/Minecraft.a (Let;Ljava/lang/String;)V net/minecraft/client/Minecraft.a (Lfb;Ljava/lang/String;)V !
+net/minecraft/client/Minecraft.a (Let;Ljava/lang/String;Lgh;)V net/minecraft/client/Minecraft.a (Lfb;Ljava/lang/String;Lgq;)V ! # modified 96% equal
+net/minecraft/client/Minecraft.a (Ljava/lang/String;)Ljava/io/File; net/minecraft/client/Minecraft.a (Ljava/lang/String;)Ljava/io/File; =
+net/minecraft/client/Minecraft.a (Ljava/lang/String;I)V net/minecraft/client/Minecraft.a (Ljava/lang/String;I)V =
+net/minecraft/client/Minecraft.a (Ljava/lang/String;Ljava/io/File;)V net/minecraft/client/Minecraft.a (Ljava/lang/String;Ljava/io/File;)V =
+net/minecraft/client/Minecraft.a (Ljava/lang/String;Ljava/lang/String;)V net/minecraft/client/Minecraft.a (Ljava/lang/String;Ljava/lang/String;)V =
+net/minecraft/client/Minecraft.a (Ljava/lang/String;Ljava/lang/String;J)V net/minecraft/client/Minecraft.a (Ljava/lang/String;Ljava/lang/String;J)V =
+net/minecraft/client/Minecraft.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V net/minecraft/client/Minecraft.a (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V =
+net/minecraft/client/Minecraft.a (Llk;)V net/minecraft/client/Minecraft.a (Lmc;)V !
+net/minecraft/client/Minecraft.a (Z)V net/minecraft/client/Minecraft.a (ZI)V ! # modified 21% equal
+net/minecraft/client/Minecraft.b ()Ljava/io/File; net/minecraft/client/Minecraft.b ()Ljava/io/File; =
+net/minecraft/client/Minecraft.b (Ljava/lang/String;)Z net/minecraft/client/Minecraft.b (Ljava/lang/String;)Z =
+net/minecraft/client/Minecraft.b (Ljava/lang/String;Ljava/lang/String;)V net/minecraft/client/Minecraft.b (Ljava/lang/String;Ljava/lang/String;)V =
+net/minecraft/client/Minecraft.c ()Lmp; net/minecraft/client/Minecraft.c ()Lnh; !
+net/minecraft/client/Minecraft.c (Ljava/lang/String;)V net/minecraft/client/Minecraft.c (Ljava/lang/String;)V = # modified 33% equal
+net/minecraft/client/Minecraft.d ()V net/minecraft/client/Minecraft.d ()V = # modified 62% equal
+net/minecraft/client/Minecraft.d (Ljava/lang/String;)V net/minecraft/client/Minecraft.d (Ljava/lang/String;)V =
+net/minecraft/client/Minecraft.e ()V net/minecraft/client/Minecraft.f ()V !
+net/minecraft/client/Minecraft.f ()V net/minecraft/client/Minecraft.g ()V ! # modified 80% equal
+net/minecraft/client/Minecraft.g ()V net/minecraft/client/Minecraft.h ()V !
+net/minecraft/client/Minecraft.h ()V net/minecraft/client/Minecraft.i ()V !
+net/minecraft/client/Minecraft.i ()V net/minecraft/client/Minecraft.j ()V ! # modified 60% equal
+net/minecraft/client/Minecraft.j ()V net/minecraft/client/Minecraft.k ()V ! # modified 96% equal
+net/minecraft/client/Minecraft.k ()Z net/minecraft/client/Minecraft.l ()Z !
+net/minecraft/client/Minecraft.l ()V net/minecraft/client/Minecraft.m ()V ! # modified 15% equal
+net/minecraft/client/Minecraft.m ()Lcp; net/minecraft/client/Minecraft.n ()Lcv; !
+net/minecraft/client/Minecraft.main ([Ljava/lang/String;)V net/minecraft/client/Minecraft.main ([Ljava/lang/String;)V =
+net/minecraft/client/Minecraft.n ()Ljava/lang/String; net/minecraft/client/Minecraft.o ()Ljava/lang/String; !
+net/minecraft/client/Minecraft.o ()Ljava/lang/String; net/minecraft/client/Minecraft.p ()Ljava/lang/String; !
+net/minecraft/client/Minecraft.p ()Ljava/lang/String; net/minecraft/client/Minecraft.q ()Ljava/lang/String; !
+net/minecraft/client/Minecraft.q ()Ljava/lang/String; net/minecraft/client/Minecraft.r ()Ljava/lang/String; !
+net/minecraft/client/Minecraft.r ()Lmg; net/minecraft/client/Minecraft.s ()Lmx; !
+net/minecraft/client/Minecraft.run ()V net/minecraft/client/Minecraft.run ()V = # modified 83% equal
+net/minecraft/client/Minecraft.s ()Z net/minecraft/client/Minecraft.t ()Z !
+net/minecraft/client/Minecraft.t ()Z net/minecraft/client/Minecraft.u ()Z !
+net/minecraft/client/Minecraft.u ()Z net/minecraft/client/Minecraft.v ()Z !
+net/minecraft/client/Minecraft.v ()Z net/minecraft/client/Minecraft.w ()Z !
+net/minecraft/client/Minecraft.w ()V net/minecraft/client/Minecraft.x ()V !
+net/minecraft/client/Minecraft.x ()Loe; net/minecraft/client/Minecraft.y ()Loz; !
+net/minecraft/client/Minecraft.y ()V net/minecraft/client/Minecraft.z ()V !
+net/minecraft/client/Minecraft.z ()V net/minecraft/client/Minecraft.A ()V !
+net/minecraft/client/MinecraftApplet.a ()V net/minecraft/client/MinecraftApplet.a ()V =
+net/minecraft/client/MinecraftApplet.b ()V net/minecraft/client/MinecraftApplet.b ()V =
+net/minecraft/client/MinecraftApplet.c ()V net/minecraft/client/MinecraftApplet.c ()V =
+net/minecraft/client/MinecraftApplet.destroy ()V net/minecraft/client/MinecraftApplet.destroy ()V =
+net/minecraft/client/MinecraftApplet.init ()V net/minecraft/client/MinecraftApplet.init ()V = # modified 92% equal
+net/minecraft/client/MinecraftApplet.start ()V net/minecraft/client/MinecraftApplet.start ()V =
+net/minecraft/client/MinecraftApplet.stop ()V net/minecraft/client/MinecraftApplet.stop ()V =
+nf.a ()V nx.a ()V !
+nf.a (F)V nx.a (F)V !
+nf.a (IIII)V nx.a (IIII)V ! # modified 0% equal
+nf.a (IIIZLgh;)Lii; nx.a (IIIZLgq;)Liw; !
+nf.a (ILgh;)V nx.a (ILgq;)V !
+nf.a (Let;)V nx.a (Lfb;)V !
+nf.a (Lgh;)V nx.a (Lgq;)V !
+nf.a (Lgh;Let;Lii;)Z nx.a (Lgq;Lfb;Liw;)Z !
+nf.a (Lgh;Let;Lii;IIII)Z nx.a (Lgq;Lfb;Liw;IIII)Z !
+nf.a (Lgh;Lrj;)V nx.a (Lgq;Lsi;)V !
+nf.b ()F nx.b ()F !
+nf.b (IIII)Z nx.b (IIII)Z ! # modified 25% equal
+nf.b (Let;)Lgh; nx.b (Lfb;)Lgq; !
+nf.b (Lgh;)V nx.b (Lgq;)V !
+nf.b (Lgh;Lrj;)V nx.b (Lgq;Lsi;)V !
+nf.c ()V nx.c ()V !
+nf.c (IIII)V nx.c (IIII)V !
+nf.d ()Z nx.d ()Z !
+nh.a (Lgy;)V nz.a (Lhi;)V !
+ni.a (Ljava/lang/Iterable;)Ljava/util/List; oa.a (Ljava/lang/Iterable;)Ljava/util/List; !
+ni.equals (Ljava/lang/Object;)Z oa.equals (Ljava/lang/Object;)Z !
+ni.hashCode ()I oa.hashCode ()I !
+ni.toString ()Ljava/lang/String; oa.toString ()Ljava/lang/String; !
+nm.h (Let;III)I oe.h (Lfb;III)I ! # modified 55% equal
+nm.i (Let;III)Z oe.i (Lfb;III)Z !
+no.a ()Lgj; oh.a ()Lgs; !
+no.a (Ljava/lang/Iterable;)Lpf; oh.a (Ljava/lang/Iterable;)Lqa; !
+no.a (Ljava/lang/String;)Lpb; oh.a (Ljava/lang/String;)Lpw; !
+no.a (Ljava/util/Map;)Lpf; oh.a (Ljava/util/Map;)Lqa; !
+no.a ([Lgj;)Lpf; oh.a ([Lgs;)Lqa; !
+no.b ()Lgj; oh.b ()Lgs; !
+no.b (Ljava/lang/String;)Lgj; oh.b (Ljava/lang/String;)Lgs; !
+no.c ()Lgj; oh.c ()Lgs; !
+np.b (Let;IIIII)I oi.b (Lfb;IIIII)I !
+np.e (Let;IIII)I oi.f (Lfb;IIII)I !
+np.f (Let;IIII)V oi.g (Lfb;IIII)V !
+np.k (Let;III)[Z oi.k (Lfb;III)[Z !
+np.l (Let;III)Z oi.l (Lfb;III)Z ! # modified 90% equal
+np.m (Let;III)Z oi.m (Lfb;III)Z !
+nq.a (Lpw;DDDFF)V oj.a (Lqr;DDDFF)V !
+nx.a (DDD)D os.a (DDD)D !
+nx.a (Ljava/lang/Class;Ljava/lang/String;)V os.a (Ljava/lang/Class;Ljava/lang/String;)V !
+nx.a (Lmy;)V os.a (Lnq;)V !
+nx.b (Lmy;)V os.b (Lnq;)V !
+nx.c (Lmy;)Lnx; os.c (Lnq;)Los; ! # modified 87% equal
+nx.e ()I os.e ()I !
+nx.f ()Lto; os.f ()Lun; !
+nx.m_ ()V os.m_ ()V !
+nx.y_ ()V os.y_ ()V !
+o.toString ()Ljava/lang/String; o.toString ()Ljava/lang/String; =
+od.a (Let;IIIIZI)Z oy.a (Lfb;IIIIZI)Z !
+od.a (Let;IIIZII)Z oy.a (Lfb;IIIZII)Z !
+od.a (Lod;)Z oy.a (Loy;)Z !
+od.c (I)Z oy.c (I)Z !
+od.h ()Z oy.h ()Z !
+od.h (Let;III)Z oy.h (Lfb;III)Z !
+od.i (Let;III)V oy.a (Lfb;IIIZ)V ! # modified 66% equal
+oe.valueOf (Ljava/lang/String;)Loe; oz.valueOf (Ljava/lang/String;)Loz; ! # modified 0% equal
+oe.values ()[Loe; oz.values ()[Loz; !
+og.a ()V pb.b ()V !
+og.a (Ljava/lang/Exception;)V pb.a (Ljava/lang/Exception;)V !
+og.a (Ljava/lang/String;[Ljava/lang/Object;)V pb.a (Ljava/lang/String;[Ljava/lang/Object;)V !
+og.a (Ljo;)V pb.a (Lke;)V !
+og.a (Log;)Z pb.a (Lpb;)Z !
+og.b ()V pb.d ()V ! # modified 22% equal
+og.b (Log;)Z pb.b (Lpb;)Z !
+og.c ()V pb.e ()V ! # modified 71% equal
+og.c (Log;)V pb.c (Lpb;)V !
+og.d (Log;)V pb.d (Lpb;)V !
+og.e (Log;)Ljava/lang/Thread; pb.g (Lpb;)Ljava/lang/Thread; !
+og.f (Log;)Ljava/lang/Thread; pb.h (Lpb;)Ljava/lang/Thread; !
+oh.a (DDD)V pc.a (DDD)V !
+oh.a (Let;Ljava/util/Random;III)Z pc.a (Lfb;Ljava/util/Random;III)Z !
+oi.f (Let;IIII)V pd.g (Lfb;IIII)V ! # modified 92% equal
+oj.a (Lc;DDDFF)V pe.a (Lc;DDDFF)V !
+ol.a (II[BDDD)V pg.a (II[BDDD)V !
+ol.a (II[BDDDFFFIID)V pg.a (II[BDDDFFFIID)V !
+om.a (Llb;DDDFF)V ph.a (Llt;DDDFF)V ! # modified 25% equal
+on.a (III)V pi.a (III)V !
+on.a (IIILnx;)V pi.a (IIILos;)V !
+on.a (Ljava/lang/String;DDDDDD)V pi.a (Ljava/lang/String;DDDDDD)V !
+on.a (Ljava/lang/String;DDDFF)V pi.a (Ljava/lang/String;DDDFF)V !
+on.a (Ljava/lang/String;III)V pi.a (Ljava/lang/String;III)V !
+on.a (Lrj;)V pi.a (Lsi;)V !
+on.b (IIIIII)V pi.b (IIIIII)V !
+on.b (Lrj;)V pi.b (Lsi;)V !
+on.e ()V pi.e ()V !
+oo.a ()Loo; pj.a ()Lpj; !
+oo.a (Lkf;)Loo; pj.a (Lkx;)Lpj; !
+oo.b ()Lpb; pj.b ()Lpw; !
+oo.b (Lkf;)Loo; pj.b (Lkx;)Lpj; !
+oo.c ()Lgj; pj.c ()Lgs; !
+op.a (Lxa;DDDF)V pk.a (Lyb;DDDF)V !
+oq.toString ()Ljava/lang/String; pl.toString ()Ljava/lang/String; !
+or.a (Lbi;F)V pm.a (Lbn;F)V !
+os.a (Lss;Lss;)I pn.a (Ltr;Ltr;)I !
+os.compare (Ljava/lang/Object;Ljava/lang/Object;)I pn.compare (Ljava/lang/Object;Ljava/lang/Object;)I !
+ot.a (F)V po.a (F)V !
+ot.a (FFF)V po.a (FFF)V !
+ot.a (FFFIII)V po.a (FFFIII)V !
+ot.a (FFFIIIF)V po.a (FFFIIIF)V !
+ot.b (F)V po.b (F)V !
+ot.c (F)V po.c (F)V !
+ot.d (F)V po.d (F)V !
+ov.a (Lkf;)V pq.a (Lkx;)V !
+ov.a (Loo;)V pq.a (Lpj;)V !
+oy.a ()V pt.a ()V !
+oy.a (F)V pt.a (F)V !
+oy.a (FFFF)Ljava/nio/FloatBuffer; pt.a (FFFF)Ljava/nio/FloatBuffer; !
+oy.a (FI)V pt.a (FI)V ! # modified 58% equal
+oy.a (IF)V pt.a (IF)V ! # modified 94% equal
+oy.b ()V pt.b ()V !
+oy.b (F)V pt.b (F)V ! # modified 50% equal
+oy.b (FI)V pt.b (FI)V !
+oy.c ()V pt.c ()V ! # modified 69% equal
+oy.c (F)V pt.a (FJ)V ! # modified 23% equal
+oy.d (F)V pt.c (F)V ! # modified 10% equal
+oy.e (F)F pt.d (F)F !
+oy.f (F)V pt.e (F)V !
+oy.g (F)V pt.f (F)V !
+oy.h (F)V pt.g (F)V !
+oy.i (F)V pt.h (F)V !
+oz.a ()V pu.a ()V ! # modified 40% equal
+pb.a (Lpb;)I pw.a (Lpw;)I !
+pb.compareTo (Ljava/lang/Object;)I pw.compareTo (Ljava/lang/Object;)I !
+pb.equals (Ljava/lang/Object;)Z pw.equals (Ljava/lang/Object;)Z !
+pb.hashCode ()I pw.hashCode ()I !
+pb.toString ()Ljava/lang/String; pw.toString ()Ljava/lang/String; !
+pg.a (Lgj;)Z qb.a (Lgs;)Z !
+pg.b (Lgj;)Ljava/util/Map; qb.b (Lgs;)Ljava/util/Map; !
+pg.toString ()Ljava/lang/String; qb.toString ()Ljava/lang/String; !
+ph.a (Ljava/util/List;)Z qc.a (Ljava/util/List;)Z !
+ph.b (Ljava/util/List;)Lgj; qc.b (Ljava/util/List;)Lgs; !
+ph.toString ()Ljava/lang/String; qc.toString ()Ljava/lang/String; !
+pj.a (Ljava/util/Map;)Z qe.a (Ljava/util/Map;)Z !
+pj.b (Ljava/util/Map;)Lgj; qe.b (Ljava/util/Map;)Lgs; !
+pj.toString ()Ljava/lang/String; qe.toString ()Ljava/lang/String; !
+pk.a ()I qf.a ()I !
+pk.a (II)Ljava/io/DataInputStream; qf.a (II)Ljava/io/DataInputStream; !
+pk.a (III)V qf.a (III)V !
+pk.a (II[BI)V qf.a (II[BI)V !
+pk.a (I[BI)V qf.a (I[BI)V !
+pk.a (Ljava/lang/String;)V qf.a (Ljava/lang/String;)V !
+pk.a (Ljava/lang/String;IIILjava/lang/String;)V qf.a (Ljava/lang/String;IIILjava/lang/String;)V !
+pk.a (Ljava/lang/String;IILjava/lang/String;)V qf.a (Ljava/lang/String;IILjava/lang/String;)V !
+pk.b ()V qf.b ()V !
+pk.b (II)Ljava/io/DataOutputStream; qf.b (II)Ljava/io/DataOutputStream; !
+pk.b (III)V qf.b (III)V !
+pk.b (Ljava/lang/String;)V qf.b (Ljava/lang/String;)V !
+pk.b (Ljava/lang/String;IILjava/lang/String;)V qf.b (Ljava/lang/String;IILjava/lang/String;)V !
+pk.c (II)Z qf.c (II)Z !
+pk.d (II)Z qf.d (II)Z !
+pk.e (II)I qf.e (II)I !
+pn.a (III)Lpn; qi.a (III)Lqi; !
+po.a (II[B)V qj.a (II[B)V !
+po.a ([DIIIIII)[D qj.a ([DIIIIII)[D !
+po.b (II[B)V qj.b (II[B)V !
+pq.toString ()Ljava/lang/String; ql.toString ()Ljava/lang/String; !
+pr.a ()I qm.a ()I !
+pr.b ()I qm.b ()I !
+pv.b (I)V qq.b (I)V !
+pv.c (I)F qq.c (I)F !
+pv.k ()Z qq.k ()Z !
+pw.k ()V qr.k ()V !
+px.a ()V qs.a ()V !
+px.a (Z)V qs.a (Z)V !
+py.a (J)Lpy; qt.a (J)Lqt; !
+py.a (Lpy;)I qt.a (Lqt;)I !
+py.compareTo (Ljava/lang/Object;)I qt.compareTo (Ljava/lang/Object;)I !
+py.equals (Ljava/lang/Object;)Z qt.equals (Ljava/lang/Object;)Z !
+py.hashCode ()I qt.hashCode ()I !
+q.addNotify ()V q.addNotify ()V =
+q.removeNotify ()V q.removeNotify ()V =
+qa.a ()V qv.a ()V ! # modified 78% equal
+qa.a (F)V qv.a (F)V ! # modified 12% equal
+qa.a (FI)V qv.a (FI)V !
+qa.a (Lii;)V qv.a (Llo;Liw;)V ! # modified 15% equal
+qa.b ()V qv.b ()V !
+qa.b (F)V qv.b (F)V ! # modified 40% equal
+qa.c ()V qv.c ()V !
+qa.c (F)V qv.c (F)V !
+qa.d (F)V qv.d (F)V !
+qe.a (II)V qz.a (II)V !
+qe.a (Let;II)V qz.a (Lfb;II)V !
+qf.a ()V ra.a ()V !
+qh.h (Let;III)V rd.h (Lfb;III)V !
+qi.a ()V re.a ()V !
+qi.a (Ljava/io/File;II)Lpk; re.a (Ljava/io/File;II)Lqf; !
+qi.b (Ljava/io/File;II)I re.b (Ljava/io/File;II)I !
+qi.c (Ljava/io/File;II)Ljava/io/DataInputStream; re.c (Ljava/io/File;II)Ljava/io/DataInputStream; !
+qi.d (Ljava/io/File;II)Ljava/io/DataOutputStream; re.d (Ljava/io/File;II)Ljava/io/DataOutputStream; !
+qn.a ()Ljava/lang/String; rj.a ()Ljava/lang/String; !
+qn.a (CI)V rj.a (CI)V !
+qn.a (I)V rj.a (I)V !
+qn.a (III)V rj.a (III)V !
+qn.a (Ljava/lang/String;)V rj.a (Ljava/lang/String;)V !
+qn.a (Z)V rj.a (Z)V !
+qn.b ()V rj.b ()V !
+qn.c ()V rj.c ()V !
+qo.a (Lwf;IIILkr;)D rk.a (Lxg;IIILlj;)D !
+qo.c (I)F rk.c (I)F !
+qo.c (Lwf;III)I rk.c (Lxg;III)I !
+qo.e (Lwf;III)Lbm; rk.e (Lxg;III)Lbr; !
+qo.h (Let;III)I rk.h (Lfb;III)I !
+qo.i (Let;III)V rk.i (Lfb;III)V !
+qo.j (Let;III)V rk.j (Lfb;III)V !
+qp.a (Lqp;)Ljava/util/List; rl.a (Lrl;)Ljava/util/List; !
+qp.a (Lqp;I)I rl.a (Lrl;I)I !
+qp.b (Lqp;)I rl.b (Lrl;)I !
+qp.c (I)Ljava/lang/String; rl.c (I)Ljava/lang/String; !
+qp.c (Lqp;)Ljk; rl.c (Lrl;)Lka; !
+qp.d (I)Ljava/lang/String; rl.d (I)Ljava/lang/String; !
+qp.d (Lqp;)Ljk; rl.d (Lrl;)Lka; !
+qp.e (I)V rl.e (I)V !
+qp.e (Lqp;)Ljk; rl.e (Lrl;)Lka; !
+qp.f (Lqp;)Ljava/lang/String; rl.f (Lrl;)Ljava/lang/String; !
+qp.g (Lqp;)Ljava/text/DateFormat; rl.g (Lrl;)Ljava/text/DateFormat; !
+qp.h (Lqp;)Ljava/lang/String; rl.h (Lrl;)Ljava/lang/String; !
+qp.k ()V rl.k ()V !
+qp.l ()V rl.l ()V !
+qq.a (IIII)V rm.a (IIII)V !
+qq.b (IIII)V rm.b (IIII)V !
+qq.c (IIII)Z rm.c (IIII)Z !
+qr.accept (Ljava/io/File;Ljava/lang/String;)Z rn.accept (Ljava/io/File;Ljava/lang/String;)Z !
+qs.valueOf (Ljava/lang/String;)Lqs; ro.valueOf (Ljava/lang/String;)Lro; ! # modified 0% equal
+qs.values ()[Lqs; ro.values ()[Lro; !
+qu.a_ ()Lnx; rr.a_ ()Los; !
+rf.a (Ljava/lang/String;)I se.a (Ljava/lang/String;)I !
+rf.a (Ljava/lang/String;I)I se.a (Ljava/lang/String;I)I ! # modified 0% equal
+rf.a (Ljava/lang/String;III)V se.a (Ljava/lang/String;III)V !
+rf.a (Ljava/lang/String;IIII)V se.a (Ljava/lang/String;IIII)V ! # modified 9% equal
+rf.a (Ljava/lang/String;IIIZ)V se.a (Ljava/lang/String;IIIZ)V !
+rf.b (Ljava/lang/String;III)V se.b (Ljava/lang/String;III)V !
+rg.a (Lii;)I sf.a (Liw;)I !
+rg.b ()Z sf.b ()Z !
+rg.b (I)I sf.b (I)I !
+rg.c (I)I sf.c (I)I !
+rg.g ()V sf.g ()V !
+rg.i ()Z sf.i ()Z !
+rh.a (DDDFF)V sg.a (DDDFF)V !
+ri.a (Let;IIIIII)V sh.a (Lfb;IIIIII)V ! # modified 93% equal
+ri.c (Lwf;III)Z sh.c (Lxg;III)Z !
+ri.f (Let;IIII)I sh.g (Lfb;IIII)I !
+ri.h (Let;III)V sh.h (Lfb;III)V !
+ri.i (Let;III)V sh.i (Lfb;III)V !
+rj.J ()D si.I ()D !
+rj.L ()V si.K ()V !
+rj.M ()Z si.L ()Z ! # modified 0% equal
+rj.U ()V si.U ()V !
+rj.W ()Z si.W ()Z !
+rj.a (B)V si.a (B)V !
+rj.a (D)Z si.a (D)Z !
+rj.a (DDD)V si.a (DDD)V !
+rj.a (DDDFFI)V si.a (DDDFFI)V !
+rj.a (DZ)V si.a (DZ)V !
+rj.a (F)F si.a (F)F !
+rj.a (FFF)V si.a (FFF)V !
+rj.a (I)V si.a (I)V !
+rj.a (IIF)Lgz; si.a (IIF)Lhj; !
+rj.a (Lbm;)Z si.a (Lbr;)Z !
+rj.a (Lc;)V si.a (Lc;)V !
+rj.a (Let;)V si.a (Lfb;)V !
+rj.a (Lgh;)Z si.a (Lgq;)Z !
+rj.a (Lii;F)Lgz; si.a (Liw;F)Lhj; !
+rj.a (Lkr;)Z si.a (Llj;)Z !
+rj.a (Lkw;)V si.a (Llo;)V !
+rj.a (Lmy;)V si.a (Lnq;)V !
+rj.a (Lrj;)Leg; si.a (Lsi;)Leo; !
+rj.a (Lrj;I)Z si.a (Lsi;I)Z !
+rj.a ([D)Lrl; si.a ([D)Lsk; !
+rj.a ([F)Lrl; si.a ([F)Lsk; !
+rj.ab ()V si.ab ()V !
+rj.ac ()Lbm; si.ac ()Lbr; !
+rj.ad ()Lsz; si.ad ()Lty; !
+rj.ae ()V si.ae ()V !
+rj.af ()Z si.af ()Z !
+rj.ag ()Z si.ag ()Z !
+rj.ah ()Z si.ah ()Z !
+rj.ai ()V si.ai ()V !
+rj.aj ()Ljava/lang/String; si.aj ()Ljava/lang/String; !
+rj.ak ()Z si.ak ()Z !
+rj.al ()Z si.al ()Z !
+rj.b ()V si.b ()V !
+rj.b (DDD)V si.b (DDD)V ! # modified 82% equal
+rj.b (DDDFF)V si.b (DDDFF)V !
+rj.b (F)V si.b (F)V !
+rj.b (FF)V si.b (FF)V !
+rj.b (II)Lgz; si.b (II)Lhj; !
+rj.b (IZ)V si.b (IZ)V !
+rj.b (Lgh;)V si.b (Lgq;)V !
+rj.b (Lmy;)V si.b (Lnq;)V !
+rj.c (DDD)V si.d (DDD)V !
+rj.c (DDDFF)V si.c (DDDFF)V !
+rj.c (FF)V si.c (FF)V !
+rj.c (III)V si.c (III)V !
+rj.c (Lmy;)Z si.c (Lnq;)Z !
+rj.c (Lrj;I)V si.c (Lsi;I)V !
+rj.d (DDD)Z si.e (DDD)Z !
+rj.d (FF)V si.d (FF)V !
+rj.d (I)Z si.d (I)Z !
+rj.d (Lmy;)V si.d (Lnq;)V ! # modified 0% equal
+rj.e (DDD)D si.f (DDD)D !
+rj.e (Lmy;)V si.e (Lnq;)V ! # modified 85% equal
+rj.equals (Ljava/lang/Object;)Z si.equals (Ljava/lang/Object;)Z !
+rj.f ()Leg; si.f ()Leo; !
+rj.f (DDD)D si.g (DDD)D !
+rj.f (Lrj;)F si.f (Lsi;)F !
+rj.g (DDD)V si.h (DDD)V !
+rj.g (Lrj;)D si.g (Lsi;)D !
+rj.g_ ()Z si.g_ ()Z !
+rj.h ()V si.h ()V !
+rj.h (Lrj;)V si.h (Lsi;)V !
+rj.h_ ()Z si.h_ ()Z !
+rj.hashCode ()I si.hashCode ()I !
+rj.i (Lrj;)V si.i (Lsi;)V !
+rj.j_ ()Z si.j_ ()Z ! # modified 0% equal
+rj.k_ ()V si.k_ ()V !
+rj.l_ ()F si.l_ ()F !
+rj.m ()D si.m ()D !
+rj.n ()Z si.n ()Z !
+rj.p_ ()Ljava/lang/String; si.p_ ()Ljava/lang/String; !
+rj.s_ ()V si.s_ ()V ! # modified 86% equal
+rj.t ()Z si.t ()Z !
+rj.t_ ()V si.t_ ()V !
+rj.u ()V si.S ()V !
+rj.u_ ()V si.u_ ()V !
+rj.w_ ()V si.w_ ()V !
+rj.x ()F si.w ()F !
+rj.x_ ()F si.x_ ()F !
+rl.a (I)Lhu; sk.a (I)Lig; !
+rl.a (Lhu;)V sk.a (Lig;)V !
+rl.c ()I sk.c ()I !
+rl.toString ()Ljava/lang/String; sk.toString ()Ljava/lang/String; !
+rm.a (II[BDDD)V sl.a (II[BDDD)V !
+rm.a (II[BDDDFFFIID)V sl.a (II[BDDDFFFIID)V !
+rn.a (DDDDDD)Z sm.a (DDDDDD)Z !
+rp.a (IIIIII)Z so.a (IIIIII)Z !
+rp.a (Let;)V so.a (Lfb;)V ! # modified 98% equal
+rt.a ()Lpf; ss.a ()Lqa; !
+rt.a (Loo;)Lrt; ss.a (Lpj;)Lss; !
+rt.a (Lrt;)Ljava/util/List; ss.a (Lss;)Ljava/util/List; !
+rv.toString ()Ljava/lang/String; su.toString ()Ljava/lang/String; !
+rx.a (Lxb;DDDFF)V sw.a (Lyc;DDDFF)V !
+ry.a (ZLet;III)V sx.a (ZLfb;III)V ! # modified 50% equal
+ry.h (Let;III)V sx.h (Lfb;III)V !
+sa.a ()Lkf; sz.a ()Lkx; !
+sa.a (Ljava/lang/String;)Lkf; sz.a (Ljava/lang/String;)Lkx; !
+sa.b ()Lkf; sz.b ()Lkx; !
+sa.b (Ljava/lang/String;)Lf; sz.b (Ljava/lang/String;)Lf; !
+sa.c ()Lkf; sz.c ()Lkx; !
+sa.d ()Lrt; sz.d ()Lss; !
+sa.e ()Ldu; sz.e ()Leb; !
+sc.a ()V tb.a ()V !
+sc.a (I)V tb.a (I)V !
+sc.a (III)Z tb.a (III)Z !
+sc.a (IIIDDD)V tb.a (IIIDDD)V !
+sc.b ()V tb.b ()V !
+sd.a ()Lrf; tc.a ()Lse; !
+sd.a (DDD)D tc.a (DDD)D !
+sd.a (Let;)V tc.a (Lfb;)V !
+sd.a (Let;Lip;Lrf;Lkw;Ljz;F)V tc.a (Lfb;Ljf;Lse;Llo;Lkr;F)V !
+sd.a (Ljava/lang/Class;)Lbp; tc.a (Ljava/lang/Class;)Lbu; ! # modified 75% equal
+sd.a (Lrj;)Lbp; tc.a (Lsi;)Lbu; !
+sd.a (Lrj;DDDFF)V tc.a (Lsi;DDDFF)V !
+sd.a (Lrj;F)V tc.a (Lsi;F)V !
+se.a (La;)V td.a (La;)V !
+se.a (Lbt;)V td.a (Lby;)V ! # modified 0% equal
+se.a (Lda;)V td.a (Ldg;)V !
+se.a (Ldw;)V td.a (Led;)V !
+se.a (Lek;)V td.a (Les;)V !
+se.a (Leq;)V td.a (Ley;)V ! # modified 0% equal
+se.a (Lfy;)V td.a (Lgh;)V !
+se.a (Lgm;)V td.a (Lgv;)V !
+se.a (Lgu;)V td.a (Lhe;)V !
+se.a (Lhb;)V td.a (Lhm;)V !
+se.a (Lhd;)V td.a (Lho;)V !
+se.a (Lhr;)V td.a (Lid;)V !
+se.a (Lig;)V td.a (Lit;)V !
+se.a (Lim;)V td.a (Ljc;)V !
+se.a (Lit;)V td.a (Ljj;)V !
+se.a (Ljava/lang/String;[Ljava/lang/Object;)V td.a (Ljava/lang/String;[Ljava/lang/Object;)V !
+se.a (Ljb;)V td.a (Ljr;)V !
+se.a (Ljf;)V td.a (Ljv;)V ! # modified 0% equal
+se.a (Ljh;)V td.a (Ljx;)V !
+se.a (Llm;)V td.a (Lme;)V !
+se.a (Lls;)V td.a (Lmj;)V !
+se.a (Llt;)V td.a (Lml;)V !
+se.a (Lmb;)V td.a (Lmr;)V !
+se.a (Lmh;)V td.a (Lmz;)V !
+se.a (Lmq;)V td.a (Lni;)V !
+se.a (Lmw;)V td.a (Lno;)V !
+se.a (Lnd;)V td.a (Lnv;)V !
+se.a (Lnj;)V td.a (Lob;)V !
+se.a (Lnn;)V td.a (Lof;)V !
+se.a (Lny;)V td.a (Lot;)V !
+se.a (Lof;)V td.a (Lpa;)V !
+se.a (Lpm;)V td.a (Lqh;)V ! # modified 0% equal
+se.a (Lps;)V td.a (Lqn;)V !
+se.a (Lqc;)V td.a (Lqx;)V !
+se.a (Lqg;)V td.a (Lrb;)V !
+se.a (Lql;)V td.a (Lrh;)V !
+se.a (Lqt;)V td.a (Lrq;)V !
+se.a (Lr;)V td.a (Lr;)V !
+se.a (Lrb;)V td.a (Lrz;)V !
+se.a (Lrk;)V td.a (Lsj;)V !
+se.a (Lso;)V td.a (Ltn;)V !
+se.a (Lsr;)V td.a (Ltq;)V !
+se.a (Ltd;)V td.a (Luc;)V !
+se.a (Lte;)V td.a (Lud;)V !
+se.a (Ltr;)V td.a (Luq;)V !
+se.a (Lum;)V td.a (Lvl;)V !
+se.a (Lup;)V td.a (Lvo;)V !
+se.a (Lvl;)V td.a (Lwl;)V !
+se.a (Lxh;)V td.a (Lyi;)V !
+se.b (Ljo;)V td.c (Lke;)V !
+se.c ()Z td.c ()Z !
+sf.run ()V te.run ()V !
+sg.am ()V tf.am ()V !
+sg.an ()V tf.an ()V !
+sg.b (Luk;I)V tf.b (Lvj;I)V !
+sj.a ()V ti.a ()V !
+sj.a (Let;III)V ti.a (Lfb;III)V !
+sk.a (II)Ljava/io/File; tj.a (II)Ljava/io/File; !
+sk.a (Let;Lmy;)Lkq; tj.a (Lfb;Lnq;)Lli; !
+sk.a (Lkq;Let;Lmy;)V tj.a (Lli;Lfb;Lnq;)V !
+sl.a (Lgy;)V tk.a (Lhi;)V !
+sm.a ([Ljava/io/File;)V tl.a ([Ljava/io/File;)V !
+ss.a ()I tr.a ()I !
+st.run ()V ts.run ()V !
+sv.a ()V tu.a ()V !
+sv.a (Lna;F)V tu.a (Lns;F)V !
+sx.a (IIII)V tw.a (IIII)V !
+sx.a (IIIII)V tw.a (IIIII)V !
+sx.a (IIIIII)V tw.a (IIIIII)V !
+sx.a (Lrf;Ljava/lang/String;III)V tw.a (Lse;Ljava/lang/String;III)V !
+sx.b (IIII)V tw.b (IIII)V !
+sx.b (IIIIII)V tw.b (IIIIII)V !
+sx.b (Lrf;Ljava/lang/String;III)V tw.b (Lse;Ljava/lang/String;III)V !
+sz.a (I)B ty.a (I)B !
+sz.a (ILjava/lang/Object;)V ty.a (ILjava/lang/Object;)V !
+sz.a (Ljava/io/DataInputStream;)Ljava/util/List; ty.a (Ljava/io/DataInputStream;)Ljava/util/List; !
+sz.a (Ljava/io/DataOutputStream;)V ty.a (Ljava/io/DataOutputStream;)V !
+sz.a (Ljava/io/DataOutputStream;Lle;)V ty.a (Ljava/io/DataOutputStream;Llw;)V !
+sz.a (Ljava/util/List;)V ty.a (Ljava/util/List;)V !
+sz.a (Ljava/util/List;Ljava/io/DataOutputStream;)V ty.a (Ljava/util/List;Ljava/io/DataOutputStream;)V !
+sz.b (I)I ty.b (I)I !
+sz.b (ILjava/lang/Object;)V ty.b (ILjava/lang/Object;)V !
+sz.c (I)Ljava/lang/String; ty.c (I)Ljava/lang/String; !
+t.a ()V t.a ()V =
+t.a (DDDD)Ljava/nio/FloatBuffer; t.a (DDDD)Ljava/nio/FloatBuffer; =
+t.a (FFFF)Ljava/nio/FloatBuffer; t.a (FFFF)Ljava/nio/FloatBuffer; =
+t.b ()V t.b ()V =
+tb.a (DD)D ua.a (DD)D !
+tb.a ([DDDDIIIDDD)[D ua.a ([DDDDIIIDDD)[D !
+tb.a ([DIIIIDDD)[D ua.a ([DIIIIDDD)[D !
+tc.a ([DDDIIDDD)[D ub.a ([DDDIIDDD)[D !
+tc.a ([DDDIIDDDD)[D ub.a ([DDDIIDDDD)[D !
+tg.toString ()Ljava/lang/String; uf.toString ()Ljava/lang/String; !
+th.c (Let;IIILgh;)V ug.c (Lfb;IIILgq;)V !
+ti.a ()V uh.a ()V !
+ti.a (Lqe;)V uh.a (Lqz;)V !
+tj.a ()V ui.a ()V !
+tj.a (IZ)V ui.a (IZ)V !
+tj.a (Lgh;)V ui.a (Lgq;)V !
+tk.k ()I uj.k ()I !
+tl.a ()V uk.a ()V !
+tl.a (FII)V uk.a (FII)V !
+tl.a (FZII)V uk.a (FZII)V ! # modified 96% equal
+tl.a (II)V uk.a (II)V !
+tl.a (IIIF)V uk.a (IIIF)V !
+tl.a (Ljava/lang/String;)V uk.a (Ljava/lang/String;)V !
+tl.b (FII)V uk.b (FII)V ! # modified 0% equal
+tl.b (Ljava/lang/String;)V uk.b (Ljava/lang/String;)V !
+tl.c (Ljava/lang/String;)V uk.c (Ljava/lang/String;)V !
+tm.a (Let;Lrj;)V ul.a (Lfb;Lsi;)V !
+tm.b (Let;Lrj;)Z ul.b (Lfb;Lsi;)Z ! # modified 92% equal
+tm.c (Let;Lrj;)Z ul.c (Lfb;Lsi;)Z !
+to.a ()Z un.a ()Z !
+to.a (F)Lto; un.a (F)Lun; !
+to.a (FFFFFF)V un.a (FFFFFF)V !
+to.a (I)I un.a (I)I !
+to.a (II)I un.a (II)I !
+to.a (ILjava/util/Random;)I un.a (ILjava/util/Random;)I !
+to.a (IZ)Z un.a (IZ)Z !
+to.a (Lbm;)Z un.a (Lbr;)Z !
+to.a (Lcl;)Lto; un.a (Lcr;)Lun; !
+to.a (Let;III)Z un.a (Lfb;III)Z !
+to.a (Let;IIII)V un.a (Lfb;IIII)V !
+to.a (Let;IIIIF)V un.a (Lfb;IIIIF)V !
+to.a (Let;IIIII)V un.a (Lfb;IIIII)V !
+to.a (Let;IIILbm;Lbm;)Lty; un.a (Lfb;IIILbr;Lbr;)Lux; !
+to.a (Let;IIILeg;Ljava/util/ArrayList;)V un.a (Lfb;IIILeo;Ljava/util/ArrayList;)V !
+to.a (Let;IIILgh;)Z un.a (Lfb;IIILgq;)Z !
+to.a (Let;IIILjava/util/Random;)V un.a (Lfb;IIILjava/util/Random;)V !
+to.a (Let;IIILkw;)V un.a (Lfb;IIILlo;)V !
+to.a (Let;IIILrj;)V un.a (Lfb;IIILsi;)V !
+to.a (Let;IIILrj;Lbm;)V un.a (Lfb;IIILsi;Lbr;)V !
+to.a (Let;Lgh;IIII)V un.a (Lfb;Lgq;IIII)V !
+to.a (Lgh;)F un.a (Lgq;)F !
+to.a (Ljava/lang/String;)Lto; un.a (Ljava/lang/String;)Lun; !
+to.a (Ljava/util/Random;)I un.a (Ljava/util/Random;)I !
+to.a (Lrj;)F un.a (Lsi;)F !
+to.a (Lwf;III)V un.a (Lxg;III)V !
+to.a (Lwf;IIII)I un.a (Lxg;IIII)I !
+to.a_ (Let;IIII)V un.b_ (Lfb;IIII)V !
+to.b ()Z un.b ()Z !
+to.b (F)Lto; un.b (F)Lun; !
+to.b (I)I un.b (I)I !
+to.b (Lbm;)Z un.b (Lbr;)Z !
+to.b (Let;III)V un.b (Lfb;III)V !
+to.b (Let;IIII)V un.b (Lfb;IIII)V !
+to.b (Let;IIILgh;)V un.b (Lfb;IIILgq;)V !
+to.b (Let;IIILjava/util/Random;)V un.b (Lfb;IIILjava/util/Random;)V !
+to.b (Let;IIILrj;)V un.b (Lfb;IIILsi;)V !
+to.b (Lwf;III)I un.b (Lxg;III)I !
+to.b (Lwf;IIII)Z un.b (Lxg;IIII)Z !
+to.b (Z)Lto; un.b (Z)Lun; !
+to.c ()I un.c ()I !
+to.c (F)Lto; un.c (F)Lun; !
+to.c (Lbm;)Z un.c (Lbr;)Z !
+to.c (Let;III)V un.c (Lfb;III)V !
+to.c (Let;IIII)Z un.c (Lfb;IIII)Z !
+to.c (Lwf;IIII)Z un.c (Lxg;IIII)Z !
+to.d ()I un.d ()I !
+to.d (Let;III)Leg; un.d (Lfb;III)Leo; !
+to.d (Let;IIII)V un.d (Lfb;IIII)V !
+to.d (Lwf;III)F un.d (Lxg;III)F ! # modified 0% equal
+to.e ()Z un.e ()Z !
+to.e (Let;III)V un.e (Lfb;III)V !
+to.f ()V un.f ()V !
+to.f (I)Lto; un.f (I)Lun; !
+to.f (Let;III)Leg; un.f (Lfb;III)Leo; !
+to.g ()I un.g ()I !
+to.g (Let;III)Z un.g (Lfb;III)Z !
+to.i ()Ljava/lang/String; un.j ()Ljava/lang/String; !
+to.j ()Ljava/lang/String; un.k ()Ljava/lang/String; !
+to.k ()Z un.l ()Z !
+to.l ()Lto; un.m ()Lun; !
+to.v_ ()Z un.v_ ()Z !
+tp.d (II)V uo.d (II)V !
+tq.e (I)V up.e (I)V !
+tq.w ()I up.v ()I !
+tr.b ()Ljava/util/List; uq.b ()Ljava/util/List; !
+tt.a (Lbq;DDDFF)V us.a (Lbv;DDDFF)V !
+tu.a ()Ljava/lang/String; ut.a ()Ljava/lang/String; !
+tu.a (Ltu;)I ut.a (Lut;)I !
+tu.b ()Ljava/lang/String; ut.b ()Ljava/lang/String; !
+tu.c ()J ut.c ()J !
+tu.compareTo (Ljava/lang/Object;)I ut.compareTo (Ljava/lang/Object;)I !
+tu.d ()Z ut.d ()Z !
+tu.e ()J ut.e ()J !
+tx.a (Let;IIIZ)V uw.a (Lfb;IIIZ)V !
+tx.c (I)I uw.c (I)I !
+tx.d (I)Z uw.d (I)Z !
+tx.e (I)Z uw.e (I)Z !
+tx.f (Let;IIII)Lbk; uw.g (Lfb;IIII)Lbp; ! # modified 93% equal
+tx.m ()V uw.n ()V !
+ub.a ([B)V va.a ([B)V !
+uc.run ()V vb.run ()V !
+ud.run ()V vc.run ()V !
+ue.h (Let;III)Z vd.h (Lfb;III)Z !
+ue.i (Let;III)Z vd.i (Lfb;III)Z !
+uf.h (Let;III)Z ve.h (Lfb;III)Z !
+uh.a ()V vg.a ()V !
+uh.a (I)V vg.a (I)V !
+uh.a (III)Z vg.a (III)Z !
+uh.a (Luh;)I vg.a (Lvg;)I !
+uh.a (Luy;)Luh; vg.a (Lvx;)Lvg; !
+uh.a (Z)V vg.a (ZZ)V ! # modified 17% equal
+uh.b ()I vg.b ()I !
+uh.b (III)Z vg.b (III)Z !
+uh.b (Luh;)Z vg.b (Lvg;)Z !
+uh.c (III)Z vg.c (III)Z !
+uh.c (Luh;)Z vg.c (Lvg;)Z !
+uh.d (Luh;)V vg.d (Lvg;)V !
+ui.b (Ljava/lang/String;)Ljava/lang/String; vh.b (Ljava/lang/String;)Ljava/lang/String; !
+uk.a (I)Ljava/lang/String; vj.a (I)Ljava/lang/String; !
+uk.d ()Z vj.d ()Z !
+uk.g ()Luk; vj.g ()Lvj; !
+uk.h ()Luk; vj.h ()Lvj; !
+uk.i ()Ljava/text/NumberFormat; vj.i ()Ljava/text/NumberFormat; !
+uk.j ()Ljava/text/DecimalFormat; vj.j ()Ljava/text/DecimalFormat; !
+uk.toString ()Ljava/lang/String; vj.toString ()Ljava/lang/String; !
+un.a ()V vm.a ()V !
+un.a (Lnc;)V vm.a (Lnu;)V !
+un.b ()V vm.b ()V !
+un.b (Lnc;)V vm.b (Lnu;)V !
+uo.a (DDDFF)V vn.a (DDDFF)V !
+uq.a (Luq;)Z vp.a (Lvp;)Z !
+uq.a (Luq;Lmg;)Lmg; vp.a (Lvp;Lmx;)Lmx; !
+uq.b (Luq;)Lmg; vp.b (Lvp;)Lmx; !
+ur.a ()V vq.a ()V !
+ur.b ()V vq.b ()V !
+ur.c ()V vq.c ()V !
+uu.c (I)Z vt.c (I)Z !
+uu.h (Let;III)V vt.h (Lfb;III)V !
+ux.a (Lfx;DDDFF)V vw.a (Lgg;DDDFF)V !
+ux.a (Lfx;F)F vw.a (Lgg;F)F !
+ux.b (Lfx;F)V vw.b (Lgg;F)V !
+uy.equals (Ljava/lang/Object;)Z vx.equals (Ljava/lang/Object;)Z !
+uy.hashCode ()I vx.hashCode ()I !
+uz.a (Ljava/lang/String;)V vy.a (Ljava/lang/String;)V !
+uz.b ()V vy.b ()V !
+uz.b (Ljava/lang/String;)V vy.b (Ljava/lang/String;)V !
+uz.c ()V vy.c ()V !
+uz.c (Ljava/lang/String;)V vy.c (Ljava/lang/String;)V !
+uz.d ()V vy.d ()V !
+uz.e ()V vy.e ()V !
+uz.f ()V vy.f ()V !
+uz.g ()V vy.g ()V !
+uz.h ()V vy.h ()V !
+uz.i ()V vy.i ()V !
+uz.j ()V vy.j ()V !
+uz.k ()V vy.k ()V !
+v.a ()Ldj; v.a ()Ldp; !
+v.a ([[FI)V v.a ([[FI)V =
+v.b ()V v.b ()V =
+va.a (Z)V vz.a (Z)V !
+va.w ()Z vz.v ()Z !
+vb.a ()Z wa.a ()Z !
+vb.a (III)I wa.a (III)I !
+vb.a (IIII)V wa.a (IIII)V !
+vc.a (I)Ljava/lang/String; wb.a (I)Ljava/lang/String; !
+ve.a ()I wd.a ()I !
+ve.b ()Ljava/lang/Object; wd.b ()Ljava/lang/Object; !
+ve.equals (Ljava/lang/Object;)Z wd.equals (Ljava/lang/Object;)Z !
+ve.hashCode ()I wd.hashCode ()I !
+ve.toString ()Ljava/lang/String; wd.toString ()Ljava/lang/String; !
+vg.f (Let;IIII)Z wf.g (Lfb;IIII)Z !
+vk.a (Ldy;)V wk.a (Leg;)V !
+vk.a (Ldy;Ljava/util/List;)V wk.a (Leg;Ljava/util/List;)V !
+vk.a (Lvr;)Laz; wk.a (Lwr;)Lbe; !
+vk.b ()V wk.b ()V !
+vk.c ()Ldy; wk.c ()Leg; !
+vq.run ()V wq.run ()V !
+vr.a ()V wr.a ()V !
+vr.a (FF)Lbm; wr.b (FF)Lbr; !
+vr.a (I)Lvr; wr.a (I)Lwr; ! # modified 28% equal
+vr.a (II)Z wr.a (II)Z !
+vr.a (JF)F wr.a (JF)F !
+vr.a (Let;)V wr.a (Lfb;)V !
+vr.b ()V wr.e ()V !
+vr.b (FF)[F wr.a (FF)[F !
+vr.c ()Lcf; wr.b ()Lcj; !
+vr.d ()Z wr.f ()Z !
+vs.toString ()Ljava/lang/String; ws.toString ()Ljava/lang/String; !
+vt.a (Lgy;)V wt.a (Lhi;)V !
+vx.run ()V wx.run ()V !
+vy.a ()Ljava/util/Map; wz.a ()Ljava/util/Map; !
+vy.a (Ljava/lang/String;)Ljava/util/Map; wz.a (Ljava/lang/String;)Ljava/util/Map; ! # modified 80% equal
+vy.a (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String; wz.a (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String; !
+vy.a (Ljava/util/Map;)V wz.a (Ljava/util/Map;)V !
+vy.a (Ljava/util/Map;Luk;I)V wz.a (Ljava/util/Map;Lvj;I)V !
+vy.a (Lnc;)Z wz.a (Lnu;)Z !
+vy.a (Luk;)I wz.a (Lvj;)I !
+vy.a (Luk;I)V wz.a (Lvj;I)V !
+vy.b ()V wz.b ()V !
+vy.b (Ljava/util/Map;)V wz.b (Ljava/util/Map;)V !
+vy.b (Lnc;)Z wz.b (Lnu;)Z !
+vy.c ()V wz.c ()V !
+vy.c (Ljava/util/Map;)V wz.c (Ljava/util/Map;)V !
+vy.d ()V wz.d ()V !
+vz.run ()V xa.run ()V ! # modified 92% equal
+wa.e ()V xb.e ()V !
+wb.run ()V xc.run ()V ! # modified 60% equal
+wc.b (IIF)V xd.b (IIF)V ! # modified 98% equal
+wc.k ()V xd.k ()V !
+wf.a ()Lwl; xg.a ()Lxm; !
+wf.a (III)I xg.a (III)I !
+wf.b (III)Lnx; xg.b (III)Los; !
+wf.c (III)F xg.c (III)F !
+wf.e (III)I xg.e (III)I !
+wf.f (III)Lkr; xg.f (III)Llj; !
+wf.g (III)Z xg.g (III)Z !
+wg.c (Let;IIILjava/util/Random;)V xh.c (Lfb;IIILjava/util/Random;)V ! # modified 10% equal
+wg.h (Let;III)V xh.h (Lfb;III)V !
+wh.h (Let;III)Z xi.h (Lfb;III)Z !
+wl.a (II)Ljj; xm.a (II)Ljz; !
+wl.a (IIII)[Ljj; xm.a (IIII)[Ljz; !
+wl.a (Lxo;)Ljj; xm.a (Lyp;)Ljz; !
+wl.a ([DIIII)[D xm.a ([DIIII)[D !
+wl.a ([Ljj;IIII)[Ljj; xm.a ([Ljz;IIII)[Ljz; !
+wl.b (II)D xm.b (II)D !
+wm.a (Lna;FFFFFF)V xn.a (Lns;FFFFFF)V !
+wm.b_ ()I xn.b_ ()I !
+wm.c (F)Lwm; xn.c (F)Lxn; !
+wm.d (F)Lwm; xn.d (F)Lxn; !
+wo.a (Ldd;IF)Z xp.a (Ldj;IF)Z !
+wq.d (Lrj;)V xr.d (Lsi;)V !
+wr.a (I)V xs.a (I)V !
+wr.b (Ljava/lang/String;)V xs.b (Ljava/lang/String;)V !
+wr.d (Ljava/lang/String;)V xs.d (Ljava/lang/String;)V !
+wv.a (II[B[Ljj;)V xw.a (II[B[Ljz;)V !
+wv.a (II[B[Ljj;[D)V xw.a (II[B[Ljz;[D)V !
+wv.a ([DIIIIII)[D xw.a ([DIIIIII)[D !
+ww.a (Lmx;F)V xx.a (Lnp;F)V !
+x.a (Lgy;)V y.a (Lhi;)V !
+xb.a (DDDD)Lbm; yc.a (DDDD)Lbr; !
+xb.h (DDD)Lbm; yc.i (DDD)Lbr; !
+xd.a (DDD)V ye.a (DDD)V !
+xd.a (Leg;)Z ye.a (Leo;)Z !
+xe.a ()V yf.a ()V !
+xe.a (Ljava/lang/String;FF)V yf.a (Ljava/lang/String;FF)V !
+xe.a (Ljava/lang/String;FFFFF)V yf.a (Ljava/lang/String;FFFFF)V !
+xe.a (Ljava/lang/String;Ljava/io/File;)V yf.a (Ljava/lang/String;Ljava/io/File;)V !
+xe.a (Ljz;)V yf.a (Lkr;)V !
+xe.a (Lkw;F)V yf.a (Llo;F)V !
+xe.b ()V yf.b ()V !
+xe.b (Ljava/lang/String;FFFFF)V yf.b (Ljava/lang/String;FFFFF)V !
+xe.b (Ljava/lang/String;Ljava/io/File;)V yf.b (Ljava/lang/String;Ljava/io/File;)V !
+xe.c ()V yf.c ()V !
+xe.c (Ljava/lang/String;Ljava/io/File;)V yf.c (Ljava/lang/String;Ljava/io/File;)V !
+xe.d ()V yf.d ()V ! # modified 33% equal
+xf.a ()Ljava/lang/String; yg.a ()Ljava/lang/String; !
+xf.a (Ljava/lang/Object;)Z yg.a (Ljava/lang/Object;)Z !
+xf.b (Ljava/lang/Object;)Ljava/lang/Object; yg.b (Ljava/lang/Object;)Ljava/lang/Object; !
+xg.a (III)V yh.a (III)V !
+xg.a (Let;IIIILjava/util/Random;)V yh.a (Lfb;IIIILjava/util/Random;I)V ! # modified 46% equal
+xg.c (Lwf;III)Z yh.c (Lxg;III)Z !
+xg.f (Let;IIII)I yh.g (Lfb;IIII)I !
+xg.h (Let;III)Z yh.h (Lfb;III)Z !
+xg.i (Let;III)I yh.i (Lfb;III)I !
+xj.toString ()Ljava/lang/String; yk.toString ()Ljava/lang/String; !
+xm.l ()I yn.l ()I !
+xm.m ()Z yn.m ()Z !
+xn.a (Lcg;)F yo.a (Lcl;)F !
+xn.a (Lcg;IF)Z yo.a (Lcl;IF)Z !
+xo.a (II)I yp.a (II)I !
+xo.equals (Ljava/lang/Object;)Z yp.equals (Ljava/lang/Object;)Z !
+xo.hashCode ()I yp.hashCode ()I !
+z.a ()Lhg; aa.a ()Lhr; !
+# Unmatched source methods
+bw.a (Lii;II)V * * !
+cu.u ()V * * !
+ge.f ()Z * * !
+gz.h (DDD)Z * * !
+uj.f ()Z * * !
+xl.f ()Z * * !
+# Unmatched target methods
+* * ah.a ()I !
+* * ah.a (Ljava/io/DataInputStream;)V !
+* * ah.a (Ljava/io/DataOutputStream;)V !
+* * ah.a (Ltd;)V !
+* * ao.a (Lfb;Ljava/util/Random;III)Z !
+* * ax.a ()V !
+* * ax.a (FF)[F !
+* * ax.a (II)Z !
+* * ax.a (JF)F !
+* * ax.b ()Lcj; !
+* * ax.b (FF)Lbr; !
+* * ax.c ()Z !
+* * ax.d ()F !
+* * bk.a (I)Liw; !
+* * bn.l ()I !
+* * bn.w_ ()V !
+* * br.a ()V !
+* * cd.x_ ()F !
+* * ch.a (Ljava/io/File;Ljava/lang/String;Ljava/io/File;)V !
+* * da.c (DDD)Z !
+* * da.d (III)Z !
+* * du.a (Liw;IIZ)V !
+* * ee.a (Lnq;)V !
+* * ee.b (Lnq;)V !
+* * eo.a ()V !
+* * eo.e (DDD)Leo; !
+* * eu.a (IIII)F !
+* * eu.h (III)Z !
+* * fb.a (IIII)F !
+* * fb.a (Lbr;Lbr;ZZ)Lux; !
+* * fb.a (Lgq;IIIII)V !
+* * fb.a (Ljava/lang/Class;Ljava/lang/String;)Lhk; !
+* * fb.a (Ljava/lang/String;Lhk;)V !
+* * fb.b (Ljava/lang/String;)I !
+* * fb.e (IIIII)V !
+* * fb.h (III)Z !
+* * fb.m (III)I !
+* * fk.a (Ljava/lang/String;)Ljava/io/File; !
+* * fl.a ()I !
+* * fl.a (Ljava/io/DataInputStream;)V !
+* * fl.a (Ljava/io/DataOutputStream;)V !
+* * fl.a (Ltd;)V !
+* * fm.a_ ()Los; !
+* * fm.b (Lfb;III)V !
+* * fm.b_ (Lfb;III)V !
+* * fz.b (Lsi;F)V !
+* * gc.b (I)V !
+* * gk.a (Liw;Lfb;Lsi;IZ)V !
+* * gk.b (Liw;Lfb;Lgq;)V !
+* * gq.S ()V !
+* * gq.c (Liw;)I !
+* * ha.a ()V !
+* * ha.a (Lhk;)V !
+* * ha.a (Ljava/lang/Class;Ljava/lang/String;)Lhk; !
+* * ha.a (Ljava/lang/String;)I !
+* * ha.a (Ljava/lang/String;Lhk;)V !
+* * ha.b ()V !
+* * hk.a ()V !
+* * hk.a (Lnq;)V !
+* * hk.a (Z)V !
+* * hk.b ()Z !
+* * hk.b (Lnq;)V !
+* * hu.a ([I)V !
+* * hx.a ([I)V !
+* * ia.a ()V !
+* * if.b (Lsi;F)V !
+* * iq.a (I)Liw; !
+* * ir.a (III)V !
+* * ir.a (Lgq;Liw;)V !
+* * ir.a (Lnq;)V !
+* * ir.a ([B)V !
+* * ir.b (Lnq;)V !
+* * iu.c (Liw;)Z !
+* * iv.a (Lgq;Ljf;Lir;)V !
+* * iw.a (Lfb;Lsi;IZ)V !
+* * iw.b (I)V !
+* * iw.b (Lfb;Lgq;)V !
+* * iw.b (Liw;)Z !
+* * iy.a (II)I !
+* * iy.a (ILjava/util/Random;)I !
+* * iy.c (I)Z !
+* * ja.a ()Z !
+* * ja.a (II)Z !
+* * ja.a (II[B[Ljz;)V !
+* * ja.a (II[B[Ljz;[D)V !
+* * ja.a (Lcj;II)V !
+* * ja.a (ZLxs;)Z !
+* * ja.a ([DIIIIII)[D !
+* * ja.b ()Z !
+* * ja.b (II)Lli; !
+* * ja.c ()Ljava/lang/String; !
+* * ja.c (II)Lli; !
+* * je.a ([I)V !
+* * jf.a (Ljava/awt/image/BufferedImage;[I)[I !
+* * jf.a (Ljava/lang/String;)[I !
+* * jf.a ([IIII)V !
+* * jf.b (Ljava/awt/image/BufferedImage;)[I !
+* * kl.run ()V !
+* * kp.a (Lfb;Ljava/util/Random;III)Z !
+* * lj.h ()Z !
+* * lj.i ()Llj; !
+* * lo.c (Liw;)I !
+* * m.a (Lgq;IIIII)V !
+* * m.f ()V !
+* * mi.m ()V !
+* * mx.a (Lah;)V !
+* * mx.a (Lfl;)V !
+* * mx.a (Lke;)V !
+* * net/minecraft/client/Minecraft.B ()V !
+* * net/minecraft/client/Minecraft.b (Lmc;)V !
+* * net/minecraft/client/Minecraft.e ()V !
+* * nq.c ()Ljava/util/Collection; !
+* * oe.e (Lfb;IIII)Z !
+* * og.a ()Z !
+* * og.a (II)Z !
+* * og.a (Lcj;II)V !
+* * og.a (Lli;)V !
+* * og.a (ZLxs;)Z !
+* * og.b ()Z !
+* * og.b (II)Lli; !
+* * og.b (Lli;)V !
+* * og.c ()Ljava/lang/String; !
+* * og.c (II)Lli; !
+* * og.d (II)Lli; !
+* * om.a ()Z !
+* * om.a (Lfb;IIII)V !
+* * om.a (Lfb;IIILbr;Lbr;)Lux; !
+* * om.a (Lfb;IIILgq;)Z !
+* * om.a (Lfb;IIIZ)V !
+* * om.a (Lxg;III)V !
+* * om.b ()Z !
+* * om.b (Lfb;IIILgq;)V !
+* * om.c (I)V !
+* * om.d (I)Z !
+* * om.d (Lfb;III)Leo; !
+* * om.d (Lfb;IIII)V !
+* * om.e (Lfb;IIII)Z !
+* * om.f ()V !
+* * om.f (Lfb;III)Leo; !
+* * om.g ()I !
+* * oq.a ()Z !
+* * oq.b ()Z !
+* * oq.c ()Z !
+* * pb.a ()V !
+* * pb.a (Lpb;Z)Z !
+* * pb.c ()V !
+* * pb.e (Lpb;)Z !
+* * pb.f (Lpb;)Ljava/io/DataOutputStream; !
+* * pi.a (Lgq;IIIII)V !
+* * rk.b (Lxg;III)I !
+* * rk.d (Lxg;IIII)Z !
+* * rp.a (II)I !
+* * rp.a (ILjava/util/Random;)I !
+* * rp.b (Lxg;III)I !
+* * rt.a (F)I !
+* * sh.b (Lxg;III)I !
+* * si.a (III)Z !
+* * si.c (DDD)Z !
+* * sx.b (Lfb;III)V !
+* * td.a (Lah;)V !
+* * td.a (Lfl;)V !
+* * tg.a (Lfb;IIILjava/util/Random;)V !
+* * uk.b ()V !
+* * un.d (Lxg;IIII)Z !
+* * un.e (Lfb;IIII)Z !
+* * un.i ()V !
+* * un.n ()Lun; !
+* * w.a ()V !
+* * w.a (CI)V !
+* * w.a (IIF)V !
+* * w.a (Lka;)V !
+* * w.b ()V !
+* * wi.a (Lfb;Lsi;Lir;)V !
+* * wi.a (Liw;Lfb;)Lir; !
+* * wi.a (Liw;Lfb;Lsi;IZ)V !
+* * wi.a (SLfb;)Lir; !
+* * wi.b (Liw;Lfb;Lgq;)V !
+* * wk.a (Ljava/lang/String;)Ljava/io/File; !
+* * wp.a (Ljava/lang/String;)Ljava/io/File; !
+* * wr.c ()Z !
+* * wr.d ()F !
+* * wy.run ()V !
+* * xg.a (IIII)F !
+* * xg.h (III)Z !
+* * xh.b (Lfb;III)V !
+* * xi.e (Lfb;IIII)Z !
+* * yh.v_ ()Z !
+* * z.a (I)Liw; !
+#
+# Total classes:
+# 641 matched
+# 617 mappings changed
+# 297 modified
+# 0/641 source unmatched
+# 27/668 target unmatched
+#
+# Total fields:
+# 2546 matched
+# 2445 mappings changed
+# 4/2550 source unmatched
+# 132/2678 target unmatched
+#
+# Total methods:
+# 2051 matched
+# 1988 mappings changed
+# 148 modified
+# 6/2057 source unmatched
+# 188/2239 target unmatched
+#
+# Total :
+# 5238 matched
+# 5050 mappings changed
+# 10/5248 source unmatched
+# 347/5585 target unmatched
+#
+# Extra comment to make ProfMobius happy. :)
