@@ -102,7 +102,6 @@ class IRC(object):
     def loop_read(self):
         try:
             l = self.conn.read_all()
-            print l
         except IRCDisconnected:
             return False
         for line in l:
