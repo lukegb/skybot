@@ -19,6 +19,7 @@ def get_version():
 
     return ret, revnumber
 
+
 #autorejoin channels
 @hook.event('KICK')
 def rejoin(paraml, conn=None):
@@ -59,6 +60,7 @@ def onjoin(paraml, conn=None, bot=None):
     # set user-agent
     ident, rev = get_version()
     http.ua_skybot = 'Skybot/r%d %s http://github.com/lahwran/skybot' % (rev, ident)
+
 
 @hook.regex(r'^\x01VERSION\x01$')
 def version(inp, notice=None):

@@ -6,16 +6,19 @@ import urlparse
 import urllib2
 import repaste
 
+
 maxlen = 4086
 titler = re.compile(r'(?si)<title>(.+?)</title>')
+
 
 @hook.regex(r".*(minecraftforum\.net/viewtopic\.php\?[\w=&]+)\b.*")
 def regex(inp, say=None):
     "titles minecraftforum urls"
-    t=title("http://"+inp.group(1)).replace(" - Minecraft Forums","")
-    if t=="Login":
+    t = title("http://" + inp.group(1)).replace(" - Minecraft Forums", "")
+    if t == "Login":
         return
-    say("mcforum title: "+t)
+    say("mcforum title: " + t)
+
 
 def check_response(headers):
     type = headers.get("content-type", None)
@@ -35,6 +38,7 @@ def check_response(headers):
 
         return reply
 
+
 @hook.command
 @hook.command("t")
 def title(inp, db=None, chan=None):
@@ -53,9 +57,9 @@ def title(inp, db=None, chan=None):
         path = parts.path
 
         if parts.query:
-            path += "?"+parts.query
+            path += "?" + parts.query
 
-        conn.request('HEAD',path)
+        conn.request('HEAD', path)
         resp = conn.getresponse()
 
         if not (200 <= resp.status < 400):

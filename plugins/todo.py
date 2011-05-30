@@ -3,8 +3,10 @@ import re
 
 db_inited = False
 
+
 def cleanSQL(sql):
     return re.sub(r'\s+', " ", sql).strip()
+
 
 def db_init(db):
     global db_inited
@@ -30,6 +32,7 @@ def db_init(db):
 
     db_inited = True
 
+
 def db_getall(db, nick, limit=-1):
     return db.execute("""
         select added, text
@@ -39,6 +42,7 @@ def db_getall(db, nick, limit=-1):
             limit ?
 
         """, (nick, limit))
+
 
 def db_get(db, nick, id):
     return db.execute("""
@@ -60,8 +64,8 @@ def db_del(db, nick, limit='all'):
           limit ?
           offset ?)
      """, (nick,
-          -1 if limit=='all' else 1,
-          0 if limit=='all' else limit))
+          -1 if limit == 'all' else 1,
+          0 if limit == 'all' else limit))
     db.commit()
     return row
 
@@ -73,6 +77,7 @@ def db_add(db, nick, text):
     """, (nick, text))
     db.commit()
 
+
 def db_search(db, nick, query):
     return db.execute("""
         select added, text
@@ -81,6 +86,7 @@ def db_search(db, nick, query):
         and user = ?
         order by added desc
     """, (query, nick))
+
 
 @hook.command
 def todo(inp, nick='', chan='', db=None, notice=None, bot=None):
@@ -148,7 +154,6 @@ def todo(inp, nick='', chan='', db=None, notice=None, bot=None):
 
         rows = db_getall(db, nick, limit)
 
-
         found = False
 
         for (index, row) in enumerate(rows):
@@ -156,7 +161,7 @@ def todo(inp, nick='', chan='', db=None, notice=None, bot=None):
             found = True
 
         if not found:
-            notice("%s has no entries."%nick)
+            notice("%s has no entries." % nick)
     elif cmd == 'search':
         if not len(args):
             return "no search query given"
@@ -171,9 +176,7 @@ def todo(inp, nick='', chan='', db=None, notice=None, bot=None):
             found = True
 
         if not found:
-            notice("%s has no matching entries for: %s"%(nick,query))
-
+            notice("%s has no matching entries for: %s" % (nick, query))
 
     else:
         return "unknown command: %s" % cmd
-

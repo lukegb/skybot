@@ -1,5 +1,6 @@
 from util import hook, http
 
+
 @hook.command
 def haspaid(inp):
     ".haspaid <username> - checks if minecraft <username> has paid for the game"

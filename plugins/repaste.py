@@ -6,12 +6,14 @@ import urllib2
 import htmlentitydefs
 import re
 
-re_htmlent = re.compile("&("+"|".join(htmlentitydefs.name2codepoint.keys())+");")
+re_htmlent = re.compile("&(" + "|".join(htmlentitydefs.name2codepoint.keys()) + ");")
 re_numeric = re.compile(r'&#(x?)([a-fA-F0-9]+);')
+
 
 def db_init(db):
     db.execute("create table if not exists repaste(chan, manual, primary key(chan))")
     db.commit()
+
 
 def decode_html(text):
     text = re.sub(re_htmlent,
@@ -23,9 +25,10 @@ def decode_html(text):
                   text)
     return text
 
+
 def scrape_mibpaste(url):
     if not url.startswith("http"):
-        url = "http://"+url
+        url = "http://" + url
     pagesource = http.get(url)
     rawpaste = re.search(r'(?s)(?<=<body>\n).+(?=<hr>)', pagesource).group(0)
     filterbr = rawpaste.replace("<br />", "")
@@ -37,19 +40,22 @@ def scrape_mibpaste(url):
 
 def scrape_pastebin(url):
     id = re.search(r'(?:www\.)?pastebin.com/([a-zA-Z0-9]+)$', url).group(1)
-    rawurl = "http://pastebin.com/raw.php?i="+id
+    rawurl = "http://pastebin.com/raw.php?i=" + id
     text = http.get(rawurl)
 
     return text
 
+
 autorepastes = {}
+
+
 @hook.regex('(pastebin\.com)(/[^ ]+)')
 @hook.regex('(mibpaste\.com)(/[^ ]+)')
 def autorepaste(inp, input=None, db=None, chan=None):
     if "autoreply" in input.bot.config and not input.bot.config["autoreply"]:
         return
     db_init(db)
-    manual = input.db.execute("select manual from repaste where chan=?",(chan,)).fetchone()
+    manual = input.db.execute("select manual from repaste where chan=?", (chan, )).fetchone()
     if manual and len(manual) and manual[0]:
         return
     url = inp.group(1) + inp.group(2)
@@ -58,19 +64,21 @@ def autorepaste(inp, input=None, db=None, chan=None):
         out = autorepastes[url]
         input.notice("that has already been repasted, please use the repasted version: %s" % out)
     else:
-        out = repaste("http://"+url, input, db,  False)
+        out = repaste("http://" + url, input, db, False)
         autorepastes[url] = out
         input.notice("in the future, please use a less awful pastebin (e.g. gist.github.com) instead of %s." % inp.group(1))
     input.say("%s (repasted for %s)" % (out, input.nick))
+
 
 scrapers = {
     r'mibpaste\.com': scrape_mibpaste,
     r'pastebin\.com': scrape_pastebin
 }
 
+
 def scrape(url):
     for pat, scraper in scrapers.iteritems():
-        print "matching "+repr(pat)+" "+url
+        print "matching " + repr(pat) + " " + url
         if re.search(pat, url):
             break
     else:
@@ -78,21 +86,24 @@ def scrape(url):
 
     return scraper(url)
 
+
 def paste_sprunge(text, syntax=None, user=None):
-    data = urllib.urlencode({"sprunge":text})
+    data = urllib.urlencode({"sprunge": text})
     url = urllib2.urlopen("http://sprunge.us/", data).read().strip()
 
     if syntax:
-        url += "?"+syntax
+        url += "?" + syntax
 
     return url
+
 
 def paste_ubuntu(text, user=None, syntax='text'):
     data = urllib.urlencode({"poster": user,
                              "syntax": syntax,
-                             "content":text})
+                             "content": text})
 
     return urllib2.urlopen("http://paste.ubuntu.com/", data).url
+
 
 def paste_gist(text, user=None, syntax=None, description=None):
     data = {
@@ -104,16 +115,17 @@ def paste_gist(text, user=None, syntax=None, description=None):
         data['description'] = description
 
     if syntax:
-        data['file_ext[gistfile1]'] = "."+syntax
+        data['file_ext[gistfile1]'] = "." + syntax
 
     req = urllib2.urlopen('https://gist.github.com/gists', urllib.urlencode(data).encode('utf8'))
     return req.url
 
+
 def paste_strictfp(text, user=None, syntax="plain"):
     data = urllib.urlencode(dict(
-        language = syntax,
-        paste = text,
-        private = "private",
+        language=syntax,
+        paste=text,
+        private="private",
         submit="Paste"))
     req = urllib2.urlopen("http://paste.strictfp.com/", data)
     return req.url
@@ -144,11 +156,11 @@ def repaste(inp, input=None, db=None, isManual=True):
             return "repaste mode set to " + ("manual" if parts[1] == "manual" else "auto")
         else:
             input.notice("you don't have op nor admin")
-    
-    manual = input.db.execute("select manual from repaste where chan=?",(input.chan,)).fetchone()
+
+    manual = input.db.execute("select manual from repaste where chan=?", (input.chan, )).fetchone()
     if (not (manual and len(manual) and (manual[0]))) and isManual:
         return
-    
+
     paster = paste_ubuntu
     args = {}
 
@@ -169,7 +181,7 @@ def repaste(inp, input=None, db=None, isManual=True):
         return "PEBKAC"
 
     args["user"] = input.user
-    
+
     url = parts[0]
 
     scraped = scrape(url)
@@ -181,5 +193,3 @@ def repaste(inp, input=None, db=None, isManual=True):
     pasted = paster(**args)
 
     return pasted
-
-

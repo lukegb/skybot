@@ -10,9 +10,9 @@ re_lineends = re.compile(r'[\r\n]*')
 @hook.command
 def python(inp):
     ".python <prog> -- executes python code <prog>"
-    inp = inp.replace("~~n","adsfervbthbfhyujgyjugkikjgqwedawdfrefgdrgrdthg")
-    inp = inp.replace("~n","\n")
-    inp = inp.replace("adsfervbthbfhyujgyjugkikjgqwedawdfrefgdrgrdthg","~n")
+    inp = inp.replace("~~n", "adsfervbthbfhyujgyjugkikjgqwedawdfrefgdrgrdthg")
+    inp = inp.replace("~n", "\n")
+    inp = inp.replace("adsfervbthbfhyujgyjugkikjgqwedawdfrefgdrgrdthg", "~n")
     res = http.get("http://eval.appspot.com/eval", statement=inp).splitlines()
 
     if len(res) == 0:
@@ -26,6 +26,7 @@ def python(inp):
 
 def rexec(s, bot, input, db):
     exec(s)
+
 
 @hook.command
 def ply(inp, bot=None, input=None, nick=None, db=None, chan=None):

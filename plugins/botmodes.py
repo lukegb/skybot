@@ -1,7 +1,11 @@
 from util import hook
+
+
 def db_init(db):
     db.execute("create table if not exists botmodes(modename, nick, user, host, authed, admin, channel, chanmodes, usermodes)")
     db.commit()
+
+
 class Checker(object):
     def __init__(self, bot, user, channel):
 
@@ -23,7 +27,7 @@ class Checker(object):
             checks.append(user.authed or "")
             checks.append(str(user.nick in bot.config["admins"]))
         else:
-            checks.extend([""]*4)
+            checks.extend([""] * 4)
             checks.append(str(False))
 
         if channel:
@@ -39,10 +43,32 @@ class Checker(object):
 
         return bool(query(db, checks).fetchone())
 
+
 def query(db, checks):
-    return db.execute("select * from botmodes where ? glob modename and lower(?) glob lower(nick) and lower(?) glob lower(user) and lower(?) glob lower(host) and lower(?) glob lower(authed) and ? glob admin and lower(?) glob lower(channel) and ? glob chanmodes and ? glob usermodes order by modename", checks)
+    return db.execute("select * from botmodes where "
+                      "? glob modename and "
+                      "lower(?) glob lower(nick) and "
+                      "lower(?) glob lower(user) and "
+                      "lower(?) glob lower(host) and "
+                      "lower(?) glob lower(authed) and "
+                      "? glob admin and "
+                      "lower(?) glob lower(channel) and "
+                      "? glob chanmodes and "
+                      "? glob usermodes order by modename", checks)
+
+
 def posquery(db, checks):
-    return db.execute("select * from botmodes where modename glob ? and lower(nick) glob lower(?) and lower(user) glob lower(?) and lower(host) glob (?) and authed glob ? and admin glob ? and lower(channel) glob lower(?) and chanmodes glob ? and usermodes glob ? order by modename", checks)
+    return db.execute("select * from botmodes where "
+                      "modename glob ? and "
+                      "lower(nick) glob lower(?) and "
+                      "lower(user) glob lower(?) and "
+                      "lower(host) glob ? and "
+                      "authed glob ? and "
+                      "admin glob ? and "
+                      "lower(channel) glob lower(?) and "
+                      "chanmodes glob ? and "
+                      "usermodes glob ? order by modename", checks)
+
 
 #called from usertracking, not as it's own sieve
 def valueadd(bot, input, func, kind, args):
@@ -54,11 +80,13 @@ def valueadd(bot, input, func, kind, args):
         user = input.users.users[input.nick]
     input["modes"] = Checker(bot, user, channel)
 
+
 @hook.command
 def mode(inp, input=None, db=None):
     ".mode - set modes on things. admin only."
     if input.nick not in input.bot.config["admins"]:
         input.notice("only bot admins can use this command, sorry")
+        return
     db_init(db)
     split = inp.split(" ")
     print repr(split)
@@ -89,15 +117,15 @@ def mode(inp, input=None, db=None):
             input.notice("exceeded your provided limit (limit=%d), cutting off" % names["limit"])
 
         result = result[:names["limit"]]
-        result = [namemap]+[[repr(j)[1:] for j in i] for i in result]
+        result = [namemap] + [[repr(j)[1:] for j in i] for i in result]
 
         #hack to justify into a table
-        lengths=[[len(result[x][y]) for y in range(len(result[x]))] for x in range(len(result))]
-        lengths=[max([lengths[x][i] for x in range(len(result))]) for i in range(len(result[0]))]
+        lengths = [[len(result[x][y]) for y in range(len(result[x]))] for x in range(len(result))]
+        lengths = [max([lengths[x][i] for x in range(len(result))]) for i in range(len(result[0]))]
         for i in result:
             out = ""
             for j in range(len(result[0])):
-                out += i[j].ljust(lengths[j]+1)
+                out += i[j].ljust(lengths[j] + 1)
             input.notice(out)
     elif split[0] == "set":
         if "".join(sqlargs[1:]) == "*******" and ("iamsure" not in names or names["iamsure"] != "yes"):

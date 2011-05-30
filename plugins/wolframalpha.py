@@ -10,7 +10,7 @@ def wolframalpha(inp):
             " results for <query>"
     #return "derp"
     url = "http://www.wolframalpha.com/input/?asynchronous=false"
-    
+
     h = http.get_html(url, i=inp)
 
     pods = h.xpath("//div[@class='pod ']")
@@ -45,7 +45,7 @@ def wolframalpha(inp):
         return unichr(int(match.group(1), 16))
 
     ret = re.sub(r'\\:([0-9a-z]{4})', unicode_sub, ret)
-    leng=175
+    leng = 175
     if len(ret) > leng:
         ret = ret[:ret.rfind(' ', 0, leng)]
         ret = re.sub(r'\W+$', '', ret) + '...'

@@ -1,6 +1,7 @@
 from util import hook
 import botmodes
 
+
 @hook.sieve
 def ignore(bot, input, func, kind, args):
     channel = None
@@ -11,8 +12,8 @@ def ignore(bot, input, func, kind, args):
         user = input.users.users[input.nick]
     c = botmodes.Checker(bot, user, channel)
     db = bot.get_db_connection(input.conn)
-    if c.check("neverquiet."+kind, db):
+    if c.check("neverquiet." + kind, db):
         return input
-    if c.check("quiet."+kind, db):
+    if c.check("quiet." + kind, db):
         return
     return input

@@ -8,11 +8,12 @@ import re
 
 re_adfly = re.compile(r'var url = \'([^\']+)\'')
 
+
 @hook.command
 def isgd(inp):
     ".isgd <url> -- shorten link using is.gd"
 
-    data = urllib.urlencode(dict(format="simple",url=inp))
+    data = urllib.urlencode(dict(format="simple", url=inp))
 
     try:
         return urllib2.urlopen("http://is.gd/create.php", data).read()
@@ -20,6 +21,7 @@ def isgd(inp):
         return "Error: %s" % e
 
     return shortened
+
 
 @hook.command
 def expand(inp):
@@ -30,8 +32,8 @@ def expand(inp):
     conn = httplib.HTTPConnection(parts.hostname)
     path = parts.path
     if parts.query:
-        path += "?"+parts.query
-    conn.request('HEAD',path)
+        path += "?" + parts.query
+    conn.request('HEAD', path)
     resp = conn.getresponse()
     location = resp.msg.getheader("Location")
 
@@ -44,16 +46,20 @@ def expand(inp):
 
     return url
 
+
 def db_init(db):
     db.execute("create table if not exists deadfly_cache (adfly primary key, url)")
     db.commit()
 
+
 def db_get(db, adfly):
-    return db.execute("select url from deadfly_cache where adfly = ?", (adfly,)).fetchone()
+    return db.execute("select url from deadfly_cache where adfly = ?", (adfly, )).fetchone()
+
 
 def db_add(db, adfly, url):
-    db.execute("insert into deadfly_cache (adfly, url) values (?,?)", (adfly,url))
+    db.execute("insert into deadfly_cache (adfly, url) values (?,?)", (adfly, url))
     db.commit()
+
 
 @hook.command
 def deadfly(inp, db=None):
@@ -76,7 +82,7 @@ def deadfly(inp, db=None):
     except Exception, e:
         print e
         url = inp
-        try: 
+        try:
             text = urllib2.urlopen(url, timeout=timeout).read()
         except Exception, e:
             print e
