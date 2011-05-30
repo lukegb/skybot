@@ -52,10 +52,10 @@ if not os.path.exists(bot.persist_dir):
     os.mkdir(bot.persist_dir)
 
 print 'Running main loop'
-socks = [s[1].conn.socket for s in bot.conns.iteritems()]
+socks = [s.conn.socket for s in bot.conns.itervalues()]
 sockmap = {}
-for conn in bot.conns.iteritems():
-    sockmap[conn[1].conn.socket.fileno()] = conn[1]
+for conn in bot.conns.itervalues():
+    sockmap[conn.conn.socket.fileno()] = conn
 while True:
     reload()
     config()
