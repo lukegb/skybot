@@ -52,7 +52,7 @@ class IRCConnection(object):
         if len(self.obuffer) == 0:
             return
         if time.time() - self.lastwrite > 1:
-            x = self.obuffer.pop(0)
+            x = self.obuffer.pop(0).encode('utf-8', 'replace')
             self.socket.send(x + "\r\n")
             self.lastwrite = time.time() 
     def read_all(self):
