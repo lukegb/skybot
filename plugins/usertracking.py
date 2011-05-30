@@ -131,8 +131,8 @@ class Userdict(dict):
 @hook.sieve
 def valueadd(bot, input, func, kind, args):
     global loaded
-	global userlock
-	userlock.acquire() or raise Exception("Problem acquiring userlock, probable thread crash. Abort.")
+    global userlock
+    userlock.acquire() or raise Exception("Problem acquiring userlock, probable thread crash. Abort.")
     if not hasattr(input.conn, "users") or not loaded:
         loaded = True
         input.conn.users = Users()
@@ -144,14 +144,14 @@ def valueadd(bot, input, func, kind, args):
     else:
         input["chandata"]=None
     botmodes.valueadd(bot, input, func, kind, args)
-	userlock.release()
+    userlock.release()
     return input
 
 flag_re=re.compile(r"^([@+]*)(.*)$")
 @hook.event("332 353 311 319 312 330 318 JOIN PART KICK QUIT PRIVMSG MODE NICK")
 @hook.singlethread
 def tracking(inp, command=None, input=None, users=None):
-	userlock.acquire() or raise Exception("Problem acquiring userlock, probable thread crash. Abort.")
+    userlock.acquire() or raise Exception("Problem acquiring userlock, probable thread crash. Abort.")
     if command in ["JOIN", "PART", "KICK", "QUIT", "PRIVMSG", "MODE", "NICK"]:
         if input.nick != input.conn.nick and input.chan.startswith("#") and input.chan not in users.channels:
             input.conn.send("NAMES "+input.chan)
@@ -194,13 +194,13 @@ def tracking(inp, command=None, input=None, users=None):
         users._mode(*inp)
     elif command=="NICK":
         users._chnick(input.nick, inp[0])
-	userlock.release()
+    userlock.release()
 
 
 
 @hook.command
 def mymodes(inp, input=None, users=None):
-	userlock.acquire() or raise Exception("Problem acquiring userlock, probable thread crash. Abort.")
+    userlock.acquire() or raise Exception("Problem acquiring userlock, probable thread crash. Abort.")
     modes = users[input.chan].usermodes[input.nick]
     if len(modes):
         return "+"+("".join(modes))
