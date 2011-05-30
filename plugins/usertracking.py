@@ -152,7 +152,6 @@ def valueadd(bot, input, func, kind, args):
         else:
             input["chandata"] = None
         botmodes.valueadd(bot, input, func, kind, args)
-        userlock.release()
         return input
     except:
         raise
