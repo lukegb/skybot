@@ -25,6 +25,7 @@ class IRCConnection(object):
         #self.socket.irc = irc
         self.ibuffer = []
         self.obuffer = []
+        self.extras = ""
         self.lastwrite = 0
         self.connect()
     def connect(self):
@@ -32,7 +33,8 @@ class IRCConnection(object):
             self.socket = ssl.wrap_socket(self.socket)
         self.socket.connect((self.host, self.port))
     def read(self):
-        b = ""
+        b = self.extras
+        self.extras = ""
         tlen = 4096
         #ensure we are reading all data currently available
         while True:
@@ -43,7 +45,10 @@ class IRCConnection(object):
         #did they hang up?
         if b == "":
             raise IRCDisconnected()
-        b = b.splitlines()
+        b = b.splitlines(True)
+        if not b[-1].endswith("\r\n"):
+            self.extras = b[-1]
+            b = b[:-1]
         self.ibuffer.extend(b)
     def send(self, what):
         #print "<<< " +  what
@@ -97,6 +102,7 @@ class IRC(object):
     def loop_read(self):
         try:
             l = self.conn.read_all()
+            print l
         except IRCDisconnected:
             return False
         for line in l:
