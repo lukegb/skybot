@@ -204,7 +204,6 @@ def nickometer(nick):
 
     # if it's above 99.9%, show as many digits as is insteresting
     score_string=re.sub('(99\\.9*\\d|\\.\\d).*','\\1',`percentage`)
-
-    return score_string#, reasons
+    return score_string + ": " + ", ".join([k[0] for k in reasons])
 
 # vi: set et sta sw=4 ts=4:
